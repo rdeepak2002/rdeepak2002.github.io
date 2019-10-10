@@ -34,6 +34,15 @@ a:hover {
   transition: all 0.5s ease-in-out;
 }
 
+.sideProjects {
+  width: 100%;
+}
+
+.sideProject {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .p-r {
   position: relative;
 }
