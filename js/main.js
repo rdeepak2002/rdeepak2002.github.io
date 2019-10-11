@@ -4,7 +4,7 @@
   var navHeight = nav.outerHeight();
 
 
-  readMore( $('.spoiler'), 4);
+  readMore( $('.spoiler1'), 4);
   readMore2( $('.spoiler2'), 4);
   readMore3( $('.spoiler3'), 4);
   readMore4( $('.spoiler4'), 4);
@@ -49,21 +49,21 @@
 	  var HIDE_LABEL = 'read less';
 
 	  var jObj = _jObj;
-	  var textMinHeight = ''+ (parseInt(jObj.children('.hidden-text').css('line-height'),10)*lineNum) +'px';
-	  var textMaxHeight = ''+jObj.children('.hidden-text').css('height');
+	  var textMinHeight = ''+ (parseInt(jObj.children('.hidden-text1').css('line-height'),10)*lineNum) +'px';
+	  var textMaxHeight = ''+jObj.children('.hidden-text1').css('height');
 
-	  jObj.children('.hidden-text').css('height', ''+ textMaxHeight);
-	  jObj.children('.hidden-text').css( 'transition', 'height .5s');
-	  jObj.children('.hidden-text').css('height', ''+ textMinHeight);
+	  jObj.children('.hidden-text1').css('height', ''+ textMaxHeight);
+	  jObj.children('.hidden-text1').css( 'transition', 'height .5s');
+	  jObj.children('.hidden-text1').css('height', ''+ textMinHeight);
 
 	  jObj.append ('<button class="read-more readMoreBtn">'+READ_MORE_LABEL+'</button>');
 
 	  jObj.children('.read-more').click ( function() {
-	    if (jObj.children('.hidden-text').css('height') === textMinHeight) {
-	      jObj.children('.hidden-text').css('height', ''+textMaxHeight);
+	    if (jObj.children('.hidden-text1').css('height') === textMinHeight) {
+	      jObj.children('.hidden-text1').css('height', ''+textMaxHeight);
 	      jObj.children('.read-more').html(HIDE_LABEL).addClass('active');
 	    } else {
-	      jObj.children('.hidden-text').css('height', ''+textMinHeight);
+	      jObj.children('.hidden-text1').css('height', ''+textMinHeight);
 	      jObj.children('.read-more').html(READ_MORE_LABEL).removeClass('active');
 	    }
 	  });
