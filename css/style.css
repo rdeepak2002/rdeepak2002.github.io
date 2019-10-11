@@ -1,9 +1,36 @@
 .hidden-text {
-  width: 80%
-  margin: 0 auto
-  margin-top: 20px
-  overflow: hidden
-  font-size: 20px
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+  overflow: hidden;
+  font-size: 20px;
+}
+
+.tableContainer {
+  overflow-y: auto;
+  border: 1px solid black;
+  border-radius: 0.5em;
+  height: 670px;
+  width: 100%;
+  line-height: 1em;
+}
+
+.tableContainer::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.tableContainer::-webkit-scrollbar:vertical {
+  width: 11px;
+}
+
+.tableContainer::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  border: 2px solid white; /* should match background, can't be transparent */
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.contactText {
+  font-size: 20px;
 }
 
 * {
@@ -203,6 +230,10 @@ button:focus,button:active {
 
 .title-box {
   margin-bottom: 4rem;
+}
+
+.contact-title-box {
+  margin-bottom: 0rem;
 }
 
 .title-a {
