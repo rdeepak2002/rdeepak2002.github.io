@@ -1,9 +1,14 @@
-/*
-  Theme Name: DevFolio
-  Theme URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-  Author: BootstrapMade.com
-  License: https://bootstrapmade.com/license/
-*/
+.hidden-text {
+  width: 80%
+  margin: 0 auto
+  margin-top: 20px
+  overflow: hidden
+  font-size: 20px
+}
+
+* {
+  overflow: hidden;
+}
 
 /*======================================
 //--//-->   STYLES GENERALES
@@ -12,6 +17,11 @@
 body {
   background-color: #f5f5f5;
   color: #4e4e4e;
+  overflow: scroll !important;
+}
+
+html {
+  overflow: scroll !important;
 }
 
 h1,
@@ -36,6 +46,27 @@ a:hover {
 
 td {
   color: black;
+}
+
+
+button:focus,button:active {
+   outline: none !important;
+   box-shadow: none;
+}
+
+.readMoreBtn {
+  box-shadow: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #ddd;
+  padding: 10px;
+  font-weight: 700;
+  margin-top: 20px;
+  width:100%;
+}
+.readMoreBtn:hover {
+  background: #d0d0d0;
 }
 
 .importantTableCell  {
@@ -82,6 +113,7 @@ td {
 .work-box,
 .card-blog {
   box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+    overflow: visible !important;
 }
 
 .box-shadow-a,
@@ -244,6 +276,7 @@ td {
   margin: 0 15px 0 0;
   box-shadow: 0 0 0 3px #0078ff;
   transition: all 500ms ease;
+  overflow: visible !important;
 }
 
 .socials .ico-circle:hover {
@@ -251,6 +284,7 @@ td {
   color: #fff;
   box-shadow: 0 0 0 3px #cde1f8;
   transition: all 500ms ease;
+  overflow: visible !important;
 }
 
 /*------/ Ul resect /------*/
@@ -288,6 +322,7 @@ td {
   text-align: center;
   box-shadow: 0 0 0 10px #0078ff;
   display: block;
+  overflow: visible !important;
 }
 
 /*------/ Owl Carousel /------*/
@@ -768,14 +803,21 @@ td {
 /*======================================
 //--//-->   COUNTER
 ======================================*/
+.col {
+  overflow: visible !important;
+}
 
 .counter-box {
+  margin-top: 60px;
   color: #fff;
   text-align: center;
+  overflow: visible !important;
+
 }
 
 .counter-ico {
   margin-bottom: 1rem;
+  overflow: visible !important;
 }
 
 .counter-ico .ico-circle {
@@ -783,11 +825,13 @@ td {
   width: 60px;
   line-height: 1.8;
   box-shadow: 0 0 0 10px #cde1f8;
+  overflow: visible !important;
 }
 
 .counter-num .counter {
   font-size: 2rem;
   margin-bottom: 0;
+  overflow: visible !important;
 }
 
 /*======================================

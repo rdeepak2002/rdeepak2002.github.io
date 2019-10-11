@@ -2,6 +2,173 @@
 	"use strict";
 	var nav = $('nav');
   var navHeight = nav.outerHeight();
+
+
+  readMore( $('.spoiler'), 4);
+  readMore2( $('.spoiler2'), 4);
+  readMore3( $('.spoiler3'), 4);
+  readMore4( $('.spoiler4'), 4);
+  readMore5( $('.spoiler5'), 4);
+
+
+
+	function readMore(jObj, lineNum) {
+	  if ( isNaN(lineNum) ) {
+	    lineNum = 4;
+	  }
+	  var go = new ReadMore (jObj, lineNum);
+	}
+	function readMore2(jObj, lineNum) {
+	  if ( isNaN(lineNum) ) {
+	    lineNum = 4;
+	  }
+	  var go = new ReadMore2 (jObj, lineNum);
+	}
+	function readMore3(jObj, lineNum) {
+	  if ( isNaN(lineNum) ) {
+	    lineNum = 4;
+	  }
+	  var go = new ReadMore3 (jObj, lineNum);
+	}
+	function readMore4(jObj, lineNum) {
+	  if ( isNaN(lineNum) ) {
+	    lineNum = 4;
+	  }
+	  var go = new ReadMore4 (jObj, lineNum);
+	}
+	function readMore5(jObj, lineNum) {
+	  if ( isNaN(lineNum) ) {
+	    lineNum = 4;
+	  }
+	  var go = new ReadMore5 (jObj, lineNum);
+	}
+
+	//class
+	function ReadMore(_jObj, lineNum) { 
+	  var READ_MORE_LABEL = 'read more';
+	  var HIDE_LABEL = 'read less';
+
+	  var jObj = _jObj;
+	  var textMinHeight = ''+ (parseInt(jObj.children('.hidden-text').css('line-height'),10)*lineNum) +'px';
+	  var textMaxHeight = ''+jObj.children('.hidden-text').css('height');
+
+	  jObj.children('.hidden-text').css('height', ''+ textMaxHeight);
+	  jObj.children('.hidden-text').css( 'transition', 'height .5s');
+	  jObj.children('.hidden-text').css('height', ''+ textMinHeight);
+
+	  jObj.append ('<button class="read-more readMoreBtn">'+READ_MORE_LABEL+'</button>');
+
+	  jObj.children('.read-more').click ( function() {
+	    if (jObj.children('.hidden-text').css('height') === textMinHeight) {
+	      jObj.children('.hidden-text').css('height', ''+textMaxHeight);
+	      jObj.children('.read-more').html(HIDE_LABEL).addClass('active');
+	    } else {
+	      jObj.children('.hidden-text').css('height', ''+textMinHeight);
+	      jObj.children('.read-more').html(READ_MORE_LABEL).removeClass('active');
+	    }
+	  });
+	}
+	function ReadMore2(_jObj, lineNum) { 
+	  var READ_MORE_LABEL = 'read more';
+	  var HIDE_LABEL = 'read less';
+
+	  var jObj = _jObj;
+	  var textMinHeight = ''+ (parseInt(jObj.children('.hidden-text2').css('line-height'),10)*lineNum) +'px';
+	  var textMaxHeight = ''+jObj.children('.hidden-text2').css('height');
+
+	  jObj.children('.hidden-text2').css('height', ''+ textMaxHeight);
+	  jObj.children('.hidden-text2').css( 'transition', 'height .5s');
+	  jObj.children('.hidden-text2').css('height', ''+ textMinHeight);
+
+	  jObj.append ('<button class="read-more readMoreBtn">'+READ_MORE_LABEL+'</button>');
+
+	  jObj.children('.read-more').click ( function() {
+	    if (jObj.children('.hidden-text2').css('height') === textMinHeight) {
+	      jObj.children('.hidden-text2').css('height', ''+textMaxHeight);
+	      jObj.children('.read-more').html(HIDE_LABEL).addClass('active');
+	    } else {
+	      jObj.children('.hidden-text2').css('height', ''+textMinHeight);
+	      jObj.children('.read-more').html(READ_MORE_LABEL).removeClass('active');
+	    }
+	  });
+	}
+
+	function ReadMore3(_jObj, lineNum) { 
+	  var READ_MORE_LABEL = 'read more';
+	  var HIDE_LABEL = 'read less';
+
+	  var jObj = _jObj;
+	  var textMinHeight = ''+ (parseInt(jObj.children('.hidden-text3').css('line-height'),10)*lineNum) +'px';
+	  var textMaxHeight = ''+jObj.children('.hidden-text3').css('height');
+
+	  jObj.children('.hidden-text3').css('height', ''+ textMaxHeight);
+	  jObj.children('.hidden-text3').css( 'transition', 'height .5s');
+	  jObj.children('.hidden-text3').css('height', ''+ textMinHeight);
+
+	  jObj.append ('<button class="read-more readMoreBtn">'+READ_MORE_LABEL+'</button>');
+
+	  jObj.children('.read-more').click ( function() {
+	    if (jObj.children('.hidden-text3').css('height') === textMinHeight) {
+	      jObj.children('.hidden-text3').css('height', ''+textMaxHeight);
+	      jObj.children('.read-more').html(HIDE_LABEL).addClass('active');
+	    } else {
+	      jObj.children('.hidden-text3').css('height', ''+textMinHeight);
+	      jObj.children('.read-more').html(READ_MORE_LABEL).removeClass('active');
+	    }
+	  });
+	}
+	function ReadMore4(_jObj, lineNum) { 
+	  var READ_MORE_LABEL = 'read more';
+	  var HIDE_LABEL = 'read less';
+
+	  var jObj = _jObj;
+	  var textMinHeight = ''+ (parseInt(jObj.children('.hidden-text4').css('line-height'),10)*lineNum) +'px';
+	  var textMaxHeight = ''+jObj.children('.hidden-text4').css('height');
+
+	  jObj.children('.hidden-text4').css('height', ''+ textMaxHeight);
+	  jObj.children('.hidden-text4').css( 'transition', 'height .5s');
+	  jObj.children('.hidden-text4').css('height', ''+ textMinHeight);
+
+	  jObj.append ('<button class="read-more readMoreBtn">'+READ_MORE_LABEL+'</button>');
+
+	  jObj.children('.read-more').click ( function() {
+	    if (jObj.children('.hidden-text4').css('height') === textMinHeight) {
+	      jObj.children('.hidden-text4').css('height', ''+textMaxHeight);
+	      jObj.children('.read-more').html(HIDE_LABEL).addClass('active');
+	    } else {
+	      jObj.children('.hidden-text4').css('height', ''+textMinHeight);
+	      jObj.children('.read-more').html(READ_MORE_LABEL).removeClass('active');
+	    }
+	  });
+	}
+	function ReadMore5(_jObj, lineNum) { 
+	  var READ_MORE_LABEL = 'read more';
+	  var HIDE_LABEL = 'read less';
+
+	  var jObj = _jObj;
+	  var textMinHeight = ''+ (parseInt(jObj.children('.hidden-text5').css('line-height'),10)*lineNum) +'px';
+	  var textMaxHeight = ''+jObj.children('.hidden-text5').css('height');
+
+	  jObj.children('.hidden-text5').css('height', ''+ textMaxHeight);
+	  jObj.children('.hidden-text5').css( 'transition', 'height .5s');
+	  jObj.children('.hidden-text5').css('height', ''+ textMinHeight);
+
+	  jObj.append ('<button class="read-more readMoreBtn">'+READ_MORE_LABEL+'</button>');
+
+	  jObj.children('.read-more').click ( function() {
+	    if (jObj.children('.hidden-text5').css('height') === textMinHeight) {
+	      jObj.children('.hidden-text5').css('height', ''+textMaxHeight);
+	      jObj.children('.read-more').html(HIDE_LABEL).addClass('active');
+	    } else {
+	      jObj.children('.hidden-text5').css('height', ''+textMinHeight);
+	      jObj.children('.read-more').html(READ_MORE_LABEL).removeClass('active');
+	    }
+	  });
+	}
+  
+  
+  
+  
   
   $('.navbar-toggler').on('click', function() {
     if( ! $('#mainNav').hasClass('navbar-reduce')) {
