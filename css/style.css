@@ -34,6 +34,14 @@ a:hover {
   transition: all 0.5s ease-in-out;
 }
 
+td {
+  color: black;
+}
+
+.importantTableCell  {
+  background-color: #BAC4E8; font-weight:bold;
+}
+
 .sideProjectLink {
   margin-top: 20px;
 }
