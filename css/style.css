@@ -7,11 +7,10 @@ a {
 }
 
 .introCaptionContainer {
-  width: 75em;
-  transform: translateY(100px);
-  margin-top: 170px;
-  margin-left: 50%;
-  transform: translateX(-50%);
+  margin-top: 8em !important;
+  overflow-x: hidden !important;
+  margin-left: 50% !important;
+  transform: translateX(-50%) !important;
   border-radius: 1em;
 }
 
@@ -20,9 +19,12 @@ a {
   text-align: center !important;
   color: white !important;
   background-color: black !important;
-  width: 100%;
-  font-size: 1.4em;
+  width: auto !important;
+  padding-right: 1em;
+  padding-left: 1em;
+  font-size: 1.2em;
   border-radius: 1em;
+  display:inline-block !important;
 }
 
 .break {
