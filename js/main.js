@@ -115,24 +115,6 @@ $(function() {
   };
 })(jQuery);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 (function ($) {
 	"use strict";
 	var nav = $('nav');
