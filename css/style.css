@@ -477,6 +477,7 @@ button:focus,button:active {
 
 .list-ico {
   line-height: 2;
+  margin-top: 2em;
 }
 
 .list-ico span {
