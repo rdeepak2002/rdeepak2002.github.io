@@ -253,7 +253,7 @@ button:focus,button:active {
 .gradeCellName {
   text-align: center;
   font-weight:bold;
-  background-color: rgb(219, 221, 255);
+  background-color: rgb(189, 192, 255);
   color: black;
 }
 
