@@ -6,6 +6,12 @@ a {
   white-space: nowrap !important;
 }
 
+.introCaption {
+  text-transform: capitalize;
+  padding-top: 1em;
+  padding-left: 1em;
+}
+
 .break {
   text-align: center;
 }
