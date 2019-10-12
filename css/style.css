@@ -1021,6 +1021,10 @@ button:focus,button:active {
   overflow: visible !important;
 }
 
+.counter-text {
+  color: black !important;
+}
+
 /*======================================
 //--//-->   PORTFOLIO
 ======================================*/
@@ -1344,6 +1348,10 @@ footer .credits {
 
 footer .credits a {
   color: #fff;
+}
+
+.copyright {
+  color: white !important;
 }
 
 /*======================================
