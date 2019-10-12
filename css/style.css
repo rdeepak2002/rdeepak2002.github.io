@@ -246,7 +246,15 @@ button:focus,button:active {
 }
 
 .importantTableCell  {
-  background-color: #BAC4E8; font-weight:bold;
+  background-color: rgb(230, 231, 252); 
+  font-weight:bold;
+}
+
+.gradeCellName {
+  text-align: center;
+  font-weight:bold;
+  background-color: rgb(219, 221, 255);
+  color: black;
 }
 
 .sideProjectLink {
