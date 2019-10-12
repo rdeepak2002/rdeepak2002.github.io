@@ -142,7 +142,7 @@ $(function() {
   readMore2( $('.spoiler2'), 4);
   readMore3( $('.spoiler3'), 4);
   readMore4( $('.spoiler4'), 4);
-  readMore5( $('.spoiler5'), 4);
+  readMore5( $('.spoiler5'), 6);
 
 	function readMore(jObj, lineNum) {
 	  if ( isNaN(lineNum) ) {
