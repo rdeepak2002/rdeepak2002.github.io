@@ -1071,7 +1071,7 @@ button:focus,button:active {
 
 .w-title {
   font-size: 25px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   text-align: left;
 }
 
