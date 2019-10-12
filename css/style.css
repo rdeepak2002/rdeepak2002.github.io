@@ -249,6 +249,7 @@ button:focus,button:active {
 .sideProjectDescription {
   margin-top: 20px;
   font-size: 22px;
+  color: black;
 }
 
 .sideProjects {
