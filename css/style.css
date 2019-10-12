@@ -6,12 +6,23 @@ a {
   white-space: nowrap !important;
 }
 
+.introCaptionContainer {
+  width: 70%;
+  transform: translateY(100px);
+  margin-top: 170px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  border-radius: 1em;
+}
+
 .introCaption {
   text-transform: uppercase !important;
-  padding-top: 10em !important;
   text-align: center !important;
   color: white !important;
   background-color: black !important;
+  width: 100%;
+  font-size: 1.4em;
+  border-radius: 1em;
 }
 
 .break {
