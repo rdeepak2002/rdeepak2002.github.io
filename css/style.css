@@ -1,9 +1,36 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
 
 .hidden-text1 {
-  scroll-behavior: smooth;
+  color: black;
 }
 
+.hidden-text2 {
+  color: black;
+}
+
+.hidden-text3 {
+  color: black;
+}
+
+.hidden-text4 {
+  color: black;
+}
+
+.hidden-text5 {
+  color: black;
+}
+
+.hidden-text6 {
+  color: black;
+}
+
+.actualLink {
+  color: rgb(50,50,255) !important;
+}
+
+.actualLink:hover {
+  color: rgb(100,100,255) !important;
+}
 
 a {
   display: inline-block !important;
@@ -216,6 +243,7 @@ button:focus,button:active {
 
 .sideProjectLink {
   margin-top: 20px;
+  color: black;
 }
 
 .sideProjectDescription {
