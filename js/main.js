@@ -120,9 +120,9 @@ $(function() {
 	var nav = $('nav');
   var navHeight = nav.outerHeight();
 
-  readMore( $('.spoiler1'), 6);
-  readMore2( $('.spoiler2'), 4);
-  readMore3( $('.spoiler3'), 4);
+  readMore( $('.spoiler1'), 8);
+  readMore2( $('.spoiler2'), 6);
+  readMore3( $('.spoiler3'), 6);
   readMore4( $('.spoiler4'), 4);
   readMore5( $('.spoiler5'), 6);
 
@@ -179,6 +179,9 @@ $(function() {
 	    } else {
 	      jObj.children('.hidden-text1').css('height', ''+textMinHeight);
 	      jObj.children('.read-more').html(READ_MORE_LABEL).removeClass('active');
+
+	      var y = $(window).scrollTop();  //your current y position on the page
+				$(window).scrollTop(y-1*jObj.children('.hidden-text1').height());
 	    }
 	  });
 	}
@@ -203,6 +206,10 @@ $(function() {
 	    } else {
 	      jObj.children('.hidden-text2').css('height', ''+textMinHeight);
 	      jObj.children('.read-more').html(READ_MORE_LABEL).removeClass('active');
+
+
+	      var y = $(window).scrollTop();  //your current y position on the page
+				$(window).scrollTop(y-1*jObj.children('.hidden-text2').height());
 	    }
 	  });
 	}
@@ -228,6 +235,10 @@ $(function() {
 	    } else {
 	      jObj.children('.hidden-text3').css('height', ''+textMinHeight);
 	      jObj.children('.read-more').html(READ_MORE_LABEL).removeClass('active');
+
+
+	      var y = $(window).scrollTop();  //your current y position on the page
+				$(window).scrollTop(y-1*jObj.children('.hidden-text3').height());
 	    }
 	  });
 	}
@@ -252,9 +263,14 @@ $(function() {
 	    } else {
 	      jObj.children('.hidden-text4').css('height', ''+textMinHeight);
 	      jObj.children('.read-more').html(READ_MORE_LABEL).removeClass('active');
+
+
+	      var y = $(window).scrollTop();  //your current y position on the page
+				$(window).scrollTop(y-1*jObj.children('.hidden-text4').height());
 	    }
 	  });
 	}
+	
 	function ReadMore5(_jObj, lineNum) { 
 	  var READ_MORE_LABEL = 'READ MORE';
 	  var HIDE_LABEL = 'READ LESS';
@@ -276,13 +292,13 @@ $(function() {
 	    } else {
 	      jObj.children('.hidden-text5').css('height', ''+textMinHeight);
 	      jObj.children('.read-more').html(READ_MORE_LABEL).removeClass('active');
+
+
+	      var y = $(window).scrollTop();  //your current y position on the page
+				$(window).scrollTop(y-1*jObj.children('.hidden-text5').height());
 	    }
 	  });
 	}
-  
-  
-  
-  
   
   $('.navbar-toggler').on('click', function() {
     if( ! $('#mainNav').hasClass('navbar-reduce')) {
