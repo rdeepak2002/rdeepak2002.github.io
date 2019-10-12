@@ -159,8 +159,8 @@ $(function() {
 
 	//class
 	function ReadMore(_jObj, lineNum) { 
-	  var READ_MORE_LABEL = 'read more';
-	  var HIDE_LABEL = 'read less';
+	  var READ_MORE_LABEL = 'READ MORE';
+	  var HIDE_LABEL = 'READ LESS';
 
 	  var jObj = _jObj;
 	  var textMinHeight = ''+ (parseInt(jObj.children('.hidden-text1').css('line-height'),10)*lineNum) +'px';
@@ -183,8 +183,8 @@ $(function() {
 	  });
 	}
 	function ReadMore2(_jObj, lineNum) { 
-	  var READ_MORE_LABEL = 'read more';
-	  var HIDE_LABEL = 'read less';
+	  var READ_MORE_LABEL = 'READ MORE';
+	  var HIDE_LABEL = 'READ LESS';
 
 	  var jObj = _jObj;
 	  var textMinHeight = ''+ (parseInt(jObj.children('.hidden-text2').css('line-height'),10)*lineNum) +'px';
@@ -208,8 +208,8 @@ $(function() {
 	}
 
 	function ReadMore3(_jObj, lineNum) { 
-	  var READ_MORE_LABEL = 'read more';
-	  var HIDE_LABEL = 'read less';
+	  var READ_MORE_LABEL = 'READ MORE';
+	  var HIDE_LABEL = 'READ LESS';
 
 	  var jObj = _jObj;
 	  var textMinHeight = ''+ (parseInt(jObj.children('.hidden-text3').css('line-height'),10)*lineNum) +'px';
@@ -232,8 +232,8 @@ $(function() {
 	  });
 	}
 	function ReadMore4(_jObj, lineNum) { 
-	  var READ_MORE_LABEL = 'read more';
-	  var HIDE_LABEL = 'read less';
+	  var READ_MORE_LABEL = 'READ MORE';
+	  var HIDE_LABEL = 'READ LESS';
 
 	  var jObj = _jObj;
 	  var textMinHeight = ''+ (parseInt(jObj.children('.hidden-text4').css('line-height'),10)*lineNum) +'px';
@@ -256,8 +256,8 @@ $(function() {
 	  });
 	}
 	function ReadMore5(_jObj, lineNum) { 
-	  var READ_MORE_LABEL = 'read more';
-	  var HIDE_LABEL = 'read less';
+	  var READ_MORE_LABEL = 'READ MORE';
+	  var HIDE_LABEL = 'READ LESS';
 
 	  var jObj = _jObj;
 	  var textMinHeight = ''+ (parseInt(jObj.children('.hidden-text5').css('line-height'),10)*lineNum) +'px';
