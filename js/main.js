@@ -123,7 +123,7 @@ $(function() {
   readMore( $('.spoiler1'), 8);
   readMore2( $('.spoiler2'), 6);
   readMore3( $('.spoiler3'), 6);
-  readMore4( $('.spoiler4'), 4);
+  readMore4( $('.spoiler4'), 5);
   readMore5( $('.spoiler5'), 6);
 
 	function readMore(jObj, lineNum) {
