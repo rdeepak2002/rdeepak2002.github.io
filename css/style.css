@@ -6,20 +6,25 @@ a {
   white-space: nowrap !important;
 }
 
+mark { 
+  background-color: black;
+  color: white;
+  border-radius: 1em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
 .introCaptionContainer {
+  width: 100%;
   margin-top: 8em !important;
-  overflow-x: hidden !important;
-  margin-left: 50% !important;
-  transform: translateX(-50%) !important;
   border-radius: 1em;
 }
 
 .introCaption {
+  width: 100% !important;
   text-transform: uppercase !important;
   text-align: center !important;
-  color: white !important;
-  background-color: black !important;
-  width: auto !important;
+  color: white !important; 
   padding-right: 1em;
   padding-left: 1em;
   font-size: 1.2em;
@@ -1420,7 +1425,7 @@ footer .credits a {
   }
 
   .intro .intro-title {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
   }
 
   .intro .intro-subtitle {
