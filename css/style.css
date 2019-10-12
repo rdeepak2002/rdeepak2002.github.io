@@ -1030,7 +1030,13 @@ button:focus,button:active {
 }
 
 .counter-text {
-  color: black !important;
+  color: white !important;
+  font-style: bold !important;
+}
+
+.counter {
+  color: white !important;
+  font-style: bold !important;
 }
 
 /*======================================
