@@ -7,9 +7,11 @@ a {
 }
 
 .introCaption {
-  text-transform: capitalize;
-  padding-top: 1em;
-  padding-left: 1em;
+  text-transform: uppercase !important;
+  padding-top: 10em !important;
+  text-align: center !important;
+  color: white !important;
+  background-color: black !important;
 }
 
 .break {
