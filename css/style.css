@@ -1,5 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
 
+.cursiveWriting {
+  font-family: Apple Chancery;
+}
+
 .hidden-text1 {
   color: black;
 }
