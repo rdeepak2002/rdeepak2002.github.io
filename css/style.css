@@ -28,6 +28,10 @@
   color: rgb(0,150,255) !important;
 }
 
+p {
+  color: black !important;
+}
+
 .actualLink:hover {
   color: rgb(0,10,255) !important;
 }
