@@ -1,6 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
 
-
+img {
+  image-orientation: from-image !important;
+}
 
 #slideshow { 
   margin: 50px auto; 
