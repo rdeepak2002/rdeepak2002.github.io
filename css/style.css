@@ -1,67 +1,29 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
 
 
-/* accesorios */
 
-.carousel-inner img {
-  margin: auto;
+#slideshow { 
+  margin: 50px auto; 
+  position: relative; 
+  width: 100%; 
+  height: 1000px; 
+  padding: 10px; 
+  box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+  overflow:hidden;
 }
 
-.carousel-indicators li {
-  width: 10px;
-  height: 10px;
-  border-radius: 100%;
-  margin-bottom: 20px;
+#slideshow > div { 
+  position: absolute; 
+  top: 10px; 
+  left: 10px; 
+  right: 10px; 
+  bottom: 10px; 
 }
 
-.full-screen {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.slideshowImg {
+  width: 100%;
+  height: auto;
 }
-
-
-/* Smaller than standard 960 (devices and browsers) */
-@media only screen and (max-width: 959px) {}
-
-/* Tablet Portrait size to standard 960 (devices and browsers) */
-@media only screen and (min-width: 768px) and (max-width: 959px) {}
-
-/* All Mobile Sizes (devices and browser) */
-@media only screen and (max-width: 767px) {}
-
-/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  .carousel-control-prev, .carousel-control-next { 
-    display: none;
-  }
-}
-
-/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-@media only screen and (max-width: 479px) {
-  .carousel-inner{
-      height: 50vh;
-  }
-  .carousel-inner {
-    background-position: center;
-    vertical-align: middle;
-    background-size: contain
-  }
-  
-  .carousel-control-prev, .carousel-control-next { 
-    display: none;
-  }
-  
-}
-
-
-
-
-
-
-
-
-
 
 
 
