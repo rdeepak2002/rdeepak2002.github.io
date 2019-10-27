@@ -1,5 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
 
+.pa-gallery-player-widget {
+  margin-bottom: 20px;
+}
+
 .cursiveWriting {
   font-family: Apple Chancery;
 }
