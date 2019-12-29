@@ -141,6 +141,8 @@ $(function() {
   readMore3( $('.spoiler3'), 6);
   readMore4( $('.spoiler4'), 5);
   readMore5( $('.spoiler5'), 6);
+  readMore6( $('.spoiler6'), 6);
+
 
 	function readMore(jObj, lineNum) {
 	  if ( isNaN(lineNum) ) {
@@ -171,6 +173,13 @@ $(function() {
 	    lineNum = 4;
 	  }
 	  var go = new ReadMore5 (jObj, lineNum);
+	}
+
+	function readMore6(jObj, lineNum) {
+	  if ( isNaN(lineNum) ) {
+	    lineNum = 4;
+	  }
+	  var go = new ReadMore6 (jObj, lineNum);
 	}
 
 	//class
@@ -320,6 +329,37 @@ $(function() {
 
 				window.scrollBy({ 
 				  top: -1*jObj.children('.hidden-text5').height(), // could be negative value
+				  left: 0, 
+				  behavior: 'smooth' 
+				});
+	    }
+	  });
+	}
+
+	function ReadMore6(_jObj, lineNum) { 
+	  var READ_MORE_LABEL = 'READ MORE';
+	  var HIDE_LABEL = 'READ LESS';
+
+	  var jObj = _jObj;
+	  var textMinHeight = ''+ (parseInt(jObj.children('.hidden-text6').css('line-height'),10)*lineNum) +'px';
+	  var textMaxHeight = ''+jObj.children('.hidden-text6').css('height');
+
+	  jObj.children('.hidden-text6').css('height', ''+ textMaxHeight);
+	  jObj.children('.hidden-text6').css( 'transition', 'height .5s');
+	  jObj.children('.hidden-text6').css('height', ''+ textMinHeight);
+
+	  jObj.append ('<button class="read-more readMoreBtn">'+READ_MORE_LABEL+'</button>');
+
+	  jObj.children('.read-more').click ( function() {
+	    if (jObj.children('.hidden-text6').css('height') === textMinHeight) {
+	      jObj.children('.hidden-text6').css('height', ''+textMaxHeight);
+	      jObj.children('.read-more').html(HIDE_LABEL).addClass('active');
+	    } else {
+	      jObj.children('.hidden-text6').css('height', ''+textMinHeight);
+	      jObj.children('.read-more').html(READ_MORE_LABEL).removeClass('active');
+
+				window.scrollBy({ 
+				  top: -1*jObj.children('.hidden-text6').height(), // could be negative value
 				  left: 0, 
 				  behavior: 'smooth' 
 				});
