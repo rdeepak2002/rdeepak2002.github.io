@@ -1,5 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
 
+::-webkit-scrollbar {
+  width: 0px !important;  /* Remove scrollbar space */
+  background: transparent !important;  /* Optional: just make scrollbar invisible */
+}
+
 img {
   image-orientation: from-image !important;
 }
