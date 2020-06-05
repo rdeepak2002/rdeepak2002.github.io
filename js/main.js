@@ -1,6 +1,6 @@
 $("#slideshow > div:gt(0)").hide();
 
-setInterval(function() { 
+setInterval(function() {
   $('#slideshow > div:first')
     .fadeOut(1000)
     .next()
@@ -23,7 +23,7 @@ $(function() {
 
 (function($) {
   var PREFIX = 'mini-preview';
-  
+
   // implemented as a jQuery plugin
   $.fn.miniPreview = function(options) {
     return this.each(function() {
@@ -38,23 +38,23 @@ $(function() {
       $this.data(PREFIX, miniPreview);
     });
   };
-  
+
   var MiniPreview = function($el, options) {
     this.$el = $el;
     this.options = $.extend({}, this.defaultOptions, options);
     this.counter = MiniPreview.prototype.sharedCounter++;
   };
-  
+
   MiniPreview.prototype = {
     sharedCounter: 0,
-    
+
     defaultOptions: {
       width: 256,
       height: 144,
       scale: .25,
       prefetch: 'pageload'
     },
-        
+
     generate: function() {
       this.createElements();
       this.setPrefetch();
@@ -66,13 +66,13 @@ $(function() {
       var $frame = $('<iframe>', { class: PREFIX + '-frame' });
       var $cover = $('<div>', { class: PREFIX + '-cover' });
       $wrapper.appendTo(this.$el).append($loading, $frame, $cover);
-      
+
       // sizing
       $wrapper.css({
         width: this.options.width + 'px',
         height: this.options.height + 'px'
       });
-      
+
       // scaling
       var inversePercent = 100 / this.options.scale;
       $frame.css({
@@ -90,7 +90,7 @@ $(function() {
         left: left + 'px'
       });
     },
-    
+
     setPrefetch: function() {
       switch (this.options.prefetch) {
         case 'pageload':
@@ -109,7 +109,7 @@ $(function() {
           break;
       }
     },
-    
+
     loadPreview: function() {
       this.$el.find('.' + PREFIX + '-frame')
         .attr('src', this.$el.attr('href'))
@@ -118,7 +118,7 @@ $(function() {
           $(this).css('background-color', '#fff');
         });
     },
-    
+
     getNamespacedEvent: function(event) {
       return event + '.' + PREFIX + '_' + this.counter;
     },
@@ -143,6 +143,7 @@ $(function() {
   readMore5( $('.spoiler5'), 5);
   readMore6( $('.spoiler6'), 6);
   readMore7( $('.spoiler7'), 7);
+  readMore8( $('.spoiler8'), 7);
 
 
 	function readMore(jObj, lineNum) {
@@ -189,9 +190,15 @@ $(function() {
 	  }
 	  var go = new ReadMore7 (jObj, lineNum);
 	}
+  function readMore8(jObj, lineNum) {
+    if ( isNaN(lineNum) ) {
+      lineNum = 4;
+    }
+    var go = new ReadMore8 (jObj, lineNum);
+  }
 
 	//class
-	function ReadMore(_jObj, lineNum) { 
+	function ReadMore(_jObj, lineNum) {
 	  var READ_MORE_LABEL = 'READ MORE';
 	  var HIDE_LABEL = 'READ LESS';
 
@@ -213,15 +220,15 @@ $(function() {
 	      jObj.children('.hidden-text1').css('height', ''+textMinHeight);
 	      jObj.children('.read-more').html(READ_MORE_LABEL).removeClass('active');
 
-				window.scrollBy({ 
+				window.scrollBy({
 				  top: -1*jObj.children('.hidden-text1').height(), // could be negative value
-				  left: 0, 
-				  behavior: 'smooth' 
+				  left: 0,
+				  behavior: 'smooth'
 				});
 	    }
 	  });
 	}
-	function ReadMore2(_jObj, lineNum) { 
+	function ReadMore2(_jObj, lineNum) {
 	  var READ_MORE_LABEL = 'READ MORE';
 	  var HIDE_LABEL = 'READ LESS';
 
@@ -243,16 +250,16 @@ $(function() {
 	      jObj.children('.hidden-text2').css('height', ''+textMinHeight);
 	      jObj.children('.read-more').html(READ_MORE_LABEL).removeClass('active');
 
-				window.scrollBy({ 
+				window.scrollBy({
 				  top: -1*jObj.children('.hidden-text2').height(), // could be negative value
-				  left: 0, 
-				  behavior: 'smooth' 
+				  left: 0,
+				  behavior: 'smooth'
 				});
 	    }
 	  });
 	}
 
-	function ReadMore3(_jObj, lineNum) { 
+	function ReadMore3(_jObj, lineNum) {
 	  var READ_MORE_LABEL = 'READ MORE';
 	  var HIDE_LABEL = 'READ LESS';
 
@@ -274,15 +281,15 @@ $(function() {
 	      jObj.children('.hidden-text3').css('height', ''+textMinHeight);
 	      jObj.children('.read-more').html(READ_MORE_LABEL).removeClass('active');
 
-				window.scrollBy({ 
+				window.scrollBy({
 				  top: -1*jObj.children('.hidden-text3').height(), // could be negative value
-				  left: 0, 
-				  behavior: 'smooth' 
+				  left: 0,
+				  behavior: 'smooth'
 				});
 	    }
 	  });
 	}
-	function ReadMore4(_jObj, lineNum) { 
+	function ReadMore4(_jObj, lineNum) {
 	  var READ_MORE_LABEL = 'READ MORE';
 	  var HIDE_LABEL = 'READ LESS';
 
@@ -304,16 +311,16 @@ $(function() {
 	      jObj.children('.hidden-text4').css('height', ''+textMinHeight);
 	      jObj.children('.read-more').html(READ_MORE_LABEL).removeClass('active');
 
-				window.scrollBy({ 
+				window.scrollBy({
 				  top: -1*jObj.children('.hidden-text4').height(), // could be negative value
-				  left: 0, 
-				  behavior: 'smooth' 
+				  left: 0,
+				  behavior: 'smooth'
 				});
 	    }
 	  });
 	}
 
-	function ReadMore5(_jObj, lineNum) { 
+	function ReadMore5(_jObj, lineNum) {
 	  var READ_MORE_LABEL = 'READ MORE';
 	  var HIDE_LABEL = 'READ LESS';
 
@@ -335,16 +342,16 @@ $(function() {
 	      jObj.children('.hidden-text5').css('height', ''+textMinHeight);
 	      jObj.children('.read-more').html(READ_MORE_LABEL).removeClass('active');
 
-				window.scrollBy({ 
+				window.scrollBy({
 				  top: -1*jObj.children('.hidden-text5').height(), // could be negative value
-				  left: 0, 
-				  behavior: 'smooth' 
+				  left: 0,
+				  behavior: 'smooth'
 				});
 	    }
 	  });
 	}
 
-	function ReadMore6(_jObj, lineNum) { 
+	function ReadMore6(_jObj, lineNum) {
 	  var READ_MORE_LABEL = 'READ MORE';
 	  var HIDE_LABEL = 'READ LESS';
 
@@ -366,17 +373,17 @@ $(function() {
 	      jObj.children('.hidden-text6').css('height', ''+textMinHeight);
 	      jObj.children('.read-more').html(READ_MORE_LABEL).removeClass('active');
 
-				window.scrollBy({ 
+				window.scrollBy({
 				  top: -1*jObj.children('.hidden-text6').height(), // could be negative value
-				  left: 0, 
-				  behavior: 'smooth' 
+				  left: 0,
+				  behavior: 'smooth'
 				});
 	    }
 	  });
 	}
 
 
-	function ReadMore7(_jObj, lineNum) { 
+	function ReadMore7(_jObj, lineNum) {
 	  var READ_MORE_LABEL = 'READ MORE';
 	  var HIDE_LABEL = 'READ LESS';
 
@@ -398,15 +405,47 @@ $(function() {
 	      jObj.children('.hidden-text7').css('height', ''+textMinHeight);
 	      jObj.children('.read-more').html(READ_MORE_LABEL).removeClass('active');
 
-				window.scrollBy({ 
+				window.scrollBy({
 				  top: -1*jObj.children('.hidden-text7').height(), // could be negative value
-				  left: 0, 
-				  behavior: 'smooth' 
+				  left: 0,
+				  behavior: 'smooth'
 				});
 	    }
 	  });
 	}
-  
+
+  function ReadMore8(_jObj, lineNum) {
+    var READ_MORE_LABEL = 'READ MORE';
+    var HIDE_LABEL = 'READ LESS';
+
+    var jObj = _jObj;
+    var textMinHeight = ''+ (parseInt(jObj.children('.hidden-text8').css('line-height'),10)*lineNum) +'px';
+    var textMaxHeight = ''+jObj.children('.hidden-text8').css('height');
+
+    jObj.children('.hidden-text8').css('height', ''+ textMaxHeight);
+    jObj.children('.hidden-text8').css( 'transition', 'height .5s');
+    jObj.children('.hidden-text8').css('height', ''+ textMinHeight);
+
+    jObj.append ('<button class="read-more readMoreBtn">'+READ_MORE_LABEL+'</button>');
+
+    jObj.children('.read-more').click ( function() {
+      if (jObj.children('.hidden-text8').css('height') === textMinHeight) {
+        jObj.children('.hidden-text8').css('height', ''+textMaxHeight);
+        jObj.children('.read-more').html(HIDE_LABEL).addClass('active');
+      } else {
+        jObj.children('.hidden-text8').css('height', ''+textMinHeight);
+        jObj.children('.read-more').html(READ_MORE_LABEL).removeClass('active');
+
+        window.scrollBy({
+          top: -1*jObj.children('.hidden-text8').height(), // could be negative value
+          left: 0,
+          behavior: 'smooth'
+        });
+      }
+    });
+  }
+
+
   $('.navbar-toggler').on('click', function() {
     if( ! $('#mainNav').hasClass('navbar-reduce')) {
       $('#mainNav').addClass('navbar-reduce');
@@ -477,7 +516,7 @@ $(function() {
 	/*--/ Navbar Menu Reduce /--*/
 	$(window).trigger('scroll');
 	$(window).on('scroll', function () {
-		var pixels = 50; 
+		var pixels = 50;
 		var top = 1200;
 		if ($(window).scrollTop() > pixels) {
 			$('.navbar-expand-md').addClass('navbar-reduce');
