@@ -1,5 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
 
+html {
+  overflow-x:none;
+}
+
 img {
   image-orientation: from-image !important;
 }
