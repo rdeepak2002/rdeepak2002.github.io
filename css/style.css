@@ -4,28 +4,28 @@ img {
   image-orientation: from-image !important;
 }
 
-#slideshow { 
-  margin: 50px auto; 
-  position: relative; 
-  width: 100%; 
-  height: 560px; 
-  padding: 10px; 
-  box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+#slideshow {
+  margin: 50px auto;
+  position: relative;
+  width: 100%;
+  height: 560px;
+  padding: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
   overflow:hidden;
 }
 
 @media only screen and (max-width: 600px) {
-  #slideshow {  
-    height: 220px !important; 
+  #slideshow {
+    height: 220px !important;
   }
 }
 
-#slideshow > div { 
-  position: absolute; 
-  top: 10px; 
-  left: 10px; 
-  right: 10px; 
-  bottom: 10px; 
+#slideshow > div {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
 }
 
 .slideshowImg {
@@ -88,7 +88,7 @@ a {
   white-space: nowrap !important;
 }
 
-mark { 
+mark {
   background-color: rgba(0,0,0,0.7);
   color: white;
   border-radius: 1em;
@@ -107,7 +107,7 @@ mark {
   width: 100% !important;
   text-transform: uppercase !important;
   text-align: center !important;
-  color: white !important; 
+  color: white !important;
   padding-right: 1em;
   padding-left: 1em;
   font-size: 1.2em;
@@ -150,7 +150,7 @@ a:hover .mini-preview-wrapper {
   top: 0;
   bottom: 0;
   right: 0;
-  left: 0;  
+  left: 0;
 }
 
 .mini-preview-loading {
@@ -305,7 +305,7 @@ button:focus,button:active {
 }
 
 .importantTableCell  {
-  background-color: rgb(230, 231, 252); 
+  background-color: rgb(230, 231, 252);
   font-weight:bold;
 }
 
@@ -409,7 +409,7 @@ button:focus,button:active {
 
 .paralax-mf {
   position: relative;
-  padding: 8rem 0;
+  padding: 0rem 0;
 }
 
 .display-table {
@@ -922,7 +922,7 @@ button:focus,button:active {
 .intro {
   height: 100vh;
 /*  border-radius: 3em;
-*/  
+*/
   position: relative;
   color: #fff;
 }
@@ -934,7 +934,7 @@ button:focus,button:active {
 
 .intro .overlay-itro {
 /*  background-color: rgba(0, 0, 0, 0.6);
-*/  
+*/
   position: absolute;
   top: 0;
   left: 0px;
