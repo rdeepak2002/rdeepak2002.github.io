@@ -6,7 +6,14 @@ Deepak Ramalingam's website.
 
 ### Project Structure
 
-TODO: include project file structure here
+.
+├── build                   # Compiled files (alternatively `dist`)
+├── public                    # Documentation files (alternatively `doc`)
+├── src                     # Source files (alternatively `lib` or `app`)
+├── package.json
+├── yarn.lock
+├── LICENSE
+└── README.md
 
 ## Available Scripts
 
