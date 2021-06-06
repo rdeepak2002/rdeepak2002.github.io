@@ -10,7 +10,7 @@ Deepak Ramalingam's website.
     ├── build                   # Compiled files
     ├── public                  # Public files
     ├── src                     # Source files (alternatively `lib` or `app`)
-    ├── package.json            # File for npm
+    ├── package.json            # Metadata of project
     ├── yarn.lock               # File for yarn
     ├── LICENSE                 # Legal license for this project
     └── README.md               # This file
@@ -19,7 +19,7 @@ Deepak Ramalingam's website.
 
 In the project directory, you can run:
 
-### `npm install`
+### `yarn install`
 
 Required command to install dependencies. 
 
