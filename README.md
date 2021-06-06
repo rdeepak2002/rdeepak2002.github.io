@@ -6,14 +6,14 @@ Deepak Ramalingam's website.
 
 ### Project Structure
 
-.
-├── build                   # Compiled files (alternatively `dist`)
-├── public                    # Documentation files (alternatively `doc`)
-├── src                     # Source files (alternatively `lib` or `app`)
-├── package.json
-├── yarn.lock
-├── LICENSE
-└── README.md
+    .
+    ├── build                   # Compiled files
+    ├── public                  # Public files
+    ├── src                     # Source files (alternatively `lib` or `app`)
+    ├── package.json            # File for npm
+    ├── yarn.lock               # File for yarn
+    ├── LICENSE                 # Legal license for this project
+    └── README.md               # This file
 
 ## Available Scripts
 
