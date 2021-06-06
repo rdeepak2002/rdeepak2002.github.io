@@ -1,10 +1,10 @@
 # rdeepak2002.github.io
 
-<!-- ## About -->
+## About
 
 Deepak Ramalingam's website. 
 
-## Project Structure
+### Project Structure
 
 TODO: include project file structure here
 
@@ -26,12 +26,8 @@ You will also see any lint errors in the console.
 
 ### `npm run deploy`
 
-Publishes the compiled version of this web application to the gh-pages branch. 
+Publishes the compiled version of this web application to the gh-pages branch.
 
-## Learn More
+## Deployment
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Deployment
-
-Navigate to settings/pages in the Github repo, then select gh-pages as the active branch. 
+Navigate to Settings/Pages in the GitHub repo, then select gh-pages as the active branch. 
