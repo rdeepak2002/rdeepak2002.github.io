@@ -7,13 +7,30 @@ Deepak Ramalingam's website.
 ### Project Structure
 
     .
-    ├── build                   # Compiled files
     ├── public                  # Public files
+    │   ├── favicon.ico         # Website favicon
+    │   ├── google*.html        # Google site verification file
+    │   ├── index.html          # Default page shown
+    │   ├── logo192.png
+    │   ├── logo512.png
+    │   ├── manifest.json
+    │   └── robots.txt
     ├── src                     # Source files
+    │   ├── components          # Webpage sections
+    │   │   └── Home.tsx        # Homepage
+    │   ├── App.css             # Global styling
+    │   ├── App.test.js
+    │   ├── App.tsx             # Main web app container
+    │   ├── index.js            # Entry JS file
+    │   ├── logo.svg
+    │   ├── react-app-env.d.ts
+    │   ├── reportWebVital.js
+    │   └── setupTests.js
     ├── package.json            # Metadata of project
-    ├── yarn.lock               # File for yarn
-    ├── LICENSE                 # Legal license for this project
-    └── README.md               # This file
+    ├── yarn.lock               # Yarn file to keep track of versions
+    ├── tsconfig.json           # TypeScript configuration
+    ├── LICENSE
+    └── README.md
 
 ## Available Scripts
 
