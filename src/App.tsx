@@ -2,41 +2,31 @@ import {
     BrowserRouter as Router,
     Switch,
     Redirect,
-    Route,
-    NavLink
+    Route
 } from "react-router-dom";
 
-import { 
-    Navbar,
-    Nav
-} from "react-bootstrap";
-
+import CustomNavbar from "./components/navbar/"
 import Home from "./components/home/";
 import Admin from "./components/admin";
 
-function App() {
+import { useState } from "react";
+
+const App = () => {
+    const [state, setState] = useState("");
+
     return (
         <Router>
             <div>
-                <Navbar bg="light" expand="lg">
-                    <Navbar.Brand href="#home">Deepak Ramalingam</Navbar.Brand>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="mr-auto">
-                            <NavLink to={"/home"} className="nav-link" activeClassName="active">Home</NavLink>
-                            <NavLink to={"/admin"} className="nav-link" activeClassName="active">Admin</NavLink>
-                        </Nav>
-                    </Navbar.Collapse>
-                </Navbar>
+                <CustomNavbar />
 
                 <Switch>
                     <Route exact path="/home">
-                        <Home />
+                        <Home stateChanger={setState} />
                     </Route>
                     <Route exact path="/admin">
-                        <Admin />
+                        <Admin stateChanger={setState} />
                     </Route>
-                    <Redirect to='/home' />
+                    <Redirect to="/home" />
                 </Switch>
             </div>
         </Router>

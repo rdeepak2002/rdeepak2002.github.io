@@ -27,7 +27,7 @@ Deepak Ramalingam's website.
     │   │   │   └── index.tsx
     │   │   └── home            # Home page
     │   │       └── index.tsx
-    │   ├── App.css             # Global styling
+    │   ├── App.scss            # Global styling
     │   ├── App.test.js
     │   ├── App.tsx             # Main web app container
     │   ├── index.js            # Entry JS file
