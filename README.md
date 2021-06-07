@@ -9,7 +9,7 @@ Deepak Ramalingam's website.
     .
     ├── build                   # Compiled files
     ├── public                  # Public files
-    ├── src                     # Source files (alternatively `lib` or `app`)
+    ├── src                     # Source files
     ├── package.json            # Metadata of project
     ├── yarn.lock               # File for yarn
     ├── LICENSE                 # Legal license for this project
