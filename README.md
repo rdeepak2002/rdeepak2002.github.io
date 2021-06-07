@@ -4,6 +4,12 @@
 
 Deepak Ramalingam's website. 
 
+### Requirements
+
+- node
+- npm
+- yarn
+
 ### Project Structure
 
     .
@@ -38,7 +44,7 @@ In the project directory, you can run:
 
 ### `yarn install`
 
-Required command to install dependencies. 
+Command to install dependencies. 
 
 ### `yarn start`
 
