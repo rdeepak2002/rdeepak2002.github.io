@@ -23,7 +23,10 @@ Deepak Ramalingam's website.
     │   └── robots.txt
     ├── src                     # Source files
     │   ├── components          # Webpage sections
-    │   │   └── Home.tsx        # Homepage
+    │   │   ├── admin           # Admin page
+    │   │   │   └── index.tsx
+    │   │   └── home            # Home page
+    │   │       └── index.tsx
     │   ├── App.css             # Global styling
     │   ├── App.test.js
     │   ├── App.tsx             # Main web app container
@@ -61,3 +64,7 @@ Publishes the compiled version of this web application to the gh-pages branch.
 ## Deployment
 
 Navigate to Settings/Pages in the GitHub repo, then select gh-pages as the active branch. 
+
+## Credits
+
+Design inspired from http://kalynnakano.com/
