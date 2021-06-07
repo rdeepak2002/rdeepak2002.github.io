@@ -46,6 +46,26 @@ const Home = ({ stateChanger, ...rest }: any) => {
             <h1 className="big-name">Deepak Ramalingam</h1>
 
             <div className="home-section" id="about">
+
+
+
+                {/* INSERT ABOUT ME CARD LIKE FROM YOUR ACTUAL WEBSITE */}
+                {/* INSERT ABOUT ME CARD LIKE FROM YOUR ACTUAL WEBSITE */}
+                {/* INSERT ABOUT ME CARD LIKE FROM YOUR ACTUAL WEBSITE */}
+                {/* INSERT ABOUT ME CARD LIKE FROM YOUR ACTUAL WEBSITE */}
+                {/* INSERT ABOUT ME CARD LIKE FROM YOUR ACTUAL WEBSITE */}
+                {/* INSERT ABOUT ME CARD LIKE FROM YOUR ACTUAL WEBSITE */}
+                {/* INSERT ABOUT ME CARD LIKE FROM YOUR ACTUAL WEBSITE */}
+                {/* INSERT ABOUT ME CARD LIKE FROM YOUR ACTUAL WEBSITE */}
+                {/* INSERT ABOUT ME CARD LIKE FROM YOUR ACTUAL WEBSITE */}
+                {/* INSERT ABOUT ME CARD LIKE FROM YOUR ACTUAL WEBSITE */}
+                {/* INSERT ABOUT ME CARD LIKE FROM YOUR ACTUAL WEBSITE */}
+                {/* INSERT ABOUT ME CARD LIKE FROM YOUR ACTUAL WEBSITE */}
+                {/* INSERT ABOUT ME CARD LIKE FROM YOUR ACTUAL WEBSITE */}
+                {/* INSERT ABOUT ME CARD LIKE FROM YOUR ACTUAL WEBSITE */}
+
+
+                
                 <Container>
                     <h1>
                         About
