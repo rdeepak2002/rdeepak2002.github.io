@@ -6,9 +6,9 @@ Deepak Ramalingam's website.
 
 ### Requirements
 
-- node
-- npm
-- yarn
+- [NodeJS](https://nodejs.org/en/)
+- [npm](https://www.npmjs.com/get-npm)
+- [yarn](https://classic.yarnpkg.com/en/docs/install)
 
 ### Project Structure
 
