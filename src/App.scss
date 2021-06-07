@@ -1,13 +1,13 @@
 /* general styling */
 body {
-  background-color: black;
+  background-color: white;
 }
 
 p,
 h1,
 h2,
 h3 {
-  color: white;
+  color: black;
 }
 
 .black-background {
@@ -24,23 +24,14 @@ h3 {
   filter: invert(1);
 }
 
-/* .navbar-name {
-    color: #333;
-    cursor: default;
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    text-align: center;
-    width: 100%;
-    background-color: #fafafa;
-    line-height: 100px;
-    font-size: 15px;
+.nav-link {
+  cursor: pointer;
 }
- */
 
 /* home page styling */
 .bg-image-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -60,6 +51,22 @@ h3 {
     height: 100%;
     width: auto;
   }
+}
+
+.big-name {
+  color: #333;
+  cursor: default;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  background-color: #fafafa;
+  line-height: 100px;
+  font-size: 15px;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 0;
 }
 
 /* admin page styling */
