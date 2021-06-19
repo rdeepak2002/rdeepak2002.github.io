@@ -4,7 +4,7 @@ export default function useScrollState(height: number) {
     const [scrollState, setScrollState] = useState("topSection");
 
     useEffect(() => {
-        let listener: any = null;
+        let listener: any = undefined;
         listener = document.addEventListener("scroll", e => {
             if (document.scrollingElement) {
                 var scrolled = document.scrollingElement.scrollTop;

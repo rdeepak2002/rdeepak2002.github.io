@@ -1,6 +1,5 @@
 import {
-    NavLink,
-    useLocation
+    NavLink
 } from "react-router-dom";
 
 import {
@@ -12,18 +11,15 @@ import { isBrowser } from "react-device-detect";
 
 import { Link } from 'react-scroll';
 
-import useScrollState from "@utils/ScrollState";
-import useWindowDimensions from "@utils/WindowDimensions";
+import useScrollState from "utils/ScrollState";
+import useWindowDimensions from "utils/WindowDimensions";
 
-import logo from "@src/logo.svg";
+import logo from "resources/logo.svg";
 
-const CustomNavbar = () => {
+const CustomNavbar = ({ state, stateChanger, user, ...rest }: any) => {
     const navbarHeight = 60;
     const footerNameHeight = 100;
-    const location = useLocation();
-    const useTransparentNavbar = useScrollState(useWindowDimensions().height - navbarHeight - footerNameHeight) === "topSection" && location.pathname === "/home" && isBrowser;
-
-    const user = null;
+    const useTransparentNavbar = useScrollState(useWindowDimensions().height - navbarHeight - footerNameHeight) === "topSection" && state==="home" && isBrowser;
 
     return (
         <Navbar className={(useTransparentNavbar ? "transparent-background" : "black-background")} fixed="top" bg="dark" variant="dark" expand="lg">

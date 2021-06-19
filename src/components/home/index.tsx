@@ -5,7 +5,7 @@ import { Container } from "react-bootstrap";
 
 // import { isMobile } from "react-device-detect";
 
-import spaceBg from "./spaceBg.jpg";
+import spaceBg from "components/home/spaceBg.jpg";
 
 const Home = ({ stateChanger, ...rest }: any) => {
 
