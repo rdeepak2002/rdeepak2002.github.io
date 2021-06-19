@@ -12,10 +12,10 @@ import { isBrowser } from "react-device-detect";
 
 import { Link } from 'react-scroll';
 
-import useScrollState from "./../../utils/ScrollState";
-import useWindowDimensions from "./../../utils/WindowDimensions";
+import useScrollState from "@utils/ScrollState";
+import useWindowDimensions from "@utils/WindowDimensions";
 
-import logo from "./../../logo.svg";
+import logo from "@src/logo.svg";
 
 const CustomNavbar = () => {
     const navbarHeight = 60;
@@ -48,7 +48,6 @@ const CustomNavbar = () => {
                     <Link className="nav-link" to="contact" activeClass="active" spy={true} smooth={true}>
                         Contact
                     </Link>
-
 
                     {user && <NavLink to={"/admin"} className="nav-link" activeClassName="active">Admin</NavLink>}
                 </Nav>

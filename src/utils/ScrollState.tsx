@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export default function useScrollState(height: any) {
+export default function useScrollState(height: number) {
     const [scrollState, setScrollState] = useState("topSection");
 
     useEffect(() => {
