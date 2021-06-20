@@ -1,54 +1,16 @@
 import axios from "axios";
 
+import { isMobile } from "react-device-detect";
+import { v4 as uuidv4 } from "uuid";
+
+import { browserId } from "utils/BrowserId";
+
 const createView = async (): Promise<[response: any, error: any]> => {
-    const ip = "ip";
-    const browserId = "browserId";
-    const deviceId = "deviceId";
-    const isMobile = false;
-
-
-
-
-    // TODO: get IP ON SPRING BOOT SIDE
-    // TODO: get IP ON SPRING BOOT SIDE
-    // TODO: get IP ON SPRING BOOT SIDE
-    // TODO: get IP ON SPRING BOOT SIDE
-    // TODO: get IP ON SPRING BOOT SIDE
-    // TODO: get IP ON SPRING BOOT SIDE
-    // TODO: get IP ON SPRING BOOT SIDE
-    // TODO: get IP ON SPRING BOOT SIDE
-    // TODO: get IP ON SPRING BOOT SIDE
-    // TODO: get IP ON SPRING BOOT SIDE
-    // TODO: get IP ON SPRING BOOT SIDE
-    // TODO: get IP ON SPRING BOOT SIDE
-    // TODO: get IP ON SPRING BOOT SIDE
-    // TODO: get IP ON SPRING BOOT SIDE
-    // TODO: get IP ON SPRING BOOT SIDE
-    // TODO: get IP ON SPRING BOOT SIDE
-    // TODO: get IP ON SPRING BOOT SIDE
-    // TODO: get IP ON SPRING BOOT SIDE
-    // TODO: get IP ON SPRING BOOT SIDE
-    // TODO: get IP ON SPRING BOOT SIDE
-    // TODO: get IP ON SPRING BOOT SIDE
-    // TODO: get IP ON SPRING BOOT SIDE
-
-
-
-
-
-
-
-
-
-
-
-
     const postData = JSON.stringify({
         query: `mutation {
                 createVisit(
-                        ip: "${ip}",
-                        browserId: "${browserId}",
-                        deviceId: "${deviceId}"
+                        browserId: "${browserId()}",
+                        deviceId: "${uuidv4()}"
                         isMobile: ${isMobile},
                     ) {
                         id
