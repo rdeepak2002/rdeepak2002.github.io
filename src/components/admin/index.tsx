@@ -1,16 +1,20 @@
 import { useEffect } from "react";
 
-const Admin = ({ stateChanger, ...rest }: any) => {
+interface AdminProps {
+  setScreen: Function
+}
 
-    useEffect(() => {
-        stateChanger("admin");
-    });
+const Admin = (props: AdminProps) => {
 
-    return (
-        <div className="admin-container">
-            <h1>Admin</h1>
-        </div>
-    );
+  useEffect(() => {
+    props.setScreen("admin");
+  });
+
+  return (
+    <div className="admin-container">
+      <h1>Admin</h1>
+    </div>
+  );
 }
 
 export default Admin;

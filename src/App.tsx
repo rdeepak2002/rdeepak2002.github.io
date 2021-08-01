@@ -15,7 +15,7 @@ import Admin from "components/admin";
 import IDevice from "interfaces/Device";
 
 const App = () => {
-  const [state, setState] = useState("App");
+  const [screen, setScreen] = useState("App");
   const [device, setDevice] = useState<IDevice | undefined>(undefined);
   const [user, setUser] = useState(undefined);
 
@@ -39,14 +39,14 @@ const App = () => {
   return (
     <Router>
       <div>
-        <CustomNavbar state={state} stateChanger={setState} user={user} />
+        <CustomNavbar screen={screen} setScreen={setScreen} user={user} />
 
         <Switch>
           <Route exact path="/home">
-            <Home state={state} stateChanger={setState} />
+            <Home setScreen={setScreen} />
           </Route>
           <Route exact path="/admin">
-            <Admin state={state} stateChanger={setState} />
+            <Admin setScreen={setScreen} />
           </Route>
           <Redirect to="/home" />
         </Switch>
