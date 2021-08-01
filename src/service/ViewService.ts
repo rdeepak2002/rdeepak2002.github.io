@@ -4,43 +4,35 @@ import { isMobile } from "react-device-detect";
 import { v4 as uuidv4 } from "uuid";
 
 import { browserId } from "utils/BrowserId";
+import { collapseTextChangeRangesAcrossMultipleVersions } from "typescript";
 
 const createView = async (): Promise<[response: any, error: any]> => {
-    const postData = JSON.stringify({
-        query: `mutation {
-                createVisit(
-                        browserId: "${browserId()}",
-                        deviceId: "${uuidv4()}"
-                        isMobile: ${isMobile},
-                    ) {
-                        id
-                        ip
-                        browserId
-                        deviceId
-                        isMobile
-                        createdAt
-                        lastVisited
-                        previousDatesVisited
-                    }
-                }`,
-        variables: {}
-    });
+  const postData = JSON.stringify({
+    "Id": "",
+    "BrowserId": "browserId",
+    "IsMobile": 0
+  });
 
-    let response = undefined;
-    let error = undefined;
+  let response = undefined;
+  let error = undefined;
 
-    try {
-        const data = await axios.post('http://localhost:8080/api/graphql', postData);
-        if (data.data.data) {
-            response = data.data.data.createVisit;
-        }
-        error = data.data.errors;
+  try {
+    const apiUrl = process.env.REACT_APP_API_URL;
+    const endpoint = 'setVisit';
+    const res = await axios.post(`${apiUrl}/${endpoint}`, postData);
+
+    if (res.statusText === "OK") {
+      response = res.data;
     }
-    catch (err) {
-        error = err;
+    else {
+      error = response;
     }
+  }
+  catch (err) {
+    error = err;
+  }
 
-    return [response, error];
+  return [response, error];
 }
 
 export { createView };
