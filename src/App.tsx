@@ -38,19 +38,17 @@ const App = () => {
 
   return (
     <Router>
-      <div>
-        <CustomNavbar screen={screen} setScreen={setScreen} user={user} />
+      <CustomNavbar screen={screen} setScreen={setScreen} user={user} />
 
-        <Switch>
-          <Route exact path="/home">
-            <Home setScreen={setScreen} />
-          </Route>
-          <Route exact path="/admin">
-            <Admin setScreen={setScreen} />
-          </Route>
-          <Redirect to="/home" />
-        </Switch>
-      </div>
+      <Switch>
+        <Route exact path="/home">
+          <Home setScreen={setScreen} />
+        </Route>
+        <Route exact path="/admin">
+          <Admin setScreen={setScreen} />
+        </Route>
+        <Redirect to="/home" />
+      </Switch>
     </Router>
   );
 }
