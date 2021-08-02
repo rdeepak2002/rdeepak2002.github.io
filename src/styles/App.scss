@@ -115,6 +115,16 @@ h3 {
 }
 
 /* table styling */
+table { 
+  table-layout:fixed;
+}
+
+td { 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  word-wrap: break-word;
+}
+
 .gradeCellName {
   text-align: center;
   background-color: #c2c2c2;
