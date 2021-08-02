@@ -48,6 +48,44 @@ const Projects = (props: ProjectsProps) => {
         tags={[]}
         showMoreHeight={showMoreHeight}
       />
+      <Project
+        videoUrl={"https://www.youtube.com/embed/sywBQSnFeOw"}
+        title={"The Right Price"}
+        type={"Web App and iPhone App"}
+        date={"April of 2019"}
+        content={
+          <>
+            <p>Devpost Link: <a href="https://devpost.com/software/the-right-price-t4kipb">https://devpost.com/software/the-right-price-t4kipb</a></p>
+            <p>“The Right Price” - An Effective Application to Help Small Businesses to Survive & Shine in a Competitive Economy.</p>
+            <ul>
+              <li>Developed Web Application & iPhone Application - “The Right Price.”</li>
+              <li>Won 1st Place - Cupertino Hacks Hackathon.</li>
+              <li>Presented on Live TV to Mayor of Cupertino, Mr. Steven Scharf - Cupertino City Council.</li>
+              <li><strong>Inspired:</strong> After Observing How Online Shopping Services Mostly Target Large Retailers Causing Local Businesses in Small Towns to Lose Out on Customers.</li>
+              <li><strong>Utilized:</strong> Augmented Reality (AR) on a Smartphone & Crowdsourcing to Guide The User to Nearby Locations Where Certain Products Are Sold.</li>
+              <li><strong>Functions:</strong></li>
+              <ol>
+                <li>Helps local stores gain popularity by assisting customers in purchasing products of better quality at nearby locations.</li>
+                <li>Helps local businesses to gain popularity by assisting users to find cheap, high-quality products nearby through the recommendations of their peers.</li>
+                <li>Creates Virtual AR Labels of The Products in The Viewing Direction Relative to The User’s Current Location by Utilizing The Information Obtained From Other Users About Similar Products.</li>
+              </ol>
+              <li><strong>Advantages:</strong></li>
+              <ol>
+                <li>Serves as a Virtual Compass for The User And Makes The Shopping Experience Entertaining & Adventurous.</li>
+                <li>Motivates Users to Purchase The Products From Local Stores, Instead of Buying The Products Online From Large Retailers.</li>
+              </ol>
+            </ul>
+          </>
+        }
+        tags={[]}
+        showMoreHeight={showMoreHeight}
+      />
+
+      <h1>TODO: FINISH THE REST</h1>
+      <h1>TODO: FRUIT VISION</h1>
+      <h1>TODO: DEEP PLAYLIST</h1>
+      <h1>TODO: FORD CONNECTED</h1>
+      <h1>TODO: ADD TAGS</h1>
     </div>
   );
 }
