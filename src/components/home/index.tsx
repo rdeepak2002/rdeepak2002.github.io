@@ -4,17 +4,15 @@ import HeaderScene from "components/header-scene/";
 import Footer from "components/footer";
 import Typewriter from "typewriter-effect";
 
-import deepak_picture from "resources/images/deepak_1.jpg";
+import AboutSection from "./AboutSection";
+import WorkExperienceTimeline from "./WorkExperienceTimeline";
 import useWindowDimensions from "utils/WindowDimensions";
-import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
-import 'react-vertical-timeline-component/style.min.css';
 
 interface HomeProps {
   setScreen: Function
 }
 
 const Home = (props: HomeProps) => {
-
   const isMobileCss = useWindowDimensions().width <= 900;
 
   useEffect(() => {
@@ -42,127 +40,16 @@ const Home = (props: HomeProps) => {
 
       <div className="home-section" id="about">
         <Container style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-          <div className="card" style={{ width: "100%" }}>
-            <div style={{ display: "flex", flexDirection: isMobileCss ? "column" : "row", paddingTop: 64, paddingBottom: 64, paddingRight: 48, paddingLeft: 48 }}>
-              <div style={{ display: "flex", flexDirection: "column", flex: 0.5, borderBottomStyle: isMobileCss ? "solid" : "none", borderBottomWidth: 1, marginBottom: isMobileCss ? 10 : 0 }}>
-                <Image src={deepak_picture} fluid rounded style={{ width: isMobileCss ? "100%" : "60%", height: "auto" }} />
-
-                <div style={{ marginTop: "1rem" }}>
-                  <p><strong>Name:</strong> Deepak Ramalingam</p>
-                  <p><strong>Major:</strong> B.S. Computer Science @ Georgia Institute of Technology</p>
-                  <p><strong>Email:</strong> rdeepak2002@gmail.com</p>
-                  <p><strong>Phone:</strong> +1 (208) 391-9267</p>
-                </div>
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", flex: 0.5 }}>
-                <h5>Biography</h5>
-
-                <p>
-                  I was born in Boise, Idaho, and I am currently a second year Computer Science student at the Georgia Institute of Technology.
-                </p>
-
-                <p>
-                  I am passionate about Computer Science and during my free time I like to create full stack applications. I also love to play racquet sports like badminton and tennis.
-                </p>
-
-                <p>
-                  I work part-time as a Software Developer for PeeblesTech LLC in Wisconsin, Madison.
-                </p>
-
-                <p>
-                  I am also a full-time Augmented Reality Software Engineering Intern at TikTok's Intelligent Creation R&D Lab in Mountain View, California.
-                </p>
-              </div>
-            </div>
-          </div>
+          <AboutSection isMobileCss={isMobileCss} />
         </Container>
       </div>
 
-      <div className="home-section" id="work_experience" style={{backgroundColor: "rgb(240, 240, 240)"}}>
+      <div className="home-section" id="work_experience" style={{ backgroundColor: "rgb(240, 240, 240)" }}>
         <Container>
           <h1>
             Work Experience
           </h1>
-          <p>
-            <VerticalTimeline>
-              <VerticalTimelineElement
-                className="vertical-timeline-element--work"
-                date="2010 - 2011"
-                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                // icon={<WorkIcon />}
-              >
-                <h3 className="vertical-timeline-element-title">Art Director</h3>
-                <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
-                <p>
-                  Creative Direction, User Experience, Visual Design, SEO, Online Marketing
-                </p>
-              </VerticalTimelineElement>
-              <VerticalTimelineElement
-                className="vertical-timeline-element--work"
-                date="2008 - 2010"
-                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                // icon={<WorkIcon />}
-              >
-                <h3 className="vertical-timeline-element-title">Web Designer</h3>
-                <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4>
-                <p>
-                  User Experience, Visual Design
-                </p>
-              </VerticalTimelineElement>
-              <VerticalTimelineElement
-                className="vertical-timeline-element--work"
-                date="2006 - 2008"
-                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                // icon={<WorkIcon />}
-              >
-                <h3 className="vertical-timeline-element-title">Web Designer</h3>
-                <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
-                <p>
-                  User Experience, Visual Design
-                </p>
-              </VerticalTimelineElement>
-              <VerticalTimelineElement
-                className="vertical-timeline-element--education"
-                date="April 2013"
-                iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                // icon={<SchoolIcon />}
-              >
-                <h3 className="vertical-timeline-element-title">Content Marketing for Web, Mobile and Social Media</h3>
-                <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
-                <p>
-                  Strategy, Social Media
-                </p>
-              </VerticalTimelineElement>
-              <VerticalTimelineElement
-                className="vertical-timeline-element--education"
-                date="November 2012"
-                iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                // icon={<SchoolIcon />}
-              >
-                <h3 className="vertical-timeline-element-title">Agile Development Scrum Master</h3>
-                <h4 className="vertical-timeline-element-subtitle">Certification</h4>
-                <p>
-                  Creative Direction, User Experience, Visual Design
-                </p>
-              </VerticalTimelineElement>
-              <VerticalTimelineElement
-                className="vertical-timeline-element--education"
-                date="2002 - 2006"
-                iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                // icon={<SchoolIcon />}
-              >
-                <h3 className="vertical-timeline-element-title">Bachelor of Science in Interactive Digital Media Visual Imaging</h3>
-                <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4>
-                <p>
-                  Creative Direction, Visual Design
-                </p>
-              </VerticalTimelineElement>
-              <VerticalTimelineElement
-                iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
-                // icon={<StarIcon />}
-              />
-            </VerticalTimeline>
-          </p>
+          <WorkExperienceTimeline />
         </Container>
       </div>
 
@@ -185,7 +72,7 @@ const Home = (props: HomeProps) => {
         </Container>
       </div>
 
-      <div className="home-section" id="achievements">
+      <div className="home-section" id="achievements" style={{ backgroundColor: "rgb(240, 240, 240)" }}>
         <Container>
           <h1>
             Achievements
