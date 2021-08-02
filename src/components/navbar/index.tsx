@@ -51,6 +51,8 @@ const CustomNavbar = (props: CustomNavbarProps) => {
             Achievements
           </Link>
 
+          <Link to="teaching_cs_indian_village"></Link>
+
           {props.user && <NavLink to={"/admin"} className="nav-link" activeClassName="active">Admin</NavLink>}
         </Nav>
         {props.user && <a href="/home" style={{ color: "white", cursor: "pointer" }} className="nav-link">Sign Out</a>}

@@ -24,6 +24,7 @@ const Projects = (props: ProjectsProps) => {
         title={"Teaching Computer Science At Indian Village"}
         type={"Volunteering"}
         date={"July of 2019"}
+        id={"teaching_cs"}
         content={
           <>
             <p>
@@ -48,11 +49,13 @@ const Projects = (props: ProjectsProps) => {
         tags={[]}
         showMoreHeight={showMoreHeight}
       />
+      
       <Project
         videoUrl={"https://www.youtube.com/embed/sywBQSnFeOw"}
         title={"The Right Price"}
         type={"Web App and iPhone App"}
         date={"April of 2019"}
+        id={"the_right_price"}
         content={
           <>
             <p>Devpost Link: <a href="https://devpost.com/software/the-right-price-t4kipb">https://devpost.com/software/the-right-price-t4kipb</a></p>
@@ -81,10 +84,10 @@ const Projects = (props: ProjectsProps) => {
         showMoreHeight={showMoreHeight}
       />
 
-      <h1>TODO: FINISH THE REST</h1>
-      <h1>TODO: FRUIT VISION</h1>
-      <h1>TODO: DEEP PLAYLIST</h1>
-      <h1>TODO: FORD CONNECTED</h1>
+      <h1>TODO: FINISH THE REST (dont forget to add the id to the link in navbar.ts)</h1>
+      <h1>TODO: FRUIT VISION (dont forget to add the id to the link in navbar.ts)</h1>
+      <h1>TODO: DEEP PLAYLIST (dont forget to add the id to the link in navbar.ts)</h1>
+      <h1>TODO: FORD CONNECTED (dont forget to add the id to the link in navbar.ts)</h1>
       <h1>TODO: ADD TAGS</h1>
     </div>
   );
@@ -99,6 +102,7 @@ interface ProjectProps {
   content: any
   tags: Array<string>
   showMoreHeight: number | string
+  id: string
 }
 
 const Project = (props: ProjectProps) => {
@@ -118,7 +122,7 @@ const Project = (props: ProjectProps) => {
   }, [isOverflowActive]);
 
   return (
-    <Container className="card" style={{ width: "100%", padding: 0 }}>
+    <Container className="card" style={{ width: "100%", padding: 0 }} id={props.id}>
       {props.imageUrl &&
         <Image src={props.imageUrl} fluid />
       }
