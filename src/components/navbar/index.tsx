@@ -39,16 +39,16 @@ const CustomNavbar = (props: CustomNavbarProps) => {
             About
           </Link>
 
+          <Link className="nav-link" to="work_experience" activeClass="active" spy={true} smooth={true}>
+            Work Experience
+          </Link>
+
           <Link className="nav-link" to="innovative_endeavors" activeClass="active" spy={true} smooth={true}>
             Innovative Endeavors
           </Link>
 
           <Link className="nav-link" to="achievements" activeClass="active" spy={true} smooth={true}>
             Achievements
-          </Link>
-
-          <Link className="nav-link" to="contact" activeClass="active" spy={true} smooth={true}>
-            Contact
           </Link>
 
           {props.user && <NavLink to={"/admin"} className="nav-link" activeClassName="active">Admin</NavLink>}

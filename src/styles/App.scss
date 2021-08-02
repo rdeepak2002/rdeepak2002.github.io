@@ -82,8 +82,10 @@ h3 {
 }
 
 .home-section {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 /* admin page styling */
@@ -101,4 +103,9 @@ h3 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   width: 40%;
+}
+
+/* timeline styles */
+.vertical-timeline::before {
+  background:rgb(0, 0, 0) !important;
 }
