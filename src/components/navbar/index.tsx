@@ -28,7 +28,7 @@ const CustomNavbar = (props: CustomNavbarProps) => {
   const useTransparentNavbar = useScrollState(useWindowDimensions().height - navbarHeight - footerNameHeight) === "topSection" && props.screen === "home" && isBrowser;
 
   return (
-    <Navbar className={(useTransparentNavbar ? "transparent-background" : "black-background")} fixed="top" bg="dark" variant="dark" expand="lg">
+    <Navbar className={(useTransparentNavbar ? "transparent-background" : "black-background-transparent")} fixed="top" bg="dark" variant="dark" expand="lg">
       <Navbar.Brand href="/home">
         <img alt="logo" className="navbar-logo" src={logo} width="30" height="30" />
       </Navbar.Brand>
