@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { useFrame, useLoader } from '@react-three/fiber';
 import { Mesh } from "three";
-import { isMobile } from "react-device-detect";
+import useWindowDimensions from "utils/WindowDimensions";
 
 const Planet = () => {
   const largeScale = 0.3;
@@ -13,8 +13,10 @@ const Planet = () => {
   const { nodes } = useLoader(GLTFLoader, "models/mars.glb");
   const [scale, setScale] = useState<number>(largeScale);
 
+  const isMobileCss = useWindowDimensions().width <= 900;
+
   useEffect(() => {
-    setScale(isMobile ? smallScale : largeScale);
+    setScale(isMobileCss ? smallScale : largeScale);
   }, []);
 
   useFrame(() => (planet.current.rotation.y += rotVelY));
