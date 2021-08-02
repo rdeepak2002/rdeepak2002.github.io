@@ -7,6 +7,8 @@ import { Container } from "react-bootstrap";
 
 import spaceBg from "components/home/spaceBg.jpg";
 
+import HeaderScene from "components/header-scene/"
+
 interface HomeProps {
   setScreen: Function
 }
@@ -19,62 +21,22 @@ const Home = (props: HomeProps) => {
 
   return (
     <div>
-      <div className="bg-image-container">
-        <img alt="background" className="bg-image" src={spaceBg} />
-      </div>
+      <div className="bg-image-container" style={{backgroundColor: "black"}}>
+        {/* <img alt="background" className="bg-image" src={spaceBg} /> */}
+        <HeaderScene />
 
-      {/* <Particles
-                style={{position: "absolute", top: "30px"}}
-                height="90%"
-                width="100%"
-                params={{
-                    particles: {
-                        color: {
-                            value: "#ffffff"
-                        },
-                        line_linked: {
-                            color: {
-                                value: "#0"
-                            }
-                        },
-                        number: {
-                            value: isMobile ? 15 : 70
-                        },
-                        size: {
-                            value: 2
-                        }
-                    }
-                }}>
-            </Particles> */}
+      </div>
 
       <h1 className="big-name">Deepak Ramalingam</h1>
 
       <div className="home-section" id="about">
-
-
-
-        {/* INSERT ABOUT ME CARD LIKE FROM YOUR ACTUAL WEBSITE */}
-        {/* INSERT ABOUT ME CARD LIKE FROM YOUR ACTUAL WEBSITE */}
-        {/* INSERT ABOUT ME CARD LIKE FROM YOUR ACTUAL WEBSITE */}
-        {/* INSERT ABOUT ME CARD LIKE FROM YOUR ACTUAL WEBSITE */}
-        {/* INSERT ABOUT ME CARD LIKE FROM YOUR ACTUAL WEBSITE */}
-        {/* INSERT ABOUT ME CARD LIKE FROM YOUR ACTUAL WEBSITE */}
-        {/* INSERT ABOUT ME CARD LIKE FROM YOUR ACTUAL WEBSITE */}
-        {/* INSERT ABOUT ME CARD LIKE FROM YOUR ACTUAL WEBSITE */}
-        {/* INSERT ABOUT ME CARD LIKE FROM YOUR ACTUAL WEBSITE */}
-        {/* INSERT ABOUT ME CARD LIKE FROM YOUR ACTUAL WEBSITE */}
-        {/* INSERT ABOUT ME CARD LIKE FROM YOUR ACTUAL WEBSITE */}
-        {/* INSERT ABOUT ME CARD LIKE FROM YOUR ACTUAL WEBSITE */}
-        {/* INSERT ABOUT ME CARD LIKE FROM YOUR ACTUAL WEBSITE */}
-        {/* INSERT ABOUT ME CARD LIKE FROM YOUR ACTUAL WEBSITE */}
-
-
-
         <Container>
           <h1>
             About
           </h1>
           <p>
+            {/* INSERT ABOUT ME CARD LIKE FROM YOUR ACTUAL WEBSITE */}
+
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sem metus, semper non egestas ac, volutpat sit amet diam. Quisque quis dolor eu dolor viverra pharetra feugiat nec turpis. Curabitur convallis a eros a condimentum. Pellentesque congue lorem et augue rhoncus, ac feugiat turpis auctor. Suspendisse nec lorem quis velit porta mattis eget lacinia purus. Nam at commodo felis. Proin eleifend in libero eu porta. Donec rhoncus ligula id vestibulum finibus. Duis elementum lorem sed erat sagittis pretium. Ut quis erat enim. Integer pellentesque odio felis, sit amet vulputate nisi volutpat et.
 
             Phasellus sagittis aliquet facilisis. Donec commodo justo nibh, et tincidunt libero laoreet et. Donec auctor pulvinar urna, sit amet porta orci blandit sit amet. Donec sagittis porttitor turpis consectetur laoreet. Etiam pulvinar lorem justo, in pellentesque lorem feugiat sed. Ut sed bibendum erat. Mauris malesuada tincidunt tortor. Vestibulum pellentesque suscipit fringilla. Ut luctus, dui at pellentesque elementum, urna arcu iaculis massa, ac commodo tellus diam vitae nisl. Morbi in quam rhoncus, tincidunt diam at, vulputate augue.
