@@ -44,7 +44,3 @@ const AboutSection = (props: AboutSectionProps) => {
 }
 
 export default AboutSection;
-
-function useWindowDimensions() {
-  throw new Error("Function not implemented.");
-}

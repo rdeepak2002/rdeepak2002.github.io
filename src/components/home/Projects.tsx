@@ -1,4 +1,4 @@
-import { Container } from "react-bootstrap";
+import { Container, Image } from "react-bootstrap";
 
 interface ProjectsProps {
   isMobileCss: boolean
@@ -17,6 +17,7 @@ const Projects = (props: ProjectsProps) => {
       }}
     >
       <Project
+        videoUrl={"https://www.youtube.com/embed/53qEBPBruRk"}
         title={"Teaching Computer Science At Indian Village"}
         type={"Volunteering"}
         date={"July of 2019"}
@@ -58,13 +59,21 @@ interface ProjectProps {
 
 const Project = (props: ProjectProps) => {
   return (
-    <Container className="card" style={{ width: "100%" }}>
-      <h4 style={{ marginTop: "1rem" }}>{props.title}</h4>
-      <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
-        <p style={{color: "#0078ff"}}>{props.type}</p> <p style={{marginLeft: 10, marginRight: 10, color: "rgba(50, 50, 50)"}}>/</p> <p style={{color: "rgba(50, 50, 50)"}}>{props.date}</p>
-      </div>
-      <div style={{marginBottom: "1.5rem"}}>
-        {props.content}
+    <Container className="card" style={{ width: "100%", padding: 0 }}>
+      {props.imageUrl &&
+        <Image src={props.imageUrl} fluid />
+      }
+      {props.videoUrl &&
+        <iframe width="100%" height="300" src={props.videoUrl} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+      }
+      <div style={{paddingLeft: 15, paddingRight: 15}}>
+        <h4 style={{ marginTop: "1rem" }}>{props.title}</h4>
+        <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+          <p style={{ color: "#0078ff" }}>{props.type}</p> <p style={{ marginLeft: 10, marginRight: 10, color: "rgba(50, 50, 50)" }}>/</p> <p style={{ color: "rgba(50, 50, 50)" }}>{props.date}</p>
+        </div>
+        <div style={{ marginBottom: "1.5rem" }}>
+          {props.content}
+        </div>
       </div>
     </Container>
   );
