@@ -29,6 +29,20 @@ const Projects = (props: ProjectsProps) => {
             <p>
               The 26-minutes concise video demonstrates me (Deepak Ramalingam), a Senior at Monta Vista High School in Cupertino, California, teaching two weeks of Computer Science classes (Python 3 Programming language & Web Design) to a student body of 52 pupils at an Indian Village High School.
             </p>
+            <p><strong>Date of Internship: </strong>June 23 - July 8, 2019</p>
+            <p><strong>Venue: </strong>Sankaramangalam Public High School & Junior College, Kaviyoor, Kerala, India</p>
+            <p><strong>Note:</strong></p>
+            <ul>
+              <li>Due to the lack of air-conditioning / fans in the sweltering temperature and absence of sound-proof walls, external sounds and noises could not be eliminated because of the need for open doors and windows for aeration.</li>
+              <li>No computers or internet were available for student usage. Thus, only the theory of computer science was taught to the students.</li>
+            </ul>
+            <p><strong>Teaching Medium:</strong></p>
+            <ul>
+              <li>Personally Prepared Power Points</li>
+              <li>Digital Whiteboard</li>
+              <li>Projector</li>
+            </ul>
+            <p>It was an interactive teaching session with doubts and questions being asked and answered from both sides. An exam was conducted after the teaching session in order to test the understanding of the material - the students did well.</p>
           </>
         }
         tags={[]}
