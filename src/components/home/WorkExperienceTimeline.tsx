@@ -10,7 +10,7 @@ import { MdLocationOn } from "react-icons/md";
 
 const WorkExperienceTimeline = () => {
   return (
-    <VerticalTimeline>
+    <VerticalTimeline animate={false}>
       <WorkExperienceItem date="May 2021 - August 2021" logo={tiktok_logo} title="Augmented Reality Software Engineering Intern" location="Mountain View, CA"
         content={
           <ul style={{ marginTop: "1rem" }}>
