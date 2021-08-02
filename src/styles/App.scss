@@ -113,3 +113,14 @@ h3 {
 .vertical-timeline::before {
   background:rgb(0, 0, 0) !important;
 }
+
+/* table styling */
+.gradeCellName {
+  text-align: center;
+  background-color: #c2c2c2;
+}
+
+.importantTableCell > td {
+  font-weight: bold;
+  background-color: #e4e4e4;
+}
