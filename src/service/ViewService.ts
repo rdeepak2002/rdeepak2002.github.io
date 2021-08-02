@@ -1,16 +1,16 @@
 import axios from "axios";
 
 import { isMobile } from "react-device-detect";
-import { v4 as uuidv4 } from "uuid";
-
 import { browserId } from "utils/BrowserId";
-import { collapseTextChangeRangesAcrossMultipleVersions } from "typescript";
+import { k_device, readFromStorage } from "utils/Serialize";
 
 const createView = async (): Promise<[response: any, error: any]> => {
+  const device = readFromStorage(k_device);
+
   const postData = JSON.stringify({
-    "Id": "",
-    "BrowserId": "browserId",
-    "IsMobile": 0
+    "Id": device ? device.Id : "",
+    "BrowserId": browserId(),
+    "IsMobile": isMobile ? 1 : 0
   });
 
   let response = undefined;

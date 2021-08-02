@@ -1,13 +1,6 @@
 import { useEffect } from "react";
 import { Container } from "react-bootstrap";
-
-// import Particles from 'react-particles-js';
-
-// import { isMobile } from "react-device-detect";
-
-import spaceBg from "components/home/spaceBg.jpg";
-
-import HeaderScene from "components/header-scene/"
+import HeaderScene from "components/header-scene/";
 
 interface HomeProps {
   setScreen: Function
@@ -22,9 +15,7 @@ const Home = (props: HomeProps) => {
   return (
     <div>
       <div className="bg-image-container" style={{backgroundColor: "black"}}>
-        {/* <img alt="background" className="bg-image" src={spaceBg} /> */}
         <HeaderScene />
-
       </div>
 
       <h1 className="big-name">Deepak Ramalingam</h1>

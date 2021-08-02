@@ -4,7 +4,6 @@ import { Suspense, useEffect, useState } from "react";
 import { SpaceSkyBox } from "./SkyBoxes";
 import React from "react";
 import Camera from "./Camera";
-import OrbitCamera from "./OrbitCamera";
 import Planet from "./Planet";
 
 interface HeaderSceneProps {

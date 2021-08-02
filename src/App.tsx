@@ -6,8 +6,8 @@ import {
 } from "react-router-dom";
 
 import { useState, useEffect } from "react";
-
 import { createView } from "service/ViewService";
+import { k_device, readFromStorage, saveToStorage } from "utils/Serialize";
 
 import CustomNavbar from "components/navbar/"
 import Home from "components/home/";
@@ -21,13 +21,14 @@ const App = () => {
 
   useEffect(() => {
     setUser(undefined);
-    setDevice(undefined);
+    setDevice(readFromStorage(k_device));
+
     createView().then(([response, error]) => {
       if (error) {
         console.error(error);
       }
       else if (response) {
-        console.log('setting device', response);
+        console.log("created view", response);
         setDevice(response);
       }
       else {
@@ -35,6 +36,12 @@ const App = () => {
       }
     });
   }, []);
+
+  useEffect(() => {
+    if(device) {
+      saveToStorage(k_device, JSON.stringify(device));
+    }
+  }, [device]);
 
   return (
     <Router>
