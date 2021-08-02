@@ -9,6 +9,10 @@ import AboutSection from "./AboutSection";
 import WorkExperienceTimeline from "./WorkExperienceTimeline";
 import AchievementsSection from "./AchievementsSection";
 
+import robot_face_icon from "resources/icons/robot-face-icon.png";
+import suitcase_icon from "resources/icons/suitcase-icon.png";
+import trophy_icon from "resources/icons/trophy-icon.png";
+
 interface HomeProps {
   setScreen: Function
 }
@@ -47,18 +51,24 @@ const Home = (props: HomeProps) => {
 
       <div className="home-section" id="work_experience" style={{ backgroundColor: "rgb(240, 240, 240)" }}>
         <Container>
-          <h1>
-            Work Experience
-          </h1>
+          <div style={{ marginBottom: 10, display: "flex", flexDirection: "row", alignItems: "center" }}>
+            <Image className="emoji-icon" src={suitcase_icon} fluid />
+            <h1 style={{ marginLeft: 10, marginBottom: 0 }}>
+              Work Experience
+            </h1>
+          </div>
           <WorkExperienceTimeline />
         </Container>
       </div>
 
       <div className="home-section" id="innovative_endeavors">
         <Container>
-          <h1>
-            Innovative Endeavors
-          </h1>
+          <div style={{ marginBottom: 10, display: "flex", flexDirection: "row", alignItems: "center" }}>
+            <Image className="emoji-icon" src={robot_face_icon} fluid />
+            <h1 style={{ marginLeft: 10, marginBottom: 0 }}>
+              Innovative Endeavors
+            </h1>
+          </div>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sem metus, semper non egestas ac, volutpat sit amet diam. Quisque quis dolor eu dolor viverra pharetra feugiat nec turpis. Curabitur convallis a eros a condimentum. Pellentesque congue lorem et augue rhoncus, ac feugiat turpis auctor. Suspendisse nec lorem quis velit porta mattis eget lacinia purus. Nam at commodo felis. Proin eleifend in libero eu porta. Donec rhoncus ligula id vestibulum finibus. Duis elementum lorem sed erat sagittis pretium. Ut quis erat enim. Integer pellentesque odio felis, sit amet vulputate nisi volutpat et.
 
@@ -75,9 +85,12 @@ const Home = (props: HomeProps) => {
 
       <div className="home-section" id="achievements" style={{ backgroundColor: "rgb(240, 240, 240)" }}>
         <Container>
-          <h1>
-            Achievements
-          </h1>
+          <div style={{ marginBottom: 10, display: "flex", flexDirection: "row", alignItems: "center" }}>
+            <Image className="emoji-icon" src={trophy_icon} fluid />
+            <h1 style={{ marginLeft: 10, marginBottom: 0 }}>
+              Achievements
+            </h1>
+          </div>
           <AchievementsSection />
         </Container>
       </div>
