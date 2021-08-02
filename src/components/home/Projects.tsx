@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Button, Container, Image } from "react-bootstrap";
 
 interface ProjectsProps {
@@ -26,41 +26,14 @@ const Projects = (props: ProjectsProps) => {
         date={"July of 2019"}
         content={
           <>
-            <div>hello world</div>
-            <div>hello world</div>
-            <div>hello world</div>
-            <div>hello world</div>
-            <div>hello world</div>
-            <div>hello world</div>
-            <div>hello world</div>
-            <div>hello world</div>
-            <div>hello world</div>
-            <div>hello world</div>
-            <div>hello world</div>
-            <div>hello world</div>
-            <div>hello world</div>
+            <p>
+              The 26-minutes concise video demonstrates me (Deepak Ramalingam), a Senior at Monta Vista High School in Cupertino, California, teaching two weeks of Computer Science classes (Python 3 Programming language & Web Design) to a student body of 52 pupils at an Indian Village High School.
+            </p>
           </>
         }
         tags={[]}
         showMoreHeight={showMoreHeight}
       />
-
-      <Container style={{ backgroundColor: "red" }}>
-        <h5>Hello World</h5>
-      </Container>
-      <Container style={{ backgroundColor: "blue" }}>
-        <h5>Hello World</h5>
-      </Container>
-      <Container style={{ backgroundColor: "green" }}>
-        <h5>Hello World</h5>
-      </Container>
-      <Container style={{ backgroundColor: "pink" }}>
-        <h5>Hello World</h5>
-      </Container>
-      <Container style={{ backgroundColor: "purple" }}>
-        <h5>Hello World</h5>
-      </Container>
-
     </div>
   );
 }
@@ -77,8 +50,20 @@ interface ProjectProps {
 }
 
 const Project = (props: ProjectProps) => {
+  const contentRef: any = useRef();
   const showMoreHeight = props.showMoreHeight;
+
   const [showMore, setShowMore] = useState<boolean>(false);
+  const [overflowActive, setOverflowActive] = useState<boolean>(false);
+
+  useEffect(() => {
+    if (isOverflowActive(contentRef.current)) {
+      setOverflowActive(true);
+      return;
+    }
+
+    setOverflowActive(false);
+  }, [isOverflowActive]);
 
   return (
     <Container className="card" style={{ width: "100%", padding: 0 }}>
@@ -93,37 +78,45 @@ const Project = (props: ProjectProps) => {
         <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
           <p style={{ color: "#0078ff" }}>{props.type}</p> <p style={{ marginLeft: 10, marginRight: 10, color: "rgba(50, 50, 50)" }}>/</p> <p style={{ color: "rgba(50, 50, 50)" }}>{props.date}</p>
         </div>
-        <div style={{ marginBottom: "1rem", paddingLeft: 15, paddingRight: 15, overflow: "hidden", maxHeight: showMore ? "999999px" : showMoreHeight }}>
+        <div ref={contentRef} style={{ marginBottom: "1rem", paddingLeft: 15, paddingRight: 15, overflow: "hidden", maxHeight: showMore ? "999999px" : showMoreHeight }}>
           {props.content}
         </div>
         <div style={{ marginBottom: "1.5rem", display: "flex", alignItems: "center", justifyContent: "center" }}>
-          {
-            showMore
-              ?
-              (
-                <Button
-                  onClick={() => {
-                    setShowMore(false);
-                  }}
-                >
-                  Show Less
-                </Button>
-              )
-              :
-              (
-                <Button
-                  onClick={() => {
-                    setShowMore(true);
-                  }}
-                >
-                  Show More
-                </Button>
-              )
+          {overflowActive &&
+            <>
+              {
+                showMore
+                  ?
+                  (
+                    <Button
+                      onClick={() => {
+                        setShowMore(false);
+                      }}
+                    >
+                      Show Less
+                    </Button>
+                  )
+                  :
+                  (
+                    <Button
+                      onClick={() => {
+                        setShowMore(true);
+                      }}
+                    >
+                      Show More
+                    </Button>
+                  )
+              }
+            </>
           }
         </div>
       </div>
     </Container>
   );
+}
+
+function isOverflowActive(event: any) {
+  return event.offsetHeight < event.scrollHeight || event.offsetWidth < event.scrollWidth;
 }
 
 export default Projects;
