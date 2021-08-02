@@ -88,7 +88,7 @@ const Projects = (props: ProjectsProps) => {
       <h1>TODO: FRUIT VISION (dont forget to add the id to the link in navbar.ts)</h1>
       <h1>TODO: DEEP PLAYLIST (dont forget to add the id to the link in navbar.ts)</h1>
       <h1>TODO: FORD CONNECTED (dont forget to add the id to the link in navbar.ts)</h1>
-      <h1>TODO: ADD COLOR CODED TAGS</h1>
+      <h1>TODO: ADD COLOR CODED TAGS (below the date section)</h1>
     </div>
   );
 }
