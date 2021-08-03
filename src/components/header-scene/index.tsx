@@ -17,17 +17,19 @@ const HeaderScene = (props: HeaderSceneProps) => {
   const [loadingScene, setLoadingScene] = useState<boolean>(true);
 
   useEffect(() => {
-    setWindowWidth(window.innerWidth);
-    setWindowHeight(window.innerHeight);
-
-    window.dispatchEvent(new Event('resize'));
-
-    const timer = setInterval(() => setLoadingScene(false), 500);
-
-    // clear on component unmount
-    return () => {
-      clearInterval(timer);
-    };
+    if(!isMobile) {
+      setWindowWidth(window.innerWidth);
+      setWindowHeight(window.innerHeight);
+  
+      window.dispatchEvent(new Event('resize'));
+  
+      const timer = setInterval(() => setLoadingScene(false), 500);
+  
+      // clear on component unmount
+      return () => {
+        clearInterval(timer);
+      };
+    }
   }, []);
 
   return (

@@ -1,5 +1,6 @@
 import { useFrame, useThree } from '@react-three/fiber';
 import { useEffect, useRef, useState } from 'react';
+import { isMobile } from 'react-device-detect';
 import { degreesToRadians } from '.';
 
 interface CameraProps {
@@ -24,11 +25,13 @@ export default function Camera(props: CameraProps) {
   useEffect(() => {
     set({ camera: ref.current });
 
-    window.addEventListener("resize", resizeHandler);
+    if(!isMobile) {
+      window.addEventListener("resize", resizeHandler);
 
-    return () => {
-      window.removeEventListener("resize", resizeHandler);
-    };
+      return () => {
+        window.removeEventListener("resize", resizeHandler);
+      };
+    }
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
