@@ -17,8 +17,8 @@ export default function Camera(props: CameraProps) {
   const [cameraPos, setCameraPos] = useState<number[]>([1000, -150, 1000]);
 
   const resizeHandler = () => {
-    props.setWindowWidth(window.innerWidth);
-    props.setWindowHeight(window.innerHeight);
+    // props.setWindowWidth(window.innerWidth);
+    // props.setWindowHeight(window.innerHeight);
   }
 
   useEffect(() => {
