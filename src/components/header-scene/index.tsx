@@ -31,17 +31,15 @@ const HeaderScene = (props: HeaderSceneProps) => {
 
   return (
     <div className="canvas-3d-container" style={{ width: windowWidth, height: windowHeight, margin: 0, visibility: loadingScene ? "hidden" : "visible" }}>
-      <Canvas>
-        {/* <color attach="background" args={["red"]} /> */}
+      {/* <Canvas>
         <Camera setWindowWidth={setWindowWidth} setWindowHeight={setWindowHeight} />
-        {/* <OrbitCamera /> */}
         <directionalLight intensity={1} />
         <ambientLight intensity={0.6} />
         <Suspense fallback={null}>
           <Planet />
         </Suspense>
         <SkyBox />
-      </Canvas>
+      </Canvas> */}
     </div>
   );
 }
