@@ -34,8 +34,8 @@ const HeaderScene = (props: HeaderSceneProps) => {
       <Canvas>
         <Camera setWindowWidth={setWindowWidth} setWindowHeight={setWindowHeight} />
         <directionalLight intensity={1} />
-        <ambientLight intensity={0.6} />
-        <Suspense fallback={null}>
+        <ambientLight intensity={0.3} />
+        <Suspense fallback={"loading"}>
           <Planet />
         </Suspense>
         <SkyBox />
