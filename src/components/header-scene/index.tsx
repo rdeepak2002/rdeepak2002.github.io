@@ -22,14 +22,14 @@ const HeaderScene = (props: HeaderSceneProps) => {
       setWindowHeight(window.innerHeight);
   
       window.dispatchEvent(new Event('resize'));
-  
-      const timer = setInterval(() => setLoadingScene(false), 500);
-  
-      // clear on component unmount
-      return () => {
-        clearInterval(timer);
-      };
     }
+
+    const timer = setInterval(() => setLoadingScene(false), 500);
+  
+    // clear on component unmount
+    return () => {
+      clearInterval(timer);
+    };
   }, []);
 
   return (
