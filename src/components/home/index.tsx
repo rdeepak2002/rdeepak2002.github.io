@@ -34,7 +34,8 @@ const Home = (props: HomeProps) => {
         {
           isMobile
             ?
-            <Image className="bg-image" src={robot_face_icon} fluid/>
+            // <Image className="bg-image" src={robot_face_icon} fluid/>
+            <HeaderScene />
             :
             <HeaderScene />
         }

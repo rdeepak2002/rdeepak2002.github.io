@@ -22,25 +22,14 @@ const Planet = () => {
 
   if (nodes.Cube008 instanceof Mesh) {
     return (
-      // too much for mobile devices
-      // <mesh
-      //   ref={planet}
-      //   visible
-      //   position={[0, 0, 0]}
-      //   // Adding data from mars.glb to the geometry and material of the sphere
-      //   geometry={nodes.Cube008.geometry}
-      //   material={nodes.Cube008.material}
-      //   scale={[scale, scale, scale]}
-      // />
       <mesh
         ref={planet}
         visible
         position={[0, 0, 0]}
-        material={nodes.Cube008.material}
         scale={[scale, scale, scale]}
       >
         <sphereGeometry attach="geometry" args={[radius, quality, quality]} />
-        <meshStandardMaterial color={"rgb(255, 255, 255)"} map={mars_texture} attach='material' />
+        {/* <meshStandardMaterial color={"rgb(255, 255, 255)"} map={mars_texture} attach='material' /> */}
       </mesh>
     );
   }
