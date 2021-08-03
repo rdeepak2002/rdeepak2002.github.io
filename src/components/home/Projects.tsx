@@ -112,7 +112,7 @@ const Projects = (props: ProjectsProps) => {
         content:
           <>
             <p>Website to Download Application: <a href="https://spanishheromv.web.app/">https://spanishheromv.web.app</a></p>
-            <p>Link to Source Code of the Software: <a href="https://github.com/rdeepak2002/SpanishHero/">https://github.com/rdeepak2002/SpanishHero/</a></p>
+            <p>Link to Source Code of the Software: <a href="https://github.com/rdeepak2002/SpanishHero/">https://github.com/rdeepak2002/SpanishHero</a></p>
             <p>“Spanish Hero” - An Entertaining Medium to Practice Conjugating Verbs Into Various Spanish Grammar Tenses in a Fun & Easy Way.</p>
             <ul>
               <li>Developed Spanish Video Game - “Spanish Hero.”</li>
@@ -142,7 +142,22 @@ const Projects = (props: ProjectsProps) => {
         date: "November of 2019",
         content:
           <>
-
+            <p>Link to Source Code of the Software: <a href="https://github.com/rdeepak2002/TortFeeder">https://github.com/rdeepak2002/TortFeeder</a></p>
+            <p>“Tort Cam & Food Dispenser” - Remote Surveillance System For my Pet Tortoise, “Lettuce-be-Happy”</p>
+            <ul>
+              <li>Developed Surveillance System - “Tort Camera & Food Dispenser”</li>
+              <li><strong>Function:</strong> For Surveillance of Tortoise From Afar</li>
+              <li><strong>Utilized:</strong> (i) Raspberry Pi mini computer; (ii) Arduino microcontroller; & (iii) Webcam</li>
+              <li>‘Tort’ Website - Hosted on The Raspberry Pi Mini Computer by Utilizing a Python Flask Server</li>
+              <li>Router Settings Configured to Port Forward From The Raspberry Pi Computer</li>
+              <li>Raspberry Pi Configured to Have Static IP Address</li>
+              <li>Flask Server Takes Requests From Clients on The Website to Dispense Food Via Micro Servo Controlled by Arduino Through Serial Configuration</li>
+              <ul>
+                <li>Server Maintains Itself by Utilizing Cron Jobs to Reboot</li>
+                <li>Whenever Wi-Fi Disconnects, Server Automatically Turns On Within 20 Minutes After Reboot</li>
+              </ul>
+              <li>Project - Joyful, Learning Experience - Allows Observation of “Lettuce-be-Happy” From Afar</li>
+            </ul>
           </>,
         tags: [],
         showMoreHeight: showMoreHeight,
@@ -155,7 +170,19 @@ const Projects = (props: ProjectsProps) => {
         date: "May of 2020",
         content:
           <>
-
+            <p>Website for the Application: <a href="https://smartroomvr.herokuapp.com/">https://smartroomvr.herokuapp.com</a></p>
+            <p>"SmartRoom" - An immersive 3D classroom environment that allows students to collaborate and talk to their teacher.</p>
+            <ul>
+              <li>Developed Web Application - "SmartRoom.”</li>
+              <li><strong>Inspired:</strong> When I Noticed How Fellow Students Disliked Zoom Meetings.</li>
+              <li><strong>Utilized:</strong> THREE.js and Websockets.</li>
+              <li><strong>Functions:</strong></li>
+              <ol>
+                <li>Live quiz feature to administer quizzes to students.</li>
+                <li>Live feedback feature that utilizes IBM Watson's Tone analyzer to categorize constructive and destructive feedback.</li>
+                <li>Live whiteboard for teacher to draw diagrams that students can view.</li>
+              </ol>
+            </ul>
           </>,
         tags: [],
         showMoreHeight: showMoreHeight,
@@ -168,7 +195,18 @@ const Projects = (props: ProjectsProps) => {
         date: "March of 2021",
         content:
           <>
-
+            <p>Website for the Application: <a href="https://augnav.herokuapp.com/">https://augnav.herokuapp.com</a></p>
+            <p>“AugNav" - A Creative Way to Guide People Inside Buildings or In Complex Environments Using Augmented Reality.</p>
+            <ul>
+              <li>Developed Web Application & Mobile Phone Application - "AugNav.”</li>
+              <li><strong>Inspired:</strong> When I Noticed How My Elderly Parents Frequently Get Lost in Places Like the Mall or Disneyland.</li>
+              <li><strong>Utilized:</strong> Machine Learning and Augmented Reality.</li>
+              <li><strong>Functions:</strong></li>
+              <ol>
+                <li>To find the exit in high-rise builidings during an emergency like a fire or earthquake.</li>
+                <li>For people to navigate through complex environments like theme parks, airports, and malls.</li>
+              </ol>
+            </ul>
           </>,
         tags: [],
         showMoreHeight: showMoreHeight,
@@ -181,7 +219,19 @@ const Projects = (props: ProjectsProps) => {
         date: "August of 2019",
         content:
           <>
-
+            <p>NHS Website: <a href="https://mvnhs.herokuapp.com/home">https://mvnhs.herokuapp.com/home</a></p>
+            <p>Bite Club Website: <a href="https://biteclub.web.app/#/">https://biteclub.web.app</a></p>
+            <ul>
+              <li><strong>Vice President</strong> - Monta Vista National Honor Society (NHS).</li>
+              <li><strong>Vice President</strong> - Food Science / Bite Club.</li>
+              <li>Developed Websites For Monta Vista National Honor Society (NHS) & Food Science / Bite Clubs.</li>
+              <li><strong>Functions and Advantages</strong></li>
+              <ul>
+                <li>NHS Website - Allows Members to Create Accounts & to Sign up For Volunteer Events.</li>
+                <li>Food Science / Bite Club Website - Cooking Club at Monta Vista High School.</li>
+                <li>Future Officers Can Use Administrative Accounts to Create New Meetings & Manage Member Profiles.</li>
+              </ul>
+            </ul>
           </>,
         tags: [],
         showMoreHeight: showMoreHeight,
@@ -194,7 +244,8 @@ const Projects = (props: ProjectsProps) => {
         date: "Current",
         content:
           <>
-
+            <p>Link to my GitHub: <a href="https://github.com/rdeepak2002">https://github.com/rdeepak2002</a></p>
+            <p>More Projects Can be Viewed on my GitHub.</p>
           </>,
         tags: [],
         showMoreHeight: showMoreHeight,
@@ -288,9 +339,9 @@ const Project = (props: ProjectProps) => {
   return (
     <Container className="card" style={{ width: "100%", padding: 0 }} id={props.id}>
       {props.imageUrl &&
-      <div className="project-img-container" style={{height: "306.56px", overflow: "hidden", display: "flex", justifyContent: "center", alignItems: "center"}}>
-        <Image className="project-img" src={props.imageUrl} fluid />
-      </div>
+        <div className="project-img-container" style={{ height: "306.56px", overflow: "hidden", display: "flex", justifyContent: "center", alignItems: "center" }}>
+          <Image className="project-img" src={props.imageUrl} fluid />
+        </div>
       }
       {props.videoUrl &&
         <LiteYouTubeEmbed
