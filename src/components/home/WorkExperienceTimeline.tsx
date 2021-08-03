@@ -44,7 +44,7 @@ const WorkExperienceTimeline = () => {
               <li>Installed and configured NGINX and Jenkins on a remote Linux machine for automatic continuous integration</li>
             </ul>
           </>
-      }
+      },
     ]);
   }, []);
 

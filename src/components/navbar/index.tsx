@@ -71,5 +71,12 @@ export const k_achievements_href = "achievements";
 
 export const k_teaching_cs_indian_village_href = "teaching_cs";
 export const k_the_right_price_href = "the_right_price";
+export const k_hapi_app_href = "hapi_app";
+export const k_spanish_hero_href = "spanish_hero";
+export const k_tort_cam_href = "tort_cam";
+export const k_smart_room_href = "smart_room";
+export const k_augnav_href = "augnav";
+export const k_club_websites_hef = "club_websites";
+export const k_more_projects = "more_projects";
 
 export default CustomNavbar;
