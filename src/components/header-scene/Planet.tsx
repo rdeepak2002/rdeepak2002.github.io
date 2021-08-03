@@ -16,7 +16,7 @@ const Planet = () => {
 
   const mars_texture = useLoader(TextureLoader, mars_texture_jpg);
   const quality = isMobile ? 16 : 32;
-  const radius = 700;
+  const radius = 10;
 
   useFrame(() => (planet.current.rotation.y += rotVelY));
 

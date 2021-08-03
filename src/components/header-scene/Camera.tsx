@@ -14,7 +14,7 @@ export default function Camera(props: CameraProps) {
   const [cameraRot, setCameraRot] = useState<number[]>([0, 45]);
   const [cameraRotVel] = useState<number[]>([0, 0]);
 
-  const [cameraPos, setCameraPos] = useState<number[]>([1000, -150, 1000]);
+  const [cameraPos, setCameraPos] = useState<number[]>([10, -2, 10]);
 
   const resizeHandler = () => {
     props.setWindowWidth(window.innerWidth);
