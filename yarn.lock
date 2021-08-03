@@ -9784,6 +9784,11 @@ react-lifecycles-compat@^3.0.4:
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
 
+react-lite-youtube-embed@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/react-lite-youtube-embed/-/react-lite-youtube-embed-2.0.3.tgz#24a272e4832826252f98a4b122b8c50a25dd117f"
+  integrity sha512-jeNw1i1LROdYVoxBiVRBNoqddzP91S+V84Z14Sralbw+0IWkDNo70xLD2Suk6j+es+h8y3/WykeiGiPw/THZQw==
+
 react-merge-refs@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/react-merge-refs/-/react-merge-refs-1.1.0.tgz#73d88b892c6c68cbb7a66e0800faa374f4c38b06"

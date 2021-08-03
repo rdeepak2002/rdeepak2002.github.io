@@ -1,6 +1,8 @@
 import { k_augnav_href, k_club_websites_hef, k_hapi_app_href, k_more_projects, k_spanish_hero_href, k_teaching_cs_indian_village_href, k_the_right_price_href, k_tort_cam_href } from "components/navbar";
 import { useEffect, useRef, useState } from "react";
 import { Button, Container, Image } from "react-bootstrap";
+import LiteYouTubeEmbed from 'react-lite-youtube-embed';
+import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css'
 
 interface ProjectsProps {
   isMobileCss: boolean
@@ -21,9 +23,7 @@ const Projects = (props: ProjectsProps) => {
         date: "July of 2019",
         content:
           <>
-            <p>
-              The 26-minutes concise video demonstrates me (Deepak Ramalingam), a Senior at Monta Vista High School in Cupertino, California, teaching two weeks of Computer Science classes (Python 3 Programming language & Web Design) to a student body of 52 pupils at an Indian Village High School.
-            </p>
+            <p>The 26-minutes concise video demonstrates me (Deepak Ramalingam), a Senior at Monta Vista High School in Cupertino, California, teaching two weeks of Computer Science classes (Python 3 Programming language & Web Design) to a student body of 52 pupils at an Indian Village High School.</p>
             <p><strong>Date of Internship: </strong>June 23 - July 8, 2019</p>
             <p><strong>Venue: </strong>Sankaramangalam Public High School & Junior College, Kaviyoor, Kerala, India</p>
             <p><strong>Note:</strong></p>
@@ -84,9 +84,7 @@ const Projects = (props: ProjectsProps) => {
           <>
             <p>Website for the Application: <a href="http://www.hapidiary.com/">http://www.hapidiary.com</a></p>
             <p>Mentioned in News: <a href="https://patch.com/california/cupertino/cupertino-winners-teen-app-design-challenge-announced">https://patch.com/california/cupertino/cupertino-winners-teen-app-design-challenge-announced</a></p>
-            <p>
-              “Hapi App” - An Engaging Medium to Help People Cope With Psychological Depression, a Social Injustice That Affects People in All Walks of Life.
-            </p>
+            <p>“Hapi App” - An Engaging Medium to Help People Cope With Psychological Depression, a Social Injustice That Affects People in All Walks of Life.</p>
             <ul>
               <li>Developed Web Application & Mobile Phone Application - “Hapi App.”</li>
               <li>Won 1st Place - Teen App Challenge Competition. Won 4th Place for App and Video - Congressional App Challenge National Competition.</li>
@@ -113,7 +111,25 @@ const Projects = (props: ProjectsProps) => {
         date: "March of 2017",
         content:
           <>
-
+            <p>Website to Download Application: <a href="https://spanishheromv.web.app/">https://spanishheromv.web.app</a></p>
+            <p>Link to Source Code of the Software: <a href="https://github.com/rdeepak2002/SpanishHero/">https://github.com/rdeepak2002/SpanishHero/</a></p>
+            <p>“Spanish Hero” - An Entertaining Medium to Practice Conjugating Verbs Into Various Spanish Grammar Tenses in a Fun & Easy Way.</p>
+            <ul>
+              <li>Developed Spanish Video Game - “Spanish Hero.”</li>
+              <li><strong>Inspired:</strong> When I became flustered with the numerous Spanish grammar tenses and verb conjugations that I had to learn and remember in my Spanish 2 class.</li>
+              <li><strong>Utilized:</strong> Advanced computer programming concepts such as Object-oriented programming to organize the structure of the game's logic.</li>
+              <li><strong>Functions:</strong></li>
+              <ol>
+                <li>Helps All Students Learn Spanish Grammar in an Entertaining Way.</li>
+                <li>Delightful Way to Teach Spanish Concepts Like Verb Conjugations to Students in Poor Communities Who Lack Educational Resources Such as Teachers and Textbooks to Practice Spanish Grammar Exercises.</li>
+              </ol>
+              <li><strong>Advantages:</strong></li>
+              <ol>
+                <li>Allows Other Software Developers to Add More Features to The Video Game.</li>
+                <li>Video Game & Code is Made Available to The General Public - Allows Public to Learn & Improve Spanish grammar in a delightful manner.</li>
+              </ol>
+              <li><strong>Recognition:</strong> Received from Spanish Teacher and Mentor, Señora Griffin, that the software is very ‘advanced'.</li>
+            </ul>
           </>,
         tags: [],
         showMoreHeight: showMoreHeight,
@@ -254,9 +270,11 @@ interface ProjectProps {
 const Project = (props: ProjectProps) => {
   const contentRef: any = useRef();
   const showMoreHeight = props.showMoreHeight;
+  const videoId = props.videoUrl ? props.videoUrl.substring(props.videoUrl.lastIndexOf("embed/") + "embed/".length) : "YGE5euSZnbI";
 
   const [showMore, setShowMore] = useState<boolean>(false);
   const [overflowActive, setOverflowActive] = useState<boolean>(false);
+
 
   useEffect(() => {
     if (isOverflowActive(contentRef.current)) {
@@ -270,10 +288,15 @@ const Project = (props: ProjectProps) => {
   return (
     <Container className="card" style={{ width: "100%", padding: 0 }} id={props.id}>
       {props.imageUrl &&
-        <Image src={props.imageUrl} fluid style={{ height: 300 }} />
+      <div className="project-img-container" style={{height: "306.56px", overflow: "hidden", display: "flex", justifyContent: "center", alignItems: "center"}}>
+        <Image className="project-img" src={props.imageUrl} fluid />
+      </div>
       }
       {props.videoUrl &&
-        <iframe loading="lazy" width="100%" height="300" src={props.videoUrl} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+        <LiteYouTubeEmbed
+          id={videoId}
+          title=""
+        />
       }
       <div style={{ paddingLeft: 15, paddingRight: 15 }}>
         <h4 style={{ marginTop: "1rem" }}>{props.title}</h4>
