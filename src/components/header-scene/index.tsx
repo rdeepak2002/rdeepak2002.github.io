@@ -36,8 +36,8 @@ const HeaderScene = (props: HeaderSceneProps) => {
     <div className="canvas-3d-container" style={{ width: windowWidth, height: windowHeight, margin: 0, visibility: loadingScene ? "hidden" : "visible" }}>      
       <Canvas>
         <Camera setWindowWidth={setWindowWidth} setWindowHeight={setWindowHeight} />
-        <directionalLight intensity={1} />
-        <ambientLight intensity={0.3} />
+        <directionalLight intensity={0.1} />
+        <ambientLight intensity={0.24} />
         <Suspense fallback={"loading"}>
           <Planet />
         </Suspense>

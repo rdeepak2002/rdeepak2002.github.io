@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { Container, Image } from "react-bootstrap";
+import { isMobile } from "react-device-detect";
 import HeaderScene from "components/header-scene/";
 import Footer from "components/footer";
 import Typewriter from "typewriter-effect";
@@ -10,12 +11,13 @@ import WorkExperienceTimeline from "./WorkExperienceTimeline";
 import Projects from "./Projects";
 import AchievementsSection from "./AchievementsSection";
 
+import wallpaper from "resources/images/wallpaper.jpg";
+import galaxy from "resources/images/galaxy.jpg";
 import robot_face_icon from "resources/icons/robot-face-icon.png";
 import suitcase_icon from "resources/icons/suitcase-icon.png";
 import trophy_icon from "resources/icons/trophy-icon.png";
 
 import { k_about_href, k_achievements_href, k_innovative_endeavors_href, k_work_experience_href } from "components/navbar";
-import { isMobile } from "react-device-detect";
 
 interface HomeProps {
   setScreen: Function
@@ -34,8 +36,7 @@ const Home = (props: HomeProps) => {
         {
           isMobile
             ?
-            // <Image className="bg-image" src={robot_face_icon} fluid/>
-            <HeaderScene />
+            <Image className="bg-image" src={wallpaper} fluid/>
             :
             <HeaderScene />
         }

@@ -12,15 +12,15 @@ const Planet = () => {
 
   const planet: any = useRef();
   const [scale] = useState<number>(0.3);
-  const { nodes } = useLoader(GLTFLoader, "models/mars.glb");
+  // const { nodes } = useLoader(GLTFLoader, "models/mars.glb");
 
   const mars_texture = useLoader(TextureLoader, mars_texture_jpg);
   const quality = isMobile ? 16 : 32;
-  const radius = 10;
+  const radius = 7;
 
   useFrame(() => (planet.current.rotation.y += rotVelY));
 
-  if (nodes.Cube008 instanceof Mesh) {
+  // if (nodes.Cube008 instanceof Mesh) {
     return (
       <mesh
         ref={planet}
@@ -29,12 +29,12 @@ const Planet = () => {
         scale={[scale, scale, scale]}
       >
         <sphereGeometry attach="geometry" args={[radius, quality, quality]} />
-        {/* <meshStandardMaterial color={"rgb(255, 255, 255)"} map={mars_texture} attach='material' /> */}
+        <meshStandardMaterial color={"rgb(255, 255, 255)"} map={mars_texture} attach='material' />
       </mesh>
     );
-  }
+  // }
 
-  return <></>;
+  // return <></>;
 };
 
 export default Planet;

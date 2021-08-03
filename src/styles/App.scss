@@ -57,15 +57,13 @@ h3 {
 
 @media all and (orientation: landscape) {
   .bg-image {
-    width: 100%;
-    height: auto;
+    object-fit: cover;
   }
 }
 
 @media all and (orientation: portrait) {
   .bg-image {
-    height: 100%;
-    width: auto;
+    object-fit: cover;
   }
 }
 
