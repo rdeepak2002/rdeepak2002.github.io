@@ -1,4 +1,4 @@
-import { k_teaching_cs_indian_village_href, k_the_right_price_href } from "components/navbar";
+import { k_augnav_href, k_club_websites_hef, k_hapi_app_href, k_more_projects, k_spanish_hero_href, k_teaching_cs_indian_village_href, k_the_right_price_href, k_tort_cam_href } from "components/navbar";
 import { useEffect, useRef, useState } from "react";
 import { Button, Container, Image } from "react-bootstrap";
 
@@ -75,7 +75,97 @@ const Projects = (props: ProjectsProps) => {
         showMoreHeight: showMoreHeight,
         id: k_the_right_price_href
       },
+      {
+        videoUrl: "https://www.youtube.com/embed/cDajvueR5Wk",
+        title: "Hapi App",
+        type: "Web App and Phone App",
+        date: "July of 2018",
+        content:
+          <>
 
+          </>,
+        tags: [],
+        showMoreHeight: showMoreHeight,
+        id: k_hapi_app_href
+      },
+      {
+        videoUrl: "https://www.youtube.com/embed/g88C3LuczK4",
+        title: "\"Spanish Hero\" Educational Game",
+        type: "Educational Software",
+        date: "March of 2017",
+        content:
+          <>
+
+          </>,
+        tags: [],
+        showMoreHeight: showMoreHeight,
+        id: k_spanish_hero_href
+      },
+      {
+        videoUrl: "https://www.youtube.com/embed/Skl5BdvIy7U",
+        title: "Tort Camera & Food Dispenser",
+        type: "Hobbies",
+        date: "November of 2019",
+        content:
+          <>
+
+          </>,
+        tags: [],
+        showMoreHeight: showMoreHeight,
+        id: k_tort_cam_href
+      },
+      {
+        videoUrl: "https://www.youtube.com/embed/VwFOZGbdJio",
+        title: "SmartRoom",
+        type: "Web App",
+        date: "May of 2020",
+        content:
+          <>
+
+          </>,
+        tags: [],
+        showMoreHeight: showMoreHeight,
+        id: k_tort_cam_href
+      },
+      {
+        videoUrl: "https://www.youtube.com/embed/8opbh55IOg4",
+        title: "AugNav",
+        type: "Web App and Phone App",
+        date: "March of 2021",
+        content:
+          <>
+
+          </>,
+        tags: [],
+        showMoreHeight: showMoreHeight,
+        id: k_augnav_href
+      },
+      {
+        imageUrl: "https://theartsdevelopmentcompany.org.uk/wp-content/uploads/2019/02/Website-Building-Landscape-1280x640.jpg",
+        title: "Websites For Clubs",
+        type: "Web Apps",
+        date: "August of 2019",
+        content:
+          <>
+
+          </>,
+        tags: [],
+        showMoreHeight: showMoreHeight,
+        id: k_club_websites_hef
+      },
+      {
+        imageUrl: "https://cdn.datafloq.com/cache/blog_pictures/878x531/artificial-intelligence-future-of-programming.jpg",
+        title: "More Projects",
+        type: "Hobbies",
+        date: "Current",
+        content:
+          <>
+
+          </>,
+        tags: [],
+        showMoreHeight: showMoreHeight,
+        id: k_more_projects
+      },
     ]);
   }, []);
 
@@ -95,12 +185,38 @@ const Projects = (props: ProjectsProps) => {
         })
       }
 
-      <h1>TODO: FINISH THE REST (dont forget to add the id to the link in navbar.ts)</h1>
+      {/* <h1>TODO: FINISH THE REST (dont forget to add the id to the link in navbar.ts)</h1>
       <h1>TODO: FRUIT VISION (dont forget to add the id to the link in navbar.ts)</h1>
       <h1>TODO: DEEP PLAYLIST (dont forget to add the id to the link in navbar.ts)</h1>
       <h1>TODO: FORD CONNECTED (dont forget to add the id to the link in navbar.ts)</h1>
       <h1>TODO: THIS WEBSITE (dont forget to add the id to the link in navbar.ts)</h1>
-      <h1>TODO: ADD COLOR CODED TAGS (below the date section)</h1>
+      <h1>TODO: ADD COLOR CODED TAGS (below the date section)</h1> */}
+            {/* <h1>TODO: FINISH THE REST (dont forget to add the id to the link in navbar.ts)</h1>
+      <h1>TODO: FRUIT VISION (dont forget to add the id to the link in navbar.ts)</h1>
+      <h1>TODO: DEEP PLAYLIST (dont forget to add the id to the link in navbar.ts)</h1>
+      <h1>TODO: FORD CONNECTED (dont forget to add the id to the link in navbar.ts)</h1>
+      <h1>TODO: THIS WEBSITE (dont forget to add the id to the link in navbar.ts)</h1>
+      <h1>TODO: ADD COLOR CODED TAGS (below the date section)</h1> */}      {/* <h1>TODO: FINISH THE REST (dont forget to add the id to the link in navbar.ts)</h1>
+      <h1>TODO: FRUIT VISION (dont forget to add the id to the link in navbar.ts)</h1>
+      <h1>TODO: DEEP PLAYLIST (dont forget to add the id to the link in navbar.ts)</h1>
+      <h1>TODO: FORD CONNECTED (dont forget to add the id to the link in navbar.ts)</h1>
+      <h1>TODO: THIS WEBSITE (dont forget to add the id to the link in navbar.ts)</h1>
+      <h1>TODO: ADD COLOR CODED TAGS (below the date section)</h1> */}      {/* <h1>TODO: FINISH THE REST (dont forget to add the id to the link in navbar.ts)</h1>
+      <h1>TODO: FRUIT VISION (dont forget to add the id to the link in navbar.ts)</h1>
+      <h1>TODO: DEEP PLAYLIST (dont forget to add the id to the link in navbar.ts)</h1>
+      <h1>TODO: FORD CONNECTED (dont forget to add the id to the link in navbar.ts)</h1>
+      <h1>TODO: THIS WEBSITE (dont forget to add the id to the link in navbar.ts)</h1>
+      <h1>TODO: ADD COLOR CODED TAGS (below the date section)</h1> */}      {/* <h1>TODO: FINISH THE REST (dont forget to add the id to the link in navbar.ts)</h1>
+      <h1>TODO: FRUIT VISION (dont forget to add the id to the link in navbar.ts)</h1>
+      <h1>TODO: DEEP PLAYLIST (dont forget to add the id to the link in navbar.ts)</h1>
+      <h1>TODO: FORD CONNECTED (dont forget to add the id to the link in navbar.ts)</h1>
+      <h1>TODO: THIS WEBSITE (dont forget to add the id to the link in navbar.ts)</h1>
+      <h1>TODO: ADD COLOR CODED TAGS (below the date section)</h1> */}      {/* <h1>TODO: FINISH THE REST (dont forget to add the id to the link in navbar.ts)</h1>
+      <h1>TODO: FRUIT VISION (dont forget to add the id to the link in navbar.ts)</h1>
+      <h1>TODO: DEEP PLAYLIST (dont forget to add the id to the link in navbar.ts)</h1>
+      <h1>TODO: FORD CONNECTED (dont forget to add the id to the link in navbar.ts)</h1>
+      <h1>TODO: THIS WEBSITE (dont forget to add the id to the link in navbar.ts)</h1>
+      <h1>TODO: ADD COLOR CODED TAGS (below the date section)</h1> */}
     </div>
   );
 }
@@ -136,10 +252,10 @@ const Project = (props: ProjectProps) => {
   return (
     <Container className="card" style={{ width: "100%", padding: 0 }} id={props.id}>
       {props.imageUrl &&
-        <Image src={props.imageUrl} fluid />
+        <Image src={props.imageUrl} fluid style={{ height: 300 }} />
       }
       {props.videoUrl &&
-        <iframe width="100%" height="300" src={props.videoUrl} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+        <iframe loading="lazy" width="100%" height="300" src={props.videoUrl} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
       }
       <div style={{ paddingLeft: 15, paddingRight: 15 }}>
         <h4 style={{ marginTop: "1rem" }}>{props.title}</h4>
