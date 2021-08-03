@@ -31,8 +31,8 @@ const Home = (props: HomeProps) => {
   });
 
   return (
-    <div>
-      <div className="bg-image-container">
+    <div style={{backgroundColor: "white"}}>
+      <div className="bg-image-container" style={{overflow: "hidden"}}>
         {
           isMobile
             ?
