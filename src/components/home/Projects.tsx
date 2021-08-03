@@ -1,3 +1,4 @@
+import { k_teaching_cs_indian_village_href, k_the_right_price_href } from "components/navbar";
 import { useEffect, useRef, useState } from "react";
 import { Button, Container, Image } from "react-bootstrap";
 
@@ -24,7 +25,7 @@ const Projects = (props: ProjectsProps) => {
         title={"Teaching Computer Science At Indian Village"}
         type={"Volunteering"}
         date={"July of 2019"}
-        id={"teaching_cs"}
+        id={k_teaching_cs_indian_village_href}
         content={
           <>
             <p>
@@ -55,7 +56,7 @@ const Projects = (props: ProjectsProps) => {
         title={"The Right Price"}
         type={"Web App and iPhone App"}
         date={"April of 2019"}
-        id={"the_right_price"}
+        id={k_the_right_price_href}
         content={
           <>
             <p>Devpost Link: <a href="https://devpost.com/software/the-right-price-t4kipb">https://devpost.com/software/the-right-price-t4kipb</a></p>

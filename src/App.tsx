@@ -9,7 +9,7 @@ import { useState, useEffect } from "react";
 import { createView } from "service/ViewService";
 import { k_device, readFromStorage, saveToStorage } from "utils/Serialize";
 
-import CustomNavbar from "components/navbar/"
+import CustomNavbar, { k_admin_link, k_home_link } from "components/navbar/"
 import Home from "components/home/";
 import Admin from "components/admin";
 import IDevice from "interfaces/Device";
@@ -48,13 +48,13 @@ const App = () => {
       <CustomNavbar screen={screen} setScreen={setScreen} user={user} />
 
       <Switch>
-        <Route exact path="/home">
+        <Route exact path={k_home_link}>
           <Home setScreen={setScreen} />
         </Route>
-        <Route exact path="/admin">
+        <Route exact path={k_admin_link}>
           <Admin setScreen={setScreen} />
         </Route>
-        <Redirect to="/home" />
+        <Redirect to={k_home_link} />
       </Switch>
     </Router>
   );

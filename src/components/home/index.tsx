@@ -13,6 +13,7 @@ import AchievementsSection from "./AchievementsSection";
 import robot_face_icon from "resources/icons/robot-face-icon.png";
 import suitcase_icon from "resources/icons/suitcase-icon.png";
 import trophy_icon from "resources/icons/trophy-icon.png";
+import { k_about_href, k_achievements_href, k_innovative_endeavors_href, k_work_experience_href } from "components/navbar";
 
 interface HomeProps {
   setScreen: Function
@@ -44,13 +45,13 @@ const Home = (props: HomeProps) => {
 
       <h1 className="big-name">Deepak Ramalingam</h1>
 
-      <div className="home-section" id="about">
+      <div className="home-section" id={k_about_href}>
         <Container style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
           <AboutSection isMobileCss={isMobileCss} />
         </Container>
       </div>
 
-      <div className="home-section" id="work_experience" style={{ backgroundColor: "rgb(240, 240, 240)" }}>
+      <div className="home-section" id={k_work_experience_href} style={{ backgroundColor: "rgb(240, 240, 240)" }}>
         <Container>
           <div style={{ marginBottom: 10, display: "flex", flexDirection: "row", alignItems: "center" }}>
             <Image className="emoji-icon" src={suitcase_icon} fluid />
@@ -62,7 +63,7 @@ const Home = (props: HomeProps) => {
         </Container>
       </div>
 
-      <div className="home-section" id="innovative_endeavors">
+      <div className="home-section" id={k_innovative_endeavors_href}>
         <Container>
           <div style={{ marginBottom: 10, display: "flex", flexDirection: "row", alignItems: "center" }}>
             <Image className="emoji-icon" src={robot_face_icon} fluid />
@@ -74,7 +75,7 @@ const Home = (props: HomeProps) => {
         </Container>
       </div>
 
-      <div className="home-section" id="achievements" style={{ backgroundColor: "rgb(240, 240, 240)" }}>
+      <div className="home-section" id={k_achievements_href} style={{ backgroundColor: "rgb(240, 240, 240)" }}>
         <Container>
           <div style={{ marginBottom: 10, display: "flex", flexDirection: "row", alignItems: "center" }}>
             <Image className="emoji-icon" src={trophy_icon} fluid />
