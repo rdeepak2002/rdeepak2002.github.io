@@ -2,7 +2,8 @@ import {
   BrowserRouter as Router,
   Switch,
   Redirect,
-  Route
+  Route,
+  HashRouter
 } from "react-router-dom";
 
 import { useState, useEffect } from "react";
@@ -42,13 +43,13 @@ const App = () => {
   }, []);
 
   useEffect(() => {
-    if(device) {
+    if (device) {
       saveToStorage(k_device, JSON.stringify(device));
     }
   }, [device]);
 
   return (
-    <Router>
+    <HashRouter>
       <CustomNavbar screen={screen} setScreen={setScreen} user={user} />
 
       <Switch>
@@ -60,7 +61,7 @@ const App = () => {
         </Route>
         <Redirect to={k_home_link} />
       </Switch>
-    </Router>
+    </HashRouter>
   );
 }
 
