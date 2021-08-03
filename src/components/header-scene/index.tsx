@@ -19,19 +19,19 @@ const HeaderScene = (props: HeaderSceneProps) => {
     setWindowWidth(window.innerWidth);
     setWindowHeight(window.innerHeight);
 
-    window.dispatchEvent(new Event('resize'));
+    // window.dispatchEvent(new Event('resize'));
 
-    const timer = setInterval(() => setLoadingScene(false), 500);
+    // const timer = setInterval(() => setLoadingScene(false), 500);
 
     // clear on component unmount
-    return () => {
-      clearInterval(timer);
-    };
+    // return () => {
+    //   clearInterval(timer);
+    // };
   }, []);
 
   return (
     <div className="canvas-3d-container" style={{ width: windowWidth, height: windowHeight, margin: 0, visibility: loadingScene ? "hidden" : "visible" }}>
-      {/* <Canvas>
+      <Canvas>
         <Camera setWindowWidth={setWindowWidth} setWindowHeight={setWindowHeight} />
         <directionalLight intensity={1} />
         <ambientLight intensity={0.6} />
@@ -39,7 +39,7 @@ const HeaderScene = (props: HeaderSceneProps) => {
           <Planet />
         </Suspense>
         <SkyBox />
-      </Canvas> */}
+      </Canvas>
     </div>
   );
 }
