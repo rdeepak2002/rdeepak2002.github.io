@@ -10,23 +10,16 @@ interface ProjectsProps {
 const Projects = (props: ProjectsProps) => {
   const showMoreHeight = "100px";
 
-  return (
-    <div
-      style={{
-        display: "grid",
-        gridAutoRows: `minmax(${showMoreHeight}, auto)`,
-        gridTemplateColumns: props.isMobileCss ? "repeat(1, 1fr)" : "repeat(2, 1fr)",
-        columnGap: "1rem",
-        rowGap: "1rem"
-      }}
-    >
-      <Project
-        videoUrl={"https://www.youtube.com/embed/53qEBPBruRk"}
-        title={"Teaching Computer Science At Indian Village"}
-        type={"Volunteering"}
-        date={"July of 2019"}
-        id={k_teaching_cs_indian_village_href}
-        content={
+  const [projects, setProjects] = useState<Array<ProjectProps>>([]);
+
+  useEffect(() => {
+    setProjects([
+      {
+        videoUrl: "https://www.youtube.com/embed/53qEBPBruRk",
+        title: "Teaching Computer Science At Indian Village",
+        type: "Volunteering",
+        date: "July of 2019",
+        content:
           <>
             <p>
               The 26-minutes concise video demonstrates me (Deepak Ramalingam), a Senior at Monta Vista High School in Cupertino, California, teaching two weeks of Computer Science classes (Python 3 Programming language & Web Design) to a student body of 52 pupils at an Indian Village High School.
@@ -45,19 +38,17 @@ const Projects = (props: ProjectsProps) => {
               <li>Projector</li>
             </ul>
             <p>It was an interactive teaching session with doubts and questions being asked and answered from both sides. An exam was conducted after the teaching session in order to test the understanding of the material - the students did well.</p>
-          </>
-        }
-        tags={[]}
-        showMoreHeight={showMoreHeight}
-      />
-      
-      <Project
-        videoUrl={"https://www.youtube.com/embed/sywBQSnFeOw"}
-        title={"The Right Price"}
-        type={"Web App and iPhone App"}
-        date={"April of 2019"}
-        id={k_the_right_price_href}
-        content={
+          </>,
+        tags: [],
+        showMoreHeight: showMoreHeight,
+        id: k_teaching_cs_indian_village_href
+      },
+      {
+        videoUrl: "https://www.youtube.com/embed/sywBQSnFeOw",
+        title: "The Right Price",
+        type: "Web App and iPhone App",
+        date: "April of 2019",
+        content:
           <>
             <p>Devpost Link: <a href="https://devpost.com/software/the-right-price-t4kipb">https://devpost.com/software/the-right-price-t4kipb</a></p>
             <p>“The Right Price” - An Effective Application to Help Small Businesses to Survive & Shine in a Competitive Economy.</p>
@@ -79,11 +70,29 @@ const Projects = (props: ProjectsProps) => {
                 <li>Motivates Users to Purchase The Products From Local Stores, Instead of Buying The Products Online From Large Retailers.</li>
               </ol>
             </ul>
-          </>
-        }
-        tags={[]}
-        showMoreHeight={showMoreHeight}
-      />
+          </>,
+        tags: [],
+        showMoreHeight: showMoreHeight,
+        id: k_the_right_price_href
+      }
+    ]);
+  }, []);
+
+  return (
+    <div
+      style={{
+        display: "grid",
+        gridAutoRows: `minmax(${showMoreHeight}, auto)`,
+        gridTemplateColumns: props.isMobileCss ? "repeat(1, 1fr)" : "repeat(2, 1fr)",
+        columnGap: "1rem",
+        rowGap: "1rem"
+      }}
+    >
+      {
+        projects.map((item, index) => {
+          return <Project key={index} imageUrl={item.imageUrl} videoUrl={item.videoUrl} title={item.title} type={item.type} date={item.date} content={item.content} tags={item.tags} showMoreHeight={item.showMoreHeight} id={item.id} />
+        })
+      }
 
       <h1>TODO: FINISH THE REST (dont forget to add the id to the link in navbar.ts)</h1>
       <h1>TODO: FRUIT VISION (dont forget to add the id to the link in navbar.ts)</h1>
