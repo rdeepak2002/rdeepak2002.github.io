@@ -5,6 +5,7 @@ import { SpaceSkyBox } from "./SkyBoxes";
 import React from "react";
 import Camera from "./Camera";
 import Planet from "./Planet";
+import { isMobile } from "react-device-detect";
 
 interface HeaderSceneProps {
 }
@@ -30,7 +31,7 @@ const HeaderScene = (props: HeaderSceneProps) => {
   }, []);
 
   return (
-    <div className="canvas-3d-container" style={{ width: windowWidth, height: windowHeight, margin: 0, visibility: loadingScene ? "hidden" : "visible" }}>
+    <div className="canvas-3d-container" style={{ width: windowWidth, height: windowHeight, margin: 0, visibility: loadingScene ? "hidden" : "visible" }}>      
       <Canvas>
         <Camera setWindowWidth={setWindowWidth} setWindowHeight={setWindowHeight} />
         <directionalLight intensity={1} />

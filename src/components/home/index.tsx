@@ -13,7 +13,9 @@ import AchievementsSection from "./AchievementsSection";
 import robot_face_icon from "resources/icons/robot-face-icon.png";
 import suitcase_icon from "resources/icons/suitcase-icon.png";
 import trophy_icon from "resources/icons/trophy-icon.png";
+
 import { k_about_href, k_achievements_href, k_innovative_endeavors_href, k_work_experience_href } from "components/navbar";
+import { isMobile } from "react-device-detect";
 
 interface HomeProps {
   setScreen: Function
@@ -29,7 +31,13 @@ const Home = (props: HomeProps) => {
   return (
     <div>
       <div className="bg-image-container">
-        <HeaderScene />
+        {
+          isMobile
+            ?
+            <Image className="bg-image" src={robot_face_icon} fluid/>
+            :
+            <HeaderScene />
+        }
 
         <div style={{ position: "absolute", color: "white", bottom: "30%", fontSize: 30 }} className="digital-font">
           <Typewriter
@@ -71,7 +79,7 @@ const Home = (props: HomeProps) => {
               Innovative Endeavors
             </h1>
           </div>
-          <Projects isMobileCss={isMobileCss} showAll={false}/>
+          <Projects isMobileCss={isMobileCss} showAll={false} />
         </Container>
       </div>
 

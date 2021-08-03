@@ -7,7 +7,7 @@ import {
   Nav
 } from "react-bootstrap";
 
-import { isMobile } from "react-device-detect";
+import { isBrowser } from "react-device-detect";
 import { Link } from 'react-scroll';
 
 import useScrollState from "utils/ScrollState";
@@ -24,7 +24,7 @@ interface CustomNavbarProps {
 const CustomNavbar = (props: CustomNavbarProps) => {
   const navbarHeight = 60;
   const footerNameHeight = 100;
-  const useTransparentNavbar =  props.screen === "home" && !isMobile && (useScrollState(useWindowDimensions().height - navbarHeight - footerNameHeight) === "topSection");
+  const useTransparentNavbar = useScrollState(useWindowDimensions().height - navbarHeight - footerNameHeight) === "topSection" && props.screen === "home" && isBrowser;
 
   return (
     <Navbar className={(useTransparentNavbar ? "transparent-background" : "black-background-transparent")} fixed="top" bg="dark" variant="dark" expand="lg">
