@@ -75,7 +75,7 @@ const Projects = (props: ProjectsProps) => {
         showMoreHeight: showMoreHeight,
         id: k_the_right_price_href
       },
-      
+
     ]);
   }, []);
 
@@ -127,11 +127,11 @@ const Project = (props: ProjectProps) => {
   useEffect(() => {
     if (isOverflowActive(contentRef.current)) {
       setOverflowActive(true);
-      return;
     }
-
-    setOverflowActive(false);
-  }, [isOverflowActive]);
+    else {
+      setOverflowActive(false);
+    }
+  }, []);
 
   return (
     <Container className="card" style={{ width: "100%", padding: 0 }} id={props.id}>
@@ -183,7 +183,7 @@ const Project = (props: ProjectProps) => {
   );
 }
 
-function isOverflowActive(event: any) {
+const isOverflowActive = (event: any) => {
   return event.offsetHeight < event.scrollHeight || event.offsetWidth < event.scrollWidth;
 }
 

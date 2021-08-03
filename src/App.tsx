@@ -20,6 +20,10 @@ const App = () => {
   const [user, setUser] = useState(undefined);
 
   useEffect(() => {
+    console.log("hello! :)");
+  }, []);
+
+  useEffect(() => {
     setUser(undefined);
     setDevice(readFromStorage(k_device));
 
@@ -28,7 +32,7 @@ const App = () => {
         console.error(error);
       }
       else if (response) {
-        console.log("created view", response);
+        console.log(response);
         setDevice(response);
       }
       else {
