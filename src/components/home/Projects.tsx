@@ -82,7 +82,25 @@ const Projects = (props: ProjectsProps) => {
         date: "July of 2018",
         content:
           <>
-
+            <p>Website for the Application: <a href="http://www.hapidiary.com/">http://www.hapidiary.com</a></p>
+            <p>Mentioned in News: <a href="https://patch.com/california/cupertino/cupertino-winners-teen-app-design-challenge-announced">https://patch.com/california/cupertino/cupertino-winners-teen-app-design-challenge-announced</a></p>
+            <p>
+              “Hapi App” - An Engaging Medium to Help People Cope With Psychological Depression, a Social Injustice That Affects People in All Walks of Life.
+            </p>
+            <ul>
+              <li>Developed Web Application & Mobile Phone Application - “Hapi App.”</li>
+              <li>Won 1st Place - Teen App Challenge Competition. Won 4th Place for App and Video - Congressional App Challenge National Competition.</li>
+              <li>Featured in an Article on Patch News website.</li>
+              <li>Interviewed by Mr. Matt Lorenzo, Teen Services Librarian - Video Recording of my Application Played Daily in the Cupertino Library TV.</li>
+              <li><strong>Inspired:</strong> When Students Became Excessively Stressed About Their Academic Performance Due to The Competitive Environment of my High School.</li>
+              <li><strong>Utilized:</strong> Machine Learning to Provide Users With an Automated Analysis to Visualize Their Feelings About Certain People, Places, or Things Mentioned in the Diary Entry.</li>
+              <li><strong>Functions:</strong></li>
+              <ol>
+                <li>Serves as a Smart Diary to Help People Cope With Anxiety & Depression.</li>
+                <li>Recommends a List of Possible Activities to Help Users Strengthen Relationships With People Mentioned in The Entries of The User’s Diary.</li>
+                <li>Provides Videos Related to the Entries in the User’s Diary to Help Uplift The User’s Spirit.</li>
+              </ol>
+            </ul>
           </>,
         tags: [],
         showMoreHeight: showMoreHeight,
@@ -191,7 +209,7 @@ const Projects = (props: ProjectsProps) => {
       <h1>TODO: FORD CONNECTED (dont forget to add the id to the link in navbar.ts)</h1>
       <h1>TODO: THIS WEBSITE (dont forget to add the id to the link in navbar.ts)</h1>
       <h1>TODO: ADD COLOR CODED TAGS (below the date section)</h1> */}
-            {/* <h1>TODO: FINISH THE REST (dont forget to add the id to the link in navbar.ts)</h1>
+      {/* <h1>TODO: FINISH THE REST (dont forget to add the id to the link in navbar.ts)</h1>
       <h1>TODO: FRUIT VISION (dont forget to add the id to the link in navbar.ts)</h1>
       <h1>TODO: DEEP PLAYLIST (dont forget to add the id to the link in navbar.ts)</h1>
       <h1>TODO: FORD CONNECTED (dont forget to add the id to the link in navbar.ts)</h1>
