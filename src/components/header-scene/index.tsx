@@ -11,39 +11,39 @@ interface HeaderSceneProps {
 }
 
 const HeaderScene = (props: HeaderSceneProps) => {
-
   const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth - 1);
   const [windowHeight, setWindowHeight] = useState<number>(window.innerHeight - 1);
-  const [loadingScene, setLoadingScene] = useState<boolean>(true);
+  const [loaded, setLoaded] = useState<boolean>(false);
 
   useEffect(() => {
-    if(!isMobile) {
+    const resizeTimer = setTimeout(() => {
       setWindowWidth(window.innerWidth);
       setWindowHeight(window.innerHeight);
-  
-      window.dispatchEvent(new Event('resize'));
-    }
+    }, 500);
 
-    const timer = setInterval(() => setLoadingScene(false), 500);
+    const doneLoadingTimer = setTimeout(()=> {
+      setLoaded(true);
+    }, 1000);
   
     // clear on component unmount
     return () => {
-      clearInterval(timer);
+      clearTimeout(resizeTimer);
+      clearTimeout(doneLoadingTimer);
     };
   }, []);
 
   return (
-    <div className="canvas-3d-container" style={{ width: windowWidth, height: windowHeight, margin: 0, visibility: loadingScene ? "hidden" : "visible" }}>      
-      <Canvas>
-        <Camera setWindowWidth={setWindowWidth} setWindowHeight={setWindowHeight} />
-        <directionalLight intensity={0.1} />
-        <ambientLight intensity={0.24} />
-        <Suspense fallback={"loading"}>
-          <Planet />
-        </Suspense>
+    <Canvas className="canvas-3d" style={{width: windowWidth, height: windowHeight, visibility: loaded ? "visible" : "hidden"}}>
+      <Camera setWindowWidth={setWindowWidth} setWindowHeight={setWindowHeight} />
+      <directionalLight intensity={0.1} />
+      <ambientLight intensity={0.24} />
+      <Suspense fallback={"loading"}>
+        <Planet />
+      </Suspense>
+      { !isMobile &&
         <SkyBox />
-      </Canvas>
-    </div>
+      }
+    </Canvas>
   );
 }
 

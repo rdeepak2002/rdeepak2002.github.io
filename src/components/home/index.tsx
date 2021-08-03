@@ -32,11 +32,11 @@ const Home = (props: HomeProps) => {
 
   return (
     <div style={{backgroundColor: "white"}}>
-      <div className="bg-image-container" style={{overflow: "hidden"}}>
+      <div className={isMobile ? "bg-image-container fill-height-moblie " : "bg-image-container"} style={{overflow: "hidden"}}>
         {
           isMobile
             ?
-            <Image className="bg-image" src={wallpaper} fluid/>
+            <HeaderScene />
             :
             <HeaderScene />
         }
