@@ -139,7 +139,7 @@ projectTags[k_socketio_tag] = {
 export const k_p5_tag: string = "p5";
 projectTags[k_p5_tag] = {
   name: "p5.js",
-  color: "red",
+  color: "#FF37A6",
   link: "link"
 };
 
@@ -150,10 +150,17 @@ projectTags[k_java_tag] = {
   link: "link"
 };
 
+export const k_howler_tag: string = "howler";
+projectTags[k_howler_tag] = {
+  name: "howler.js",
+  color: "#694F5D",
+  link: "link"
+};
+
 export const k_python_tag: string = "python";
 projectTags[k_python_tag] = {
   name: "python",
-  color: "red",
+  color: "#68A691",
   link: "link"
 };
 
@@ -223,7 +230,7 @@ projectTags[k_azure_custom_vision_tag] = {
 export const k_flask_tag: string = "flask";
 projectTags[k_flask_tag] = {
   name: "flask",
-  color: "red",
+  color: "#43B929",
   link: "link"
 };
 
