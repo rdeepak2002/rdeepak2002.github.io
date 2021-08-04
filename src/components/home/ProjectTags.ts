@@ -17,6 +17,13 @@ projectTags[k_ios_tag] = {
   link: "link"
 };
 
+export const k_android_tag: string = "android";
+projectTags[k_android_tag] = {
+  name: "android",
+  color: "#15B097",
+  link: "link"
+};
+
 export const k_arkit_tag: string = "ARKit";
 projectTags[k_arkit_tag] = {
   name: "arkit",
@@ -90,7 +97,7 @@ projectTags[k_js_tag] = {
 export const k_ts_tag: string = "typescript";
 projectTags[k_ts_tag] = {
   name: "typescript",
-  color: "red",
+  color: "#68B0AB",
   link: "link"
 };
 
@@ -104,7 +111,7 @@ projectTags[k_heroku_tag] = {
 export const k_lua_tag: string = "lua";
 projectTags[k_lua_tag] = {
   name: "lua",
-  color: "#B24C63",
+  color: "#CB48B7",
   link: "link"
 };
 
@@ -139,7 +146,7 @@ projectTags[k_p5_tag] = {
 export const k_java_tag: string = "java";
 projectTags[k_java_tag] = {
   name: "java",
-  color: "red",
+  color: "#748386",
   link: "link"
 };
 
@@ -153,7 +160,14 @@ projectTags[k_python_tag] = {
 export const k_cpp_tag: string = "cpp";
 projectTags[k_cpp_tag] = {
   name: "c++",
-  color: "red",
+  color: "#357DED",
+  link: "link"
+};
+
+export const k_ar_tag: string = "ar";
+projectTags[k_ar_tag] = {
+  name: "ar",
+  color: "#A41623",
   link: "link"
 };
 
@@ -180,8 +194,8 @@ projectTags[k_graphql_tag] = {
 
 export const k_mongodb_tag: string = "mongodb";
 projectTags[k_mongodb_tag] = {
-  name: "MongoDB",
-  color: "red",
+  name: "mongodb",
+  color: "#809848",
   link: "link"
 };
 
@@ -216,7 +230,7 @@ projectTags[k_flask_tag] = {
 export const k_spring_boot_tag: string = "springboot";
 projectTags[k_spring_boot_tag] = {
   name: "spring boot",
-  color: "red",
+  color: "#337357",
   link: "link"
 };
 
@@ -230,7 +244,14 @@ projectTags[k_go_tag] = {
 export const k_react_tag: string = "react";
 projectTags[k_react_tag] = {
   name: "react",
-  color: "red",
+  color: "#4E8098",
+  link: "link"
+};
+
+export const k_napi_tag: string = "napi";
+projectTags[k_napi_tag] = {
+  name: "napi",
+  color: "#F45866",
   link: "link"
 };
 
@@ -251,7 +272,14 @@ projectTags[k_react_native_tag] = {
 export const k_nginx_tag: string = "nginx";
 projectTags[k_nginx_tag] = {
   name: "nginx",
-  color: "red",
+  color: "#26547C",
+  link: "link"
+};
+
+export const k_jenkins_tag: string = "jenkins";
+projectTags[k_jenkins_tag] = {
+  name: "jenkins",
+  color: "#EF476F",
   link: "link"
 };
 
