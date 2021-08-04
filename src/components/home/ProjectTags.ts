@@ -45,10 +45,38 @@ projectTags[k_firestore_tag] = {
   link: "link"
 };
 
+export const k_ibm_watson_tag: string = "ibmwatson";
+projectTags[k_ibm_watson_tag] = {
+  name: "ibm watson",
+  color: "#48A9A6",
+  link: "link"
+};
+
+export const k_flutter_tag: string = "flutter";
+projectTags[k_flutter_tag] = {
+  name: "flutter",
+  color: "#480355",
+  link: "link"
+};
+
+export const k_dart_tag: string = "dart";
+projectTags[k_dart_tag] = {
+  name: "dart",
+  color: "#22AED1",
+  link: "link"
+};
+
+export const k_nlp_tag: string = "nlp";
+projectTags[k_nlp_tag] = {
+  name: "nlp",
+  color: "#9448BC",
+  link: "link"
+};
+
 export const k_firebase_storage_tag: string = "firebasestorage";
 projectTags[k_firebase_storage_tag] = {
   name: "firebase storage",
-  color: "red",
+  color: "#C1666B",
   link: "link"
 };
 
@@ -83,7 +111,21 @@ projectTags[k_css_tag] = {
 export const k_sass_tag: string = "sass";
 projectTags[k_sass_tag] = {
   name: "sass",
-  color: "red",
+  color: "#645986",
+  link: "link"
+};
+
+export const k_google_maps: string = "googlemaps";
+projectTags[k_google_maps] = {
+  name: "google maps",
+  color: "#EB6424",
+  link: "link"
+};
+
+export const k_ghpages_tag: string = "ghpages";
+projectTags[k_ghpages_tag] = {
+  name: "github pages",
+  color: "#7C6A0A",
   link: "link"
 };
 
@@ -118,7 +160,7 @@ projectTags[k_lua_tag] = {
 export const k_blender_tag: string = "blender";
 projectTags[k_blender_tag] = {
   name: "blender",
-  color: "orange",
+  color: "#FFA500",
   link: "link"
 };
 
@@ -206,24 +248,24 @@ projectTags[k_mongodb_tag] = {
   link: "link"
 };
 
-export const k_dynamodb_tag: string = "dynamodb";
-projectTags[k_dynamodb_tag] = {
-  name: "Amazon DynamoDB",
-  color: "red",
+export const k_amazon_dynamodb_tag: string = "dynamodb";
+projectTags[k_amazon_dynamodb_tag] = {
+  name: "dynamodb",
+  color: "#58BC82",
   link: "link"
 };
 
-export const k_iothub_tag: string = "iothub";
-projectTags[k_iothub_tag] = {
-  name: "Azure IoT Hub",
-  color: "red",
+export const k_azure_iot_hub: string = "iothub";
+projectTags[k_azure_iot_hub] = {
+  name: "azure iot hub",
+  color: "#CB9173",
   link: "link"
 };
 
 export const k_azure_custom_vision_tag: string = "azurecustomvision";
 projectTags[k_azure_custom_vision_tag] = {
-  name: "Azure Custom Vision",
-  color: "red",
+  name: "azure custom vision",
+  color: "#80A1D4",
   link: "link"
 };
 
@@ -244,7 +286,7 @@ projectTags[k_spring_boot_tag] = {
 export const k_go_tag: string = "go";
 projectTags[k_go_tag] = {
   name: "go",
-  color: "red",
+  color: "#22AED1",
   link: "link"
 };
 
@@ -272,8 +314,8 @@ projectTags[k_napi_tag] = {
 
 export const k_angular_tag: string = "angular";
 projectTags[k_angular_tag] = {
-  name: "AngularJS",
-  color: "red",
+  name: "angularjs",
+  color: "#B39C4D",
   link: "link"
 };
 

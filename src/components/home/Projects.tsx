@@ -1,7 +1,7 @@
 import { k_augnav_href, k_club_websites_hef, k_deep_playlist_href, k_ford_connected_href, k_fruit_vision_href, k_hapi_app_href, k_more_projects, k_personal_website_href, k_smart_room_href, k_spanish_hero_href, k_teaching_cs_indian_village_href, k_the_right_price_href, k_tort_cam_href } from "components/navbar";
 import { useEffect, useRef, useState } from "react";
 import { Button, Container, Image } from "react-bootstrap";
-import { k_arkit_tag, k_babel_tag, k_blender_tag, k_css_tag, k_firestore_tag, k_graphql_tag, k_heroku_tag, k_html_tag, k_ios_tag, k_java_tag, k_js_tag, k_mongodb_tag, k_nodejs_tag, k_p5_tag, k_react_native_tag, k_redux_tag, k_socketio_tag, k_spring_boot_tag, k_threejs_tag, k_ts_tag, k_react_tag, k_flask_tag, k_python_tag, k_howler_tag, k_raspberrypi_tag, k_arduino_tag, k_cpp_tag } from "./ProjectTags";
+import { k_arkit_tag, k_babel_tag, k_blender_tag, k_css_tag, k_firestore_tag, k_graphql_tag, k_heroku_tag, k_html_tag, k_ios_tag, k_java_tag, k_js_tag, k_mongodb_tag, k_nodejs_tag, k_p5_tag, k_react_native_tag, k_redux_tag, k_socketio_tag, k_spring_boot_tag, k_threejs_tag, k_ts_tag, k_react_tag, k_flask_tag, k_python_tag, k_howler_tag, k_raspberrypi_tag, k_arduino_tag, k_cpp_tag, k_azure_custom_vision_tag, k_azure_iot_hub, k_swift_tag, k_ibm_watson_tag, k_firebase_storage_tag, k_nlp_tag, k_flutter_tag, k_dart_tag, k_go_tag, k_amazon_dynamodb_tag, k_sass_tag, k_ghpages_tag, k_google_maps, k_angular_tag } from "./ProjectTags";
 import TagsSection from "./TagsSection";
 import LiteYouTubeEmbed from 'react-lite-youtube-embed';
 import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css'
@@ -38,7 +38,7 @@ const Projects = (props: ProjectsProps) => {
               </ol>
             </ul>
           </>,
-        tags: [k_ios_tag, k_arkit_tag, k_firestore_tag, k_html_tag, k_css_tag, k_js_tag, k_threejs_tag, k_nodejs_tag, k_heroku_tag],
+        tags: [k_ios_tag, k_arkit_tag, k_swift_tag, k_firestore_tag, k_html_tag, k_css_tag, k_js_tag, k_threejs_tag, k_nodejs_tag, k_heroku_tag],
         showMoreHeight: showMoreHeight,
         id: k_augnav_href
       },
@@ -87,7 +87,7 @@ const Projects = (props: ProjectsProps) => {
               </ol>
             </ul>
           </>,
-        tags: [k_graphql_tag, k_redux_tag, k_react_native_tag, k_heroku_tag, k_ts_tag, k_css_tag, k_spring_boot_tag, k_java_tag, k_mongodb_tag],
+        tags: [k_graphql_tag, k_redux_tag, k_react_native_tag, k_heroku_tag, k_ts_tag, k_css_tag, k_spring_boot_tag, k_java_tag, k_mongodb_tag, k_firebase_storage_tag],
         showMoreHeight: showMoreHeight,
         id: k_ford_connected_href
       },
@@ -193,7 +193,7 @@ const Projects = (props: ProjectsProps) => {
               </ol>
             </ul>
           </>,
-        tags: [],
+        tags: [k_azure_custom_vision_tag, k_azure_iot_hub, k_socketio_tag, k_raspberrypi_tag, k_nodejs_tag, k_react_tag, k_css_tag, k_js_tag, k_heroku_tag],
         showMoreHeight: showMoreHeight,
         id: k_fruit_vision_href
       },
@@ -222,7 +222,7 @@ const Projects = (props: ProjectsProps) => {
               </ol>
             </ul>
           </>,
-        tags: [],
+        tags: [k_ibm_watson_tag, k_nlp_tag, k_flutter_tag, k_dart_tag, k_nodejs_tag, k_firestore_tag, k_firebase_storage_tag, k_html_tag, k_css_tag, k_js_tag, k_heroku_tag],
         showMoreHeight: showMoreHeight,
         id: k_hapi_app_href
       },
@@ -243,7 +243,7 @@ const Projects = (props: ProjectsProps) => {
               </ul>
             </ul>
           </>,
-        tags: [],
+        tags: [k_go_tag, k_amazon_dynamodb_tag, k_sass_tag, k_ghpages_tag, k_react_tag, k_ts_tag, k_threejs_tag],
         showMoreHeight: showMoreHeight,
         id: k_personal_website_href
       },
@@ -275,7 +275,7 @@ const Projects = (props: ProjectsProps) => {
               </ol>
             </ul>
           </>,
-        tags: [],
+        tags: [k_google_maps, k_arkit_tag, k_ios_tag, k_html_tag, k_css_tag, k_js_tag],
         showMoreHeight: showMoreHeight,
         id: k_the_right_price_href
       },
@@ -302,7 +302,7 @@ const Projects = (props: ProjectsProps) => {
             </ul>
             <p>It was an interactive teaching session with doubts and questions being asked and answered from both sides. An exam was conducted after the teaching session in order to test the understanding of the material - the students did well.</p>
           </>,
-        tags: [],
+        tags: [k_python_tag, k_html_tag, k_css_tag, k_js_tag],
         showMoreHeight: showMoreHeight,
         id: k_teaching_cs_indian_village_href
       },
@@ -327,7 +327,7 @@ const Projects = (props: ProjectsProps) => {
               </ul>
             </ul>
           </>,
-        tags: [],
+        tags: [k_angular_tag, k_react_tag, k_mongodb_tag, k_nodejs_tag, k_css_tag, k_js_tag, k_heroku_tag],
         showMoreHeight: showMoreHeight,
         id: k_club_websites_hef
       },
