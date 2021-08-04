@@ -236,7 +236,7 @@ const Projects = (props: ProjectsProps) => {
           <>
             <p>Link to Web App: <a rel="noreferrer" target="_blank" href="https://rdeepak2002.github.io">https://rdeepak2002.github.io</a></p>
             <ul>
-              <li>Developed Personal Website to Showcase my Innovations and Achievements.</li>
+              <li>Developed a Personal Website to Showcase my Innovations and Achievements.</li>
               <li><strong>Functions</strong></li>
               <ul>
                 <li>Keeps track of website visits using Go server and an Amazon DynamoDB database</li>
@@ -328,7 +328,7 @@ const Projects = (props: ProjectsProps) => {
               </ul>
             </ul>
           </>,
-        tags: [k_angular_tag, k_react_tag, k_mongodb_tag, k_nodejs_tag, k_css_tag, k_js_tag, k_heroku_tag],
+        tags: [k_angular_tag, k_react_tag, k_mongodb_tag, k_nodejs_tag, k_css_tag, k_js_tag, k_heroku_tag, k_firestore_tag],
         showMoreHeight: showMoreHeight,
         id: k_club_websites_hef
       },

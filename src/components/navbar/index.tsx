@@ -28,7 +28,7 @@ const CustomNavbar = (props: CustomNavbarProps) => {
 
   return (
     <Navbar className={(useTransparentNavbar ? "transparent-background" : "black-background-transparent")} fixed="top" bg="dark" variant="dark" expand="lg">
-      <Navbar.Brand href="/home">
+      <Navbar.Brand href="/">
         <img alt="logo" className="navbar-logo" src={logo} width="30" height="30" />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />

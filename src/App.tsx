@@ -20,7 +20,18 @@ const App = () => {
   const [user, setUser] = useState(undefined);
 
   useEffect(() => {
-    console.log("hello! :)");
+    const url: string = String(window.location);
+    const anchorPresent = url.lastIndexOf("#") !== url.lastIndexOf("#/");
+
+    if (anchorPresent) {
+      const anchor = url.substring(url.lastIndexOf("#") + 1);
+      if (anchor && anchor !== "") {
+        setTimeout(() => {
+          const element = document.getElementById(anchor);
+          if (element) element.scrollIntoView();
+        }, 1000);
+      }
+    }
   }, []);
 
   useEffect(() => {

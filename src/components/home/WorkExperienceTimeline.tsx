@@ -20,7 +20,7 @@ const WorkExperienceTimeline = () => {
       {
         date: "May 2021 - August 2021",
         logo: tiktok_logo,
-        title: "Augmented Reality Software Engineering Intern",
+        title: "Augmented Reality Software Engineering Intern @ TikTok (Intelligent Creation Lab)",
         location: "Mountain View, CA",
         tags: [k_ar_tag, k_cpp_tag, k_lua_tag, k_ts_tag, k_napi_tag],
         content:
@@ -35,7 +35,7 @@ const WorkExperienceTimeline = () => {
       {
         date: "June 2020 - Present",
         logo: mylifeguard_logo,
-        title: "Software Developer",
+        title: "Software Developer @ PeeblesTech LLC",
         location: "Madison, WI",
         tags: [k_spring_boot_tag, k_java_tag, k_js_tag, k_react_tag, k_android_tag, k_nginx_tag, k_jenkins_tag, k_mongodb_tag, k_digital_ocean_tag],
         content:
