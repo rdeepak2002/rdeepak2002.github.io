@@ -1,7 +1,7 @@
-import { k_augnav_href, k_club_websites_hef, k_ford_connected_href, k_hapi_app_href, k_more_projects, k_spanish_hero_href, k_teaching_cs_indian_village_href, k_the_right_price_href, k_tort_cam_href } from "components/navbar";
+import { k_augnav_href, k_club_websites_hef, k_deep_playlist_href, k_ford_connected_href, k_fruit_vision_href, k_hapi_app_href, k_more_projects, k_personal_website_href, k_smart_room_href, k_spanish_hero_href, k_teaching_cs_indian_village_href, k_the_right_price_href, k_tort_cam_href } from "components/navbar";
 import { useEffect, useRef, useState } from "react";
 import { Button, Container, Image } from "react-bootstrap";
-import { k_arkit_tag, k_css_tag, k_firestore_tag, k_html_tag, k_ios_tag, k_js_tag, k_nodejs_tag, k_threejs_tag } from "./ProjectTags";
+import { k_arkit_tag, k_babel_tag, k_css_tag, k_firestore_tag, k_html_tag, k_ios_tag, k_js_tag, k_nodejs_tag, k_socketio_tag, k_threejs_tag } from "./ProjectTags";
 import projectTags from "./ProjectTags";
 import LiteYouTubeEmbed from 'react-lite-youtube-embed';
 import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css'
@@ -25,7 +25,7 @@ const Projects = (props: ProjectsProps) => {
         date: "March of 2021",
         content:
           <>
-            <p>Website for the Application: <a href="https://augnav.herokuapp.com/">https://augnav.herokuapp.com</a></p>
+            <p>Website for the Application: <a target="_blank" href="https://augnav.herokuapp.com/">https://augnav.herokuapp.com</a></p>
             <p>“AugNav" - A Creative Way to Guide People Inside Buildings or In Complex Environments Using Augmented Reality.</p>
             <ul>
               <li>Developed Web Application & Mobile Phone Application - "AugNav.”</li>
@@ -49,7 +49,7 @@ const Projects = (props: ProjectsProps) => {
         date: "May of 2020",
         content:
           <>
-            <p>Website for the Application: <a href="https://smartroomvr.herokuapp.com/">https://smartroomvr.herokuapp.com</a></p>
+            <p>Website for the Application: <a target="_blank" href="https://smartroomvr.herokuapp.com/">https://smartroomvr.herokuapp.com</a></p>
             <p>"SmartRoom" - An Immersive 3D Classroom Environment that Allows Students to Collaborate and Talk to Their Teacher.</p>
             <ul>
               <li>Developed Web Application - "SmartRoom.”</li>
@@ -63,9 +63,9 @@ const Projects = (props: ProjectsProps) => {
               </ol>
             </ul>
           </>,
-        tags: [],
+        tags: [k_html_tag, k_js_tag, k_css_tag, k_babel_tag, k_socketio_tag, k_nodejs_tag, k_threejs_tag],
         showMoreHeight: showMoreHeight,
-        id: k_tort_cam_href
+        id: k_smart_room_href
       },
       {
         videoUrl: "https://www.youtube.com/embed/R4PKfsldrWA",
@@ -74,7 +74,7 @@ const Projects = (props: ProjectsProps) => {
         date: "July of 2021",
         content:
           <>
-            <p>Devpost Link: <a href="https://devpost.com/software/ford-connected">https://devpost.com/software/ford-connected</a></p>
+            <p>Devpost Link: <a target="_blank" href="https://devpost.com/software/ford-connected">https://devpost.com/software/ford-connected</a></p>
             <p>“Ford Connected” - A Mobile App to Allow Ford Vehicle Owners to Stay Connected.</p>
             <ul>
               <li>Developed Phone Application - “Ford Connected.”</li>
@@ -98,8 +98,8 @@ const Projects = (props: ProjectsProps) => {
         date: "March of 2017",
         content:
           <>
-            <p>Website to Download Application: <a href="https://spanishheromv.web.app/">https://spanishheromv.web.app</a></p>
-            <p>Link to Source Code of the Software: <a href="https://github.com/rdeepak2002/SpanishHero/">https://github.com/rdeepak2002/SpanishHero</a></p>
+            <p>Website to Download Application: <a target="_blank" href="https://spanishheromv.web.app/">https://spanishheromv.web.app</a></p>
+            <p>Link to Source Code of the Software: <a target="_blank" href="https://github.com/rdeepak2002/SpanishHero/">https://github.com/rdeepak2002/SpanishHero</a></p>
             <p>“Spanish Hero” - An Entertaining Medium to Practice Conjugating Verbs Into Various Spanish Grammar Tenses in a Fun & Easy Way.</p>
             <ul>
               <li>Developed Spanish Video Game - “Spanish Hero.”</li>
@@ -143,7 +143,7 @@ const Projects = (props: ProjectsProps) => {
           </>,
         tags: [],
         showMoreHeight: showMoreHeight,
-        id: k_ford_connected_href
+        id: k_deep_playlist_href
       },
       {
         videoUrl: "https://www.youtube.com/embed/Skl5BdvIy7U",
@@ -152,7 +152,7 @@ const Projects = (props: ProjectsProps) => {
         date: "November of 2019",
         content:
           <>
-            <p>Link to Source Code of the Software: <a href="https://github.com/rdeepak2002/TortFeeder">https://github.com/rdeepak2002/TortFeeder</a></p>
+            <p>Link to Source Code of the Software: <a target="_blank" href="https://github.com/rdeepak2002/TortFeeder">https://github.com/rdeepak2002/TortFeeder</a></p>
             <p>“Tort Cam & Food Dispenser” - Remote Surveillance System For my Pet Tortoise, “Lettuce-be-Happy”</p>
             <ul>
               <li>Developed Surveillance System - “Tort Camera & Food Dispenser”</li>
@@ -180,7 +180,7 @@ const Projects = (props: ProjectsProps) => {
         date: "May of 2021",
         content:
           <>
-            <p>Devpost Link: <a href="https://devpost.com/software/fruit-vision">https://devpost.com/software/fruit-vision</a></p>
+            <p>Devpost Link: <a target="_blank" href="https://devpost.com/software/fruit-vision">https://devpost.com/software/fruit-vision</a></p>
             <p>“FruitVision" - A Web App to Allow Farmers to Monitor the Health of their Crops using Computer Vision.</p>
             <ul>
               <li>Developed Web Application - “FruitVision.”</li>
@@ -195,7 +195,7 @@ const Projects = (props: ProjectsProps) => {
           </>,
         tags: [],
         showMoreHeight: showMoreHeight,
-        id: k_ford_connected_href
+        id: k_fruit_vision_href
       },
       {
         videoUrl: "https://www.youtube.com/embed/cDajvueR5Wk",
@@ -204,8 +204,8 @@ const Projects = (props: ProjectsProps) => {
         date: "July of 2018",
         content:
           <>
-            <p>Website for the Application: <a href="http://www.hapidiary.com/">http://www.hapidiary.com</a></p>
-            <p>Mentioned in News: <a href="https://patch.com/california/cupertino/cupertino-winners-teen-app-design-challenge-announced">https://patch.com/california/cupertino/cupertino-winners-teen-app-design-challenge-announced</a></p>
+            <p>Website for the Application: <a target="_blank" href="http://www.hapidiary.com/">http://www.hapidiary.com</a></p>
+            <p>Mentioned in News: <a target="_blank" href="https://patch.com/california/cupertino/cupertino-winners-teen-app-design-challenge-announced">https://patch.com/california/cupertino/cupertino-winners-teen-app-design-challenge-announced</a></p>
             <p>“Hapi App” - An Engaging Medium to Help People Cope With Psychological Depression, a Social Injustice That Affects People in All Walks of Life.</p>
             <ul>
               <li>Developed Web Application & Mobile Phone Application - “Hapi App.”</li>
@@ -233,7 +233,7 @@ const Projects = (props: ProjectsProps) => {
         date: "August of 2021",
         content:
           <>
-            <p>Link to Web App: <a href="https://rdeepak2002.github.io">https://rdeepak2002.github.io</a></p>
+            <p>Link to Web App: <a target="_blank" href="https://rdeepak2002.github.io">https://rdeepak2002.github.io</a></p>
             <ul>
               <li>Developed Personal Website to Showcase my Innovations and Achievements.</li>
               <li><strong>Functions</strong></li>
@@ -245,7 +245,7 @@ const Projects = (props: ProjectsProps) => {
           </>,
         tags: [],
         showMoreHeight: showMoreHeight,
-        id: k_club_websites_hef
+        id: k_personal_website_href
       },
       {
         videoUrl: "https://www.youtube.com/embed/sywBQSnFeOw",
@@ -254,7 +254,7 @@ const Projects = (props: ProjectsProps) => {
         date: "April of 2019",
         content:
           <>
-            <p>Devpost Link: <a href="https://devpost.com/software/the-right-price-t4kipb">https://devpost.com/software/the-right-price-t4kipb</a></p>
+            <p>Devpost Link: <a target="_blank" href="https://devpost.com/software/the-right-price-t4kipb">https://devpost.com/software/the-right-price-t4kipb</a></p>
             <p>“The Right Price” - An Effective Application to Help Small Businesses to Survive & Shine in a Competitive Economy.</p>
             <ul>
               <li>Developed Web Application & iPhone Application - “The Right Price.”</li>
@@ -313,8 +313,8 @@ const Projects = (props: ProjectsProps) => {
         date: "August of 2019",
         content:
           <>
-            <p>NHS Website: <a href="https://mvnhs.herokuapp.com/home">https://mvnhs.herokuapp.com/home</a></p>
-            <p>Bite Club Website: <a href="https://biteclub.web.app/#/">https://biteclub.web.app</a></p>
+            <p>NHS Website: <a target="_blank" href="https://mvnhs.herokuapp.com/home">https://mvnhs.herokuapp.com/home</a></p>
+            <p>Bite Club Website: <a target="_blank" href="https://biteclub.web.app/#/">https://biteclub.web.app</a></p>
             <ul>
               <li><strong>Vice President</strong> - Monta Vista National Honor Society (NHS).</li>
               <li><strong>Vice President</strong> - Food Science / Bite Club.</li>
@@ -338,7 +338,7 @@ const Projects = (props: ProjectsProps) => {
         date: "Current",
         content:
           <>
-            <p>Link to my GitHub: <a href="https://github.com/rdeepak2002">https://github.com/rdeepak2002</a></p>
+            <p>Link to my GitHub: <a target="_blank" href="https://github.com/rdeepak2002">https://github.com/rdeepak2002</a></p>
             <p>More Projects Can be Viewed on my GitHub.</p>
           </>,
         tags: [],
@@ -424,7 +424,7 @@ const Project = (props: ProjectProps) => {
                   if(tagObj) {
                     return (
                       <div key={index} style={{backgroundColor: tagObj.color, borderRadius: 5, padding: 2, paddingLeft: 4, paddingRight: 4, display: "flex", alignItems: "center", margin: 2}}>
-                        <a href={tagObj.link} style={{color: "white", fontSize: 14, fontWeight: "bold"}}>{tagObj.name}</a>
+                        <a target="_blank" href={tagObj.link} style={{color: "white", fontSize: 14, fontWeight: "bold"}}>{tagObj.name}</a>
                       </div>
                     );
                   }

@@ -52,6 +52,17 @@ const CustomNavbar = (props: CustomNavbarProps) => {
 
           <Link to={k_teaching_cs_indian_village_href}></Link>
           <Link to={k_the_right_price_href}></Link>
+          <Link to={k_hapi_app_href}></Link>
+          <Link to={k_spanish_hero_href}></Link>
+          <Link to={k_tort_cam_href}></Link>
+          <Link to={k_smart_room_href}></Link>
+          <Link to={k_augnav_href}></Link>
+          <Link to={k_club_websites_hef}></Link>
+          <Link to={k_more_projects}></Link>
+          <Link to={k_ford_connected_href}></Link>
+          <Link to={k_deep_playlist_href}></Link>
+          <Link to={k_fruit_vision_href}></Link>
+          <Link to={k_personal_website_href}></Link>
 
           {props.user && <NavLink to={k_admin_link} className="nav-link" activeClassName="active">Admin</NavLink>}
         </Nav>
@@ -79,5 +90,8 @@ export const k_augnav_href = "augnav";
 export const k_club_websites_hef = "club_websites";
 export const k_more_projects = "more_projects";
 export const k_ford_connected_href = "ford_connected";
+export const k_deep_playlist_href = "deep_playlist";
+export const k_fruit_vision_href = "fruit_vision";
+export const k_personal_website_href = "personal_website";
 
 export default CustomNavbar;

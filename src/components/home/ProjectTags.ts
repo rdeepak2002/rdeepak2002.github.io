@@ -45,6 +45,13 @@ projectTags[k_firebase_storage_tag] = {
   link: "link"
 };
 
+export const k_babel_tag: string = "babel";
+projectTags[k_babel_tag] = {
+  name: "babel",
+  color: "#748067",
+  link: "link"
+};
+
 export const k_threejs_tag: string = "threejs";
 projectTags[k_threejs_tag] = {
   name: "three.js",
@@ -97,7 +104,7 @@ projectTags[k_nodejs_tag] = {
 export const k_socketio_tag: string = "socketio";
 projectTags[k_socketio_tag] = {
   name: "socket.io",
-  color: "red",
+  color: "#0FA3B1",
   link: "link"
 };
 
