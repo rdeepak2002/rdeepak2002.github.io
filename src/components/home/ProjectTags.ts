@@ -181,14 +181,14 @@ projectTags[k_ar_tag] = {
 export const k_raspberrypi_tag: string = "raspberrypi";
 projectTags[k_raspberrypi_tag] = {
   name: "raspberrypi",
-  color: "red",
+  color: "#B287A3",
   link: "link"
 };
 
 export const k_arduino_tag: string = "arduino";
 projectTags[k_arduino_tag] = {
   name: "arduino",
-  color: "red",
+  color: "#482728",
   link: "link"
 };
 
