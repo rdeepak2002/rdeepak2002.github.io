@@ -1,7 +1,7 @@
 import { k_augnav_href, k_club_websites_hef, k_deep_playlist_href, k_ford_connected_href, k_fruit_vision_href, k_hapi_app_href, k_more_projects, k_personal_website_href, k_smart_room_href, k_spanish_hero_href, k_teaching_cs_indian_village_href, k_the_right_price_href, k_tort_cam_href } from "components/navbar";
 import { useEffect, useRef, useState } from "react";
 import { Button, Container, Image } from "react-bootstrap";
-import { k_arkit_tag, k_babel_tag, k_blender_tag, k_css_tag, k_firestore_tag, k_heroku_tag, k_html_tag, k_ios_tag, k_js_tag, k_nodejs_tag, k_socketio_tag, k_threejs_tag } from "./ProjectTags";
+import { k_arkit_tag, k_babel_tag, k_blender_tag, k_css_tag, k_firestore_tag, k_graphql_tag, k_heroku_tag, k_html_tag, k_ios_tag, k_js_tag, k_nodejs_tag, k_react_native_tag, k_redux_tag, k_socketio_tag, k_threejs_tag } from "./ProjectTags";
 import TagsSection from "./TagsSection";
 import LiteYouTubeEmbed from 'react-lite-youtube-embed';
 import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css'
@@ -87,7 +87,7 @@ const Projects = (props: ProjectsProps) => {
               </ol>
             </ul>
           </>,
-        tags: [],
+        tags: [k_graphql_tag, k_redux_tag, k_react_native_tag, k_heroku_tag],
         showMoreHeight: showMoreHeight,
         id: k_ford_connected_href
       },

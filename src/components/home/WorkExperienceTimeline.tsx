@@ -10,7 +10,7 @@ import { MdLocationOn } from "react-icons/md";
 import { useState } from "react";
 import { useEffect } from "react";
 import TagsSection from "./TagsSection";
-import { k_ar_tag, k_cpp_tag, k_java_tag, k_js_tag, k_lua_tag, k_react_tag, k_spring_boot_tag, k_ts_tag, k_napi_tag, k_android_tag, k_nginx_tag, k_jenkins_tag, k_mongodb_tag} from "./ProjectTags";
+import { k_ar_tag, k_cpp_tag, k_java_tag, k_js_tag, k_lua_tag, k_react_tag, k_spring_boot_tag, k_ts_tag, k_napi_tag, k_android_tag, k_nginx_tag, k_jenkins_tag, k_mongodb_tag, k_digital_ocean_tag} from "./ProjectTags";
 
 const WorkExperienceTimeline = () => {
   const [workExperienceItems, setWorkExperienceItems] = useState<Array<WorkExperienceItemProps>>([]);
@@ -37,7 +37,7 @@ const WorkExperienceTimeline = () => {
         logo: mylifeguard_logo,
         title: "Software Developer",
         location: "Madison, WI",
-        tags: [k_spring_boot_tag, k_java_tag, k_js_tag, k_react_tag, k_android_tag, k_nginx_tag, k_jenkins_tag, k_mongodb_tag],
+        tags: [k_spring_boot_tag, k_java_tag, k_js_tag, k_react_tag, k_android_tag, k_nginx_tag, k_jenkins_tag, k_mongodb_tag, k_digital_ocean_tag],
         content:
           <>
             <ul style={{ marginTop: "1rem" }}>

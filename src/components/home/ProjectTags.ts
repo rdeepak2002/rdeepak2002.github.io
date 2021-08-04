@@ -187,8 +187,8 @@ projectTags[k_arduino_tag] = {
 
 export const k_graphql_tag: string = "graphql";
 projectTags[k_graphql_tag] = {
-  name: "GraphQL",
-  color: "red",
+  name: "graphql",
+  color: "#657ED4",
   link: "link"
 };
 
@@ -248,6 +248,14 @@ projectTags[k_react_tag] = {
   link: "link"
 };
 
+export const k_redux_tag: string = "redux";
+projectTags[k_redux_tag] = {
+  name: "redux",
+  color: "#59546C",
+  link: "link"
+};
+
+
 export const k_napi_tag: string = "napi";
 projectTags[k_napi_tag] = {
   name: "napi",
@@ -262,10 +270,17 @@ projectTags[k_angular_tag] = {
   link: "link"
 };
 
+export const k_digital_ocean_tag: string = "digitalocean";
+projectTags[k_digital_ocean_tag] = {
+  name: "digital ocean",
+  color: "#3D405B",
+  link: "link"
+};
+
 export const k_react_native_tag: string = "reactnative";
 projectTags[k_react_native_tag] = {
   name: "react native",
-  color: "red",
+  color: "#63A375",
   link: "link"
 };
 
