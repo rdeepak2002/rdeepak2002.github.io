@@ -9,11 +9,13 @@ import {
 
 import { isBrowser } from "react-device-detect";
 import { Link } from 'react-scroll';
+import { HashLink } from 'react-router-hash-link';
 
 import useScrollState from "utils/ScrollState";
 import useWindowDimensions from "utils/WindowDimensions";
 
 import logo from "resources/logo.svg";
+import { useEffect } from "react";
 
 interface CustomNavbarProps {
   screen: string,
@@ -25,6 +27,21 @@ const CustomNavbar = (props: CustomNavbarProps) => {
   const navbarHeight = 60;
   const footerNameHeight = 100;
   const useTransparentNavbar = useScrollState(useWindowDimensions().height - navbarHeight - footerNameHeight) === "topSection" && props.screen === "home" && isBrowser;
+
+  useEffect(() => {
+    const url: string = String(window.location);
+    const anchorPresent = url.lastIndexOf("#") !== url.lastIndexOf("#/");
+
+    if (anchorPresent) {
+      const anchor = url.substring(url.lastIndexOf("#") + 1);
+      if (anchor && anchor !== "") {
+        setTimeout(() => {
+          const element = document.getElementById(anchor);
+          if (element) element.scrollIntoView();
+        }, 1000);
+      }
+    }
+  }, []);
 
   return (
     <Navbar className={(useTransparentNavbar ? "transparent-background" : "black-background-transparent")} fixed="top" bg="dark" variant="dark" expand="lg">
@@ -49,20 +66,6 @@ const CustomNavbar = (props: CustomNavbarProps) => {
           <Link className="nav-link" to={k_achievements_href} activeClass="active" spy={true} smooth={true}>
             Achievements
           </Link>
-
-          <Link to={k_teaching_cs_indian_village_href}></Link>
-          <Link to={k_the_right_price_href}></Link>
-          <Link to={k_hapi_app_href}></Link>
-          <Link to={k_spanish_hero_href}></Link>
-          <Link to={k_tort_cam_href}></Link>
-          <Link to={k_smart_room_href}></Link>
-          <Link to={k_augnav_href}></Link>
-          <Link to={k_club_websites_hef}></Link>
-          <Link to={k_more_projects}></Link>
-          <Link to={k_ford_connected_href}></Link>
-          <Link to={k_deep_playlist_href}></Link>
-          <Link to={k_fruit_vision_href}></Link>
-          <Link to={k_personal_website_href}></Link>
 
           {props.user && <NavLink to={k_admin_link} className="nav-link" activeClassName="active">Admin</NavLink>}
         </Nav>

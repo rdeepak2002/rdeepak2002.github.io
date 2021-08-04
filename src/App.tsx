@@ -20,21 +20,6 @@ const App = () => {
   const [user, setUser] = useState(undefined);
 
   useEffect(() => {
-    const url: string = String(window.location);
-    const anchorPresent = url.lastIndexOf("#") !== url.lastIndexOf("#/");
-
-    if (anchorPresent) {
-      const anchor = url.substring(url.lastIndexOf("#") + 1);
-      if (anchor && anchor !== "") {
-        setTimeout(() => {
-          const element = document.getElementById(anchor);
-          if (element) element.scrollIntoView();
-        }, 1000);
-      }
-    }
-  }, []);
-
-  useEffect(() => {
     setUser(undefined);
     setDevice(readFromStorage(k_device));
 
@@ -63,10 +48,10 @@ const App = () => {
       <CustomNavbar screen={screen} setScreen={setScreen} user={user} />
 
       <Switch>
-        <Route exact path={k_home_link}>
+        <Route path={k_home_link}>
           <Home setScreen={setScreen} />
         </Route>
-        <Route exact path={k_admin_link}>
+        <Route path={k_admin_link}>
           <Admin setScreen={setScreen} />
         </Route>
         <Redirect to={k_home_link} />

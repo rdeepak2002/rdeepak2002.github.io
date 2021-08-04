@@ -18,7 +18,7 @@ const TagsSection = (props: TagsSectionProps) => {
               if (tagObj) {
                 return (
                   <div key={index} style={{ backgroundColor: tagObj.color, borderRadius: 5, padding: 2, paddingLeft: 4, paddingRight: 4, display: "flex", alignItems: "center", margin: 2 }}>
-                    <a target="_blank" href={tagObj.link} style={{ color: "white", fontSize: 14, fontWeight: "bold" }}>{tagObj.name}</a>
+                    <a rel="noreferrer" target="_blank" href={tagObj.link} style={{ color: "white", fontSize: 14, fontWeight: "bold" }}>{tagObj.name}</a>
                   </div>
                 );
               }
