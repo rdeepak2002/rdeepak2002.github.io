@@ -78,5 +78,6 @@ export const k_smart_room_href = "smart_room";
 export const k_augnav_href = "augnav";
 export const k_club_websites_hef = "club_websites";
 export const k_more_projects = "more_projects";
+export const k_ford_connected_href = "ford_connected";
 
 export default CustomNavbar;

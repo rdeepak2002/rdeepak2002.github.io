@@ -11,8 +11,6 @@ import WorkExperienceTimeline from "./WorkExperienceTimeline";
 import Projects from "./Projects";
 import AchievementsSection from "./AchievementsSection";
 
-import wallpaper from "resources/images/wallpaper.jpg";
-import galaxy from "resources/images/galaxy.jpg";
 import robot_face_icon from "resources/icons/robot-face-icon.png";
 import suitcase_icon from "resources/icons/suitcase-icon.png";
 import trophy_icon from "resources/icons/trophy-icon.png";
