@@ -9,6 +9,8 @@ import mylifeguard_logo from "resources/images/MyLifeGuardLogo.png";
 import { MdLocationOn } from "react-icons/md";
 import { useState } from "react";
 import { useEffect } from "react";
+import TagsSection from "./TagsSection";
+import { k_cpp_tag } from "./ProjectTags";
 
 const WorkExperienceTimeline = () => {
   const [workExperienceItems, setWorkExperienceItems] = useState<Array<WorkExperienceItemProps>>([]);
@@ -20,11 +22,12 @@ const WorkExperienceTimeline = () => {
         logo: tiktok_logo,
         title: "Augmented Reality Software Engineering Intern",
         location: "Mountain View, CA",
+        tags: [k_cpp_tag],
         content:
           <>
             <ul style={{ marginTop: "1rem" }}>
               <li>Contributed to the research and development of creative tools utilized by designers for creating Augmented Reality filters and effects in the TikTok app</li>
-              <li>Contributed to the development of a machine learning powered smart playlist generator</li>
+              <li>Contributed to the development of a machine learning powered smart playlist generator during an internal Hackathon</li>
               <li>Patent pending internship project</li>
             </ul>
           </>
@@ -34,6 +37,7 @@ const WorkExperienceTimeline = () => {
         logo: mylifeguard_logo,
         title: "Software Developer",
         location: "Madison, WI",
+        tags: [],
         content:
           <>
             <ul style={{ marginTop: "1rem" }}>
@@ -52,7 +56,7 @@ const WorkExperienceTimeline = () => {
     <VerticalTimeline animate={false}>
       {
         workExperienceItems.map((item, index) => {
-          return <WorkExperienceItem key={index} date={item.date} logo={item.logo} title={item.title} location={item.location} content={item.content} />
+          return <WorkExperienceItem key={index} date={item.date} logo={item.logo} title={item.title} location={item.location} tags={item.tags} content={item.content} />
         })
       }
     </VerticalTimeline>
@@ -64,6 +68,7 @@ interface WorkExperienceItemProps {
   logo: any
   title: string
   location: string
+  tags: Array<string>
   content: any
 }
 
@@ -80,6 +85,7 @@ const WorkExperienceItem = (props: WorkExperienceItemProps) => {
         <MdLocationOn style={{ marginRight: "0.2rem" }} color="red" />
         <h4 className="vertical-timeline-element-subtitle">{props.location}</h4>
       </div>
+      <TagsSection marginBottom marginTop tags={props.tags} />
       {props.content}
     </VerticalTimelineElement>
   );

@@ -94,6 +94,27 @@ projectTags[k_ts_tag] = {
   link: "link"
 };
 
+export const k_heroku_tag: string = "heroku";
+projectTags[k_heroku_tag] = {
+  name: "heroku",
+  color: "#430098",
+  link: "link"
+};
+
+export const k_lua_tag: string = "lua";
+projectTags[k_lua_tag] = {
+  name: "lua",
+  color: "#B24C63",
+  link: "link"
+};
+
+export const k_blender_tag: string = "blender";
+projectTags[k_blender_tag] = {
+  name: "blender",
+  color: "orange",
+  link: "link"
+};
+
 export const k_nodejs_tag: string = "nodejs";
 projectTags[k_nodejs_tag] = {
   name: "node.js",

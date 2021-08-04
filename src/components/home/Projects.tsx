@@ -1,8 +1,8 @@
 import { k_augnav_href, k_club_websites_hef, k_deep_playlist_href, k_ford_connected_href, k_fruit_vision_href, k_hapi_app_href, k_more_projects, k_personal_website_href, k_smart_room_href, k_spanish_hero_href, k_teaching_cs_indian_village_href, k_the_right_price_href, k_tort_cam_href } from "components/navbar";
 import { useEffect, useRef, useState } from "react";
 import { Button, Container, Image } from "react-bootstrap";
-import { k_arkit_tag, k_babel_tag, k_css_tag, k_firestore_tag, k_html_tag, k_ios_tag, k_js_tag, k_nodejs_tag, k_socketio_tag, k_threejs_tag } from "./ProjectTags";
-import projectTags from "./ProjectTags";
+import { k_arkit_tag, k_babel_tag, k_blender_tag, k_css_tag, k_firestore_tag, k_heroku_tag, k_html_tag, k_ios_tag, k_js_tag, k_nodejs_tag, k_socketio_tag, k_threejs_tag } from "./ProjectTags";
+import TagsSection from "./TagsSection";
 import LiteYouTubeEmbed from 'react-lite-youtube-embed';
 import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css'
 
@@ -38,7 +38,7 @@ const Projects = (props: ProjectsProps) => {
               </ol>
             </ul>
           </>,
-        tags: [k_ios_tag, k_arkit_tag, k_firestore_tag, k_html_tag, k_css_tag, k_js_tag, k_threejs_tag, k_nodejs_tag],
+        tags: [k_ios_tag, k_arkit_tag, k_firestore_tag, k_html_tag, k_css_tag, k_js_tag, k_threejs_tag, k_nodejs_tag, k_heroku_tag],
         showMoreHeight: showMoreHeight,
         id: k_augnav_href
       },
@@ -63,7 +63,7 @@ const Projects = (props: ProjectsProps) => {
               </ol>
             </ul>
           </>,
-        tags: [k_html_tag, k_js_tag, k_css_tag, k_babel_tag, k_socketio_tag, k_nodejs_tag, k_threejs_tag],
+        tags: [k_html_tag, k_js_tag, k_css_tag, k_babel_tag, k_socketio_tag, k_nodejs_tag, k_threejs_tag, k_heroku_tag, k_blender_tag],
         showMoreHeight: showMoreHeight,
         id: k_smart_room_href
       },
@@ -415,27 +415,7 @@ const Project = (props: ProjectProps) => {
           <p style={{ color: "#0078ff" }}>{props.type}</p> <p style={{ marginLeft: 10, marginRight: 10, color: "rgba(50, 50, 50)" }}>/</p> <p style={{ color: "rgba(50, 50, 50)" }}>{props.date}</p>
         </div>
         <div ref={contentRef} style={{ marginBottom: "1rem", paddingLeft: 15, paddingRight: 15, overflow: "hidden", maxHeight: showMore ? "999999px" : showMoreHeight }}>
-          {props.tags.length > 0 && 
-            <div style={{display: "flex", alignItems: "center", marginBottom: "1rem", flexWrap: "wrap"}}>
-              {
-                props.tags.map((tagStr, index)=>{
-                  const tagObj = projectTags[tagStr];
-
-                  if(tagObj) {
-                    return (
-                      <div key={index} style={{backgroundColor: tagObj.color, borderRadius: 5, padding: 2, paddingLeft: 4, paddingRight: 4, display: "flex", alignItems: "center", margin: 2}}>
-                        <a target="_blank" href={tagObj.link} style={{color: "white", fontSize: 14, fontWeight: "bold"}}>{tagObj.name}</a>
-                      </div>
-                    );
-                  }
-                  else {
-                    console.error(`tag '${tagStr}' not found`);
-                    return <></>;
-                  }
-                })
-              }
-            </div>
-          }
+          <TagsSection marginBottom tags={props.tags} />
           {props.content}
         </div>
         <div style={{ marginBottom: "1.5rem", display: "flex", alignItems: "center", justifyContent: "center" }}>
