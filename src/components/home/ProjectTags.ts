@@ -14,14 +14,14 @@ export const k_ios_tag: string = "ios";
 projectTags[k_ios_tag] = {
   name: "ios",
   color: "#51bbfe",
-  link: "link"
+  link: "https://www.apple.com/ios/"
 };
 
 export const k_android_tag: string = "android";
 projectTags[k_android_tag] = {
   name: "android",
   color: "#15B097",
-  link: "link"
+  link: "https://www.android.com/"
 };
 
 export const k_arkit_tag: string = "ARKit";

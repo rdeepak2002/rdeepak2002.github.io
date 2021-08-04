@@ -1,7 +1,8 @@
-import { k_augnav_href, k_club_websites_hef, k_deep_playlist_href, k_ford_connected_href, k_fruit_vision_href, k_hapi_app_href, k_more_projects, k_personal_website_href, k_smart_room_href, k_spanish_hero_href, k_teaching_cs_indian_village_href, k_the_right_price_href, k_tort_cam_href } from "components/navbar";
+import { k_augnav_href, k_club_websites_hef, k_deep_playlist_href, k_ford_connected_href, k_fruit_vision_href, k_hapi_app_href, k_home_link, k_more_projects, k_personal_website_href, k_smart_room_href, k_spanish_hero_href, k_teaching_cs_indian_village_href, k_the_right_price_href, k_tort_cam_href } from "components/navbar";
 import { useEffect, useRef, useState } from "react";
 import { Button, Container, Image } from "react-bootstrap";
 import { k_arkit_tag, k_babel_tag, k_blender_tag, k_css_tag, k_firestore_tag, k_graphql_tag, k_heroku_tag, k_html_tag, k_ios_tag, k_java_tag, k_js_tag, k_mongodb_tag, k_nodejs_tag, k_p5_tag, k_react_native_tag, k_redux_tag, k_socketio_tag, k_spring_boot_tag, k_threejs_tag, k_ts_tag, k_react_tag, k_flask_tag, k_python_tag, k_howler_tag, k_raspberrypi_tag, k_arduino_tag, k_cpp_tag, k_azure_custom_vision_tag, k_azure_iot_hub, k_swift_tag, k_ibm_watson_tag, k_firebase_storage_tag, k_nlp_tag, k_flutter_tag, k_dart_tag, k_go_tag, k_amazon_dynamodb_tag, k_sass_tag, k_ghpages_tag, k_google_maps, k_angular_tag } from "./ProjectTags";
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 import TagsSection from "./TagsSection";
 import LiteYouTubeEmbed from 'react-lite-youtube-embed';
 import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css'
@@ -380,9 +381,13 @@ interface ProjectProps {
 }
 
 const Project = (props: ProjectProps) => {
+  const getUrl: any = window.location;
+  const baseUrl: string = getUrl.protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
+
   const contentRef: any = useRef();
   const showMoreHeight = props.showMoreHeight;
   const videoId = props.videoUrl ? props.videoUrl.substring(props.videoUrl.lastIndexOf("embed/") + "embed/".length) : "YGE5euSZnbI";
+  const sectionUrl = `${baseUrl}#${k_home_link}#${props.id}`;
 
   const [showMore, setShowMore] = useState<boolean>(false);
   const [overflowActive, setOverflowActive] = useState<boolean>(false);
@@ -410,7 +415,9 @@ const Project = (props: ProjectProps) => {
         />
       }
       <div style={{ paddingLeft: 15, paddingRight: 15 }}>
-        <h4 style={{ marginTop: "1rem" }}>{props.title}</h4>
+        <CopyToClipboard text={sectionUrl}>
+          <h4 style={{ marginTop: "1rem" }}>{props.title}</h4>
+        </CopyToClipboard>
         <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
           <p style={{ color: "#0078ff" }}>{props.type}</p> <p style={{ marginLeft: 10, marginRight: 10, color: "rgba(50, 50, 50)" }}>/</p> <p style={{ color: "rgba(50, 50, 50)" }}>{props.date}</p>
         </div>
