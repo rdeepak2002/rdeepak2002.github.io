@@ -50,6 +50,8 @@ export interface ProjectProps {
   showMoreHeight: number | string
   id: string
   showMore?: boolean
+  goHomeBtn?: boolean
+  goBackBtn?: boolean
 }
 
 export const Project = (props: ProjectProps) => {
@@ -72,61 +74,84 @@ export const Project = (props: ProjectProps) => {
   }, []);
 
   return (
-    <Container className="card" style={{ width: "100%", padding: 0 }} id={props.id}>
-      {props.imageUrl &&
-        <div className="project-img-container" style={{ height: "306.56px", overflow: "hidden", display: "flex", justifyContent: "center", alignItems: "center" }}>
-          <Image className="project-img" src={props.imageUrl} fluid />
-        </div>
-      }
-      {props.videoUrl &&
-        <LiteYouTubeEmbed
-          id={videoId}
-          title=""
-        />
-      }
-      <div style={{ paddingLeft: 15, paddingRight: 15 }}>
-        <CopyToClipboard text={sectionUrl}>
-          <h4 style={{ marginTop: "1rem" }}>{props.title}</h4>
-        </CopyToClipboard>
-        <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
-          <p style={{ color: "#0078ff" }}>{props.type}</p> <p style={{ marginLeft: 10, marginRight: 10, color: "rgba(50, 50, 50)" }}>/</p> <p style={{ color: "rgba(50, 50, 50)" }}>{props.date}</p>
-        </div>
-        <div ref={contentRef} style={{ marginBottom: "1rem", paddingLeft: 15, paddingRight: 15, overflow: "hidden", maxHeight: showMore ? "999999px" : showMoreHeight }}>
-          <TagsSection marginBottom tags={props.tags} />
-          {props.content}
-        </div>
-        {!props.showMore &&
-          <div style={{ marginBottom: "1.5rem", display: "flex", alignItems: "center", justifyContent: "center" }}>
-            {overflowActive &&
-              <>
-                {
-                  showMore
-                    ?
-                    (
-                      <Button
-                        onClick={() => {
-                          setShowMore(false);
-                        }}
-                      >
-                        Show Less
-                      </Button>
-                    )
-                    :
-                    (
-                      <Button
-                        onClick={() => {
-                          setShowMore(true);
-                        }}
-                      >
-                        Show More
-                      </Button>
-                    )
-                }
-              </>
-            }
+    <Container id={props.id} style={{ width: "100%", padding: 0 }}>
+      <div className="card" style={{ width: "100%", padding: 0 }}>
+        {props.imageUrl &&
+          <div className="project-img-container" style={{ height: "306.56px", overflow: "hidden", display: "flex", justifyContent: "center", alignItems: "center" }}>
+            <Image className="project-img" src={props.imageUrl} fluid />
           </div>
         }
+        {props.videoUrl &&
+          <LiteYouTubeEmbed
+            id={videoId}
+            title=""
+          />
+        }
+        <div style={{ paddingLeft: 15, paddingRight: 15 }}>
+          <CopyToClipboard text={sectionUrl}
+            onCopy={() => {
+              window.location.href = sectionUrl;
+            }}
+          >
+            <h4 style={{ marginTop: "1rem", cursor: "pointer" }}>{props.title}</h4>
+          </CopyToClipboard>
+          <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+            <p style={{ color: "#0078ff" }}>{props.type}</p> <p style={{ marginLeft: 10, marginRight: 10, color: "rgba(50, 50, 50)" }}>/</p> <p style={{ color: "rgba(50, 50, 50)" }}>{props.date}</p>
+          </div>
+          <div ref={contentRef} style={{ marginBottom: "1rem", paddingLeft: 15, paddingRight: 15, overflow: "hidden", maxHeight: showMore ? "999999px" : showMoreHeight }}>
+            <TagsSection marginBottom tags={props.tags} />
+            {props.content}
+          </div>
+          {!props.showMore &&
+            <div style={{ marginBottom: "1.5rem", display: "flex", alignItems: "center", justifyContent: "center" }}>
+              {overflowActive &&
+                <>
+                  {
+                    showMore
+                      ?
+                      (
+                        <Button
+                          onClick={() => {
+                            setShowMore(false);
+                          }}
+                        >
+                          Show Less
+                        </Button>
+                      )
+                      :
+                      (
+                        <Button
+                          onClick={() => {
+                            setShowMore(true);
+                          }}
+                        >
+                          Show More
+                        </Button>
+                      )
+                  }
+                </>
+              }
+            </div>
+          }
+          {
+            (!props.goBackBtn && props.goHomeBtn) &&
+            <div style={{ width: "100%", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "2rem" }}>
+              <a href={getBaseUrl()}>View All Projects</a>
+            </div>
+          }
+          {
+            (props.goBackBtn) &&
+            <div style={{ width: "100%", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "2rem" }}>
+              <Button onClick={()=>{
+                window.history.go(-1);
+              }}>
+                View All Projects
+              </Button>
+            </div>
+          }
+        </div>
       </div>
+
     </Container>
   );
 }

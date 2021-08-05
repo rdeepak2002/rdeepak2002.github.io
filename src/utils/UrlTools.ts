@@ -3,3 +3,7 @@ export const getBaseUrl = (): string => {
   const baseUrl: string = getUrl.protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
   return baseUrl;
 }
+
+export const getSearchUrl = (): string => {
+  return window.location.hash.substring(window.location.hash.indexOf("?") + 1);
+}
