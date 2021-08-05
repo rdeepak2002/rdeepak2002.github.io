@@ -1,3 +1,4 @@
+import { k_admin_link } from "components/navbar";
 import { useEffect } from "react";
 
 interface AdminProps {
@@ -7,11 +8,11 @@ interface AdminProps {
 const Admin = (props: AdminProps) => {
 
   useEffect(() => {
-    props.setScreen("admin");
+    props.setScreen(k_admin_link);
   });
 
   return (
-    <div className="admin-container">
+    <div>
       <h1>Admin</h1>
     </div>
   );

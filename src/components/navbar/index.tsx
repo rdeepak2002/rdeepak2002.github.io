@@ -8,14 +8,12 @@ import {
 } from "react-bootstrap";
 
 import { isBrowser } from "react-device-detect";
-import { Link } from 'react-scroll';
-import { HashLink } from 'react-router-hash-link';
+import { Link } from "react-scroll";
 
 import useScrollState from "utils/ScrollState";
 import useWindowDimensions from "utils/WindowDimensions";
 
 import logo from "resources/logo.svg";
-import { useEffect } from "react";
 
 interface CustomNavbarProps {
   screen: string,
@@ -28,20 +26,11 @@ const CustomNavbar = (props: CustomNavbarProps) => {
   const footerNameHeight = 100;
   const useTransparentNavbar = useScrollState(useWindowDimensions().height - navbarHeight - footerNameHeight) === "topSection" && props.screen === "home" && isBrowser;
 
-  useEffect(() => {
-    const url: string = String(window.location);
-    const anchorPresent = url.lastIndexOf("#") !== url.lastIndexOf("#/");
+  const blacklist = [k_admin_link, k_project_link];
 
-    if (anchorPresent) {
-      const anchor = url.substring(url.lastIndexOf("#") + 1);
-      if (anchor && anchor !== "") {
-        setTimeout(() => {
-          const element = document.getElementById(anchor);
-          if (element) element.scrollIntoView();
-        }, 1000);
-      }
-    }
-  }, []);
+  if(blacklist.includes(props.screen)) {
+    return <></>;
+  }
 
   return (
     <Navbar className={(useTransparentNavbar ? "transparent-background" : "black-background-transparent")} fixed="top" bg="dark" variant="dark" expand="lg">
@@ -76,6 +65,7 @@ const CustomNavbar = (props: CustomNavbarProps) => {
 }
 
 export const k_home_link = "/home";
+export const k_project_link = "/project";
 export const k_admin_link = "/admin";
 
 export const k_about_href = "about";
@@ -90,8 +80,8 @@ export const k_spanish_hero_href = "spanish_hero";
 export const k_tort_cam_href = "tort_cam";
 export const k_smart_room_href = "smart_room";
 export const k_augnav_href = "augnav";
-export const k_club_websites_hef = "club_websites";
-export const k_more_projects = "more_projects";
+export const k_club_websites_href = "club_websites";
+export const k_more_projects_href = "more_projects";
 export const k_ford_connected_href = "ford_connected";
 export const k_deep_playlist_href = "deep_playlist";
 export const k_fruit_vision_href = "fruit_vision";

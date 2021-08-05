@@ -15,7 +15,7 @@ import robot_face_icon from "resources/icons/robot-face-icon.png";
 import suitcase_icon from "resources/icons/suitcase-icon.png";
 import trophy_icon from "resources/icons/trophy-icon.png";
 
-import { k_about_href, k_achievements_href, k_innovative_endeavors_href, k_work_experience_href } from "components/navbar";
+import { k_about_href, k_achievements_href, k_home_link, k_innovative_endeavors_href, k_work_experience_href } from "components/navbar";
 
 interface HomeProps {
   setScreen: Function
@@ -25,7 +25,7 @@ const Home = (props: HomeProps) => {
   const isMobileCss = useWindowDimensions().width <= 900;
 
   useEffect(() => {
-    props.setScreen("home");
+    props.setScreen(k_home_link);
   });
 
   return (
