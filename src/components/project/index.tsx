@@ -4,7 +4,6 @@ import { Project, ProjectProps } from "components/home/Projects";
 import { getBaseUrl, getSearchUrl } from "utils/UrlTools";
 import qs from "qs";
 import projectsList from "components/home/ProjectsList";
-import { scrollToTop } from "react-scroll/modules/mixins/animate-scroll";
 
 interface PojectPageProps {
   setScreen: Function

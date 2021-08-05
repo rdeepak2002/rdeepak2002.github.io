@@ -113,6 +113,22 @@ h3 {
   overflow: hidden;
 }
 
+/* project cards */
+.project-card-container {
+  max-width: 100% !important;
+  // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+.project-card {
+  margin: 2px;
+  max-width: 100% !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  overflow: hidden;
+}
+
 /* timeline styles */
 .vertical-timeline::before {
   background:rgb(0, 0, 0) !important;

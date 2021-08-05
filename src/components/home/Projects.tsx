@@ -1,4 +1,4 @@
-import { k_home_link, k_project_link } from "components/navbar";
+import { k_project_link } from "components/navbar";
 import { useEffect, useRef, useState } from "react";
 import { Button, Container, Image } from "react-bootstrap";
 import { CopyToClipboard } from "react-copy-to-clipboard";
@@ -27,7 +27,8 @@ const Projects = (props: ProjectsProps) => {
         gridAutoRows: `minmax(${showMoreHeight}, auto)`,
         gridTemplateColumns: props.isMobileCss ? "repeat(1, 1fr)" : "repeat(2, 1fr)",
         columnGap: "1rem",
-        rowGap: "1rem"
+        rowGap: "1rem",
+        width: "100%"
       }}
     >
       {
@@ -74,8 +75,8 @@ export const Project = (props: ProjectProps) => {
   }, []);
 
   return (
-    <Container id={props.id} style={{ width: "100%", padding: 0 }}>
-      <div className="card" style={{ width: "100%", padding: 0 }}>
+    <div id={props.id} className="project-card-container" >
+      <div className="project-card">
         {props.imageUrl &&
           <div className="project-img-container" style={{ height: "306.56px", overflow: "hidden", display: "flex", justifyContent: "center", alignItems: "center" }}>
             <Image className="project-img" src={props.imageUrl} fluid />
@@ -87,7 +88,7 @@ export const Project = (props: ProjectProps) => {
             title=""
           />
         }
-        <div style={{ paddingLeft: 15, paddingRight: 15 }}>
+        <div style={{paddingLeft: 10, paddingRight: 10}}>
           <CopyToClipboard text={sectionUrl}
             onCopy={() => {
               window.location.href = sectionUrl;
@@ -98,7 +99,7 @@ export const Project = (props: ProjectProps) => {
           <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
             <p style={{ color: "#0078ff" }}>{props.type}</p> <p style={{ marginLeft: 10, marginRight: 10, color: "rgba(50, 50, 50)" }}>/</p> <p style={{ color: "rgba(50, 50, 50)" }}>{props.date}</p>
           </div>
-          <div ref={contentRef} style={{ marginBottom: "1rem", paddingLeft: 15, paddingRight: 15, overflow: "hidden", maxHeight: showMore ? "999999px" : showMoreHeight }}>
+          <div ref={contentRef} style={{ marginBottom: "1rem", overflow: "hidden", maxHeight: showMore ? "999999px" : showMoreHeight }}>
             <TagsSection marginBottom tags={props.tags} />
             {props.content}
           </div>
@@ -136,7 +137,11 @@ export const Project = (props: ProjectProps) => {
           {
             (!props.goBackBtn && props.goHomeBtn) &&
             <div style={{ width: "100%", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "2rem" }}>
-              <a href={getBaseUrl()}>View All Projects</a>
+              <Button onClick={()=>{
+                window.location.href = getBaseUrl();
+              }}>
+                View All Projects
+              </Button>
             </div>
           }
           {
@@ -151,8 +156,7 @@ export const Project = (props: ProjectProps) => {
           }
         </div>
       </div>
-
-    </Container>
+    </div>
   );
 }
 
