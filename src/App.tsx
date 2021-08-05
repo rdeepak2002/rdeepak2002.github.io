@@ -11,7 +11,7 @@ import { k_device, readFromStorage, saveToStorage } from "utils/Serialize";
 
 import CustomNavbar, { k_admin_link, k_home_link, k_project_link } from "components/navbar/"
 import Home from "components/home";
-import Project from "components/project"
+import ProjectPage from "components/project";
 import Admin from "components/admin";
 import IDevice from "interfaces/Device";
 
@@ -71,7 +71,7 @@ const App = () => {
           <Admin setScreen={setScreen} />
         </Route>
         <Route path={k_project_link}>
-          <Project setScreen={setScreen} />
+          <ProjectPage setScreen={setScreen} />
         </Route>
         <Redirect to={k_home_link} />
       </Switch>
