@@ -2,6 +2,7 @@ import { k_home_link, k_project_link } from "components/navbar";
 import { useEffect, useRef, useState } from "react";
 import { Button, Container, Image } from "react-bootstrap";
 import { CopyToClipboard } from "react-copy-to-clipboard";
+import { getBaseUrl } from "utils/UrlTools";
 import projectsList, { showMoreHeight } from "./ProjectsList";
 import TagsSection from "./TagsSection";
 import LiteYouTubeEmbed from 'react-lite-youtube-embed';
@@ -52,9 +53,7 @@ export interface ProjectProps {
 }
 
 export const Project = (props: ProjectProps) => {
-  const getUrl: any = window.location;
-  const baseUrl: string = getUrl.protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
-  const sectionUrl = `${baseUrl}#${k_project_link}?id=${props.id}`;
+  const sectionUrl = `${getBaseUrl()}#${k_project_link}?id=${props.id}`;
 
   const contentRef: any = useRef();
   const showMoreHeight = props.showMoreHeight;
@@ -96,7 +95,7 @@ export const Project = (props: ProjectProps) => {
           <TagsSection marginBottom tags={props.tags} />
           {props.content}
         </div>
-        { !props.showMore && 
+        {!props.showMore &&
           <div style={{ marginBottom: "1.5rem", display: "flex", alignItems: "center", justifyContent: "center" }}>
             {overflowActive &&
               <>

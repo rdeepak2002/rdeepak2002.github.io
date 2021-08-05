@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { Project, ProjectProps } from "components/home/Projects";
 import qs from "qs";
 import projectsList from "components/home/ProjectsList";
+import { getBaseUrl } from "utils/UrlTools";
 
 interface PojectPageProps {
   setScreen: Function
@@ -19,7 +20,7 @@ const ProjectPage = (props: PojectPageProps) => {
     setProject(project);
 
     if(!project) {
-      window.location.href = window.location.host;
+      window.location.href = getBaseUrl();
     }
   });
 
