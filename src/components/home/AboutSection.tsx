@@ -2,7 +2,7 @@ import { Image } from "react-bootstrap";
 import deepak_picture from "resources/images/deepak_1.jpg";
 
 interface AboutSectionProps {
-  isMobileCss: boolean
+  isMobileCss: boolean;
 }
 
 const AboutSection = (props: AboutSectionProps) => {

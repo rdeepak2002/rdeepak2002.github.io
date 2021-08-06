@@ -1,9 +1,9 @@
 import projectTags from "./ProjectTags";
 
 interface TagsSectionProps {
-  tags: Array<string>
-  marginTop?: boolean
-  marginBottom?: boolean
+  tags: Array<string>;
+  marginTop?: boolean;
+  marginBottom?: boolean;
 }
 
 const TagsSection = (props: TagsSectionProps) => {

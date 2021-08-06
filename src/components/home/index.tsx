@@ -18,7 +18,7 @@ import trophy_icon from "resources/icons/trophy-icon.png";
 import { k_about_href, k_achievements_href, k_home_link, k_innovative_endeavors_href, k_work_experience_href } from "components/navbar";
 
 interface HomeProps {
-  setScreen: Function
+  setScreen: Function;
 }
 
 const Home = (props: HomeProps) => {

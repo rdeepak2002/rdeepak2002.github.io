@@ -2,7 +2,7 @@ import { k_admin_link } from "components/navbar";
 import { useEffect } from "react";
 
 interface AdminProps {
-  setScreen: Function
+  setScreen: Function;
 }
 
 const Admin = (props: AdminProps) => {

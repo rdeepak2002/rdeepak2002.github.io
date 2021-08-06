@@ -1,5 +1,16 @@
+import { Chrono } from "react-chrono";
+import { isMobile } from "react-device-detect";
+import { Image } from "react-bootstrap";
+import achievementsList from "./AchievementsList";
+
+export interface AchievementProps {
+  image?: any;
+  title: string;
+  content: JSX.Element;
+}
+
 const AchievementsSection = () => {
-  return (      
+  return (
     <table className="table table-bordered table-hover table-condensed">
       <tbody>
         <tr className="gradeCellName">
@@ -623,6 +634,20 @@ const AchievementsSection = () => {
         </tr>
       </tbody>
     </table>
+  );
+}
+
+const Achievement = (props: AchievementProps) => {
+  return (
+    <div style={{ width: "100%" }}>
+      <h4>{props.title}</h4>
+      {props.content}
+      {props.image &&
+        <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+          <Image src={props.image} fluid style={{ maxWidth: "100%", width: "500px" }} />
+        </div>
+      }
+    </div>
   );
 }
 

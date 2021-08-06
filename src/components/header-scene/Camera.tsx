@@ -4,8 +4,8 @@ import { isMobile } from 'react-device-detect';
 import { degreesToRadians } from '.';
 
 interface CameraProps {
-  setWindowWidth: Function,
-  setWindowHeight: Function
+  setWindowWidth: Function;
+  setWindowHeight: Function;
 }
 
 export default function Camera(props: CameraProps) {

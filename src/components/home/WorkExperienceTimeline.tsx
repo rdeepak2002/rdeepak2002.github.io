@@ -64,12 +64,12 @@ const WorkExperienceTimeline = () => {
 }
 
 interface WorkExperienceItemProps {
-  date: string
-  logo: any
-  title: string
-  location: string
-  tags: Array<string>
-  content: any
+  date: string;
+  logo: string;
+  title: string;
+  location: string;
+  tags: Array<string>;
+  content: JSX.Element;
 }
 
 const WorkExperienceItem = (props: WorkExperienceItemProps) => {

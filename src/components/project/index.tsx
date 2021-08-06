@@ -6,7 +6,7 @@ import qs from "qs";
 import projectsList from "components/home/ProjectsList";
 
 interface PojectPageProps {
-  setScreen: Function
+  setScreen: Function;
 }
 
 const ProjectPage = (props: PojectPageProps) => {
@@ -39,7 +39,7 @@ const ProjectPage = (props: PojectPageProps) => {
     if (!project) {
       window.location.href = getBaseUrl();
     }
-  });
+  }, [props]);
 
   return (
     <div style={{ display: "flex", alignItems: "center", justifyContent: "center", padding: "2rem" }}>

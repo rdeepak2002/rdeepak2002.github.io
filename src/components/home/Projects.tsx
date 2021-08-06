@@ -1,6 +1,6 @@
 import { k_project_link } from "components/navbar";
 import { useEffect, useRef, useState } from "react";
-import { Button, Container, Image } from "react-bootstrap";
+import { Button, Image } from "react-bootstrap";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { getBaseUrl } from "utils/UrlTools";
 import projectsList, { showMoreHeight } from "./ProjectsList";
@@ -9,8 +9,8 @@ import LiteYouTubeEmbed from 'react-lite-youtube-embed';
 import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css'
 
 interface ProjectsProps {
-  isMobileCss: boolean
-  showAll: boolean
+  isMobileCss: boolean;
+  showAll: boolean;
 }
 
 const Projects = (props: ProjectsProps) => {
@@ -46,7 +46,7 @@ export interface ProjectProps {
   title: string
   type: string
   date: string
-  content: any
+  content: JSX.Element
   tags: Array<string>
   showMoreHeight: number | string
   id: string

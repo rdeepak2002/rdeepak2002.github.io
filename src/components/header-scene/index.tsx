@@ -40,9 +40,9 @@ const HeaderScene = (props: HeaderSceneProps) => {
       <Suspense fallback={"loading"}>
         <Planet />
       </Suspense>
-      { !isMobile &&
+      {/* { !isMobile &&
         <SkyBox />
-      }
+      } */}
     </Canvas>
   );
 }

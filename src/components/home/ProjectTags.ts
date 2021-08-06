@@ -1,14 +1,14 @@
-interface ProjectTag {
+interface IProjectTag {
   name: string;
   color: string;
   link: string;
 }
 
-interface ProjectTags {
-  [key: string]: ProjectTag;
+interface IProjectTags {
+  [key: string]: IProjectTag;
 }
 
-const projectTags: ProjectTags = {};
+const projectTags: IProjectTags = {};
 
 export const k_ios_tag: string = "ios";
 projectTags[k_ios_tag] = {

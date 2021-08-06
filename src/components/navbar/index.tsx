@@ -16,9 +16,9 @@ import useWindowDimensions from "utils/WindowDimensions";
 import logo from "resources/logo.svg";
 
 interface CustomNavbarProps {
-  screen: string,
-  setScreen: Function,
-  user: any
+  screen: string;
+  setScreen: Function;
+  user: any;
 }
 
 const CustomNavbar = (props: CustomNavbarProps) => {
