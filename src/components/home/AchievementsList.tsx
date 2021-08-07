@@ -9,6 +9,7 @@ let achievementsList: AchievementList = {};
 
 export const k_badger_hacks_achievement="badger-hacks-acheivement";
 achievementsList[k_badger_hacks_achievement] = {
+  time: "University of Wisconsin-Madison",
   title: "Co-Founder of BadgerHacks",
   content:
     <>
@@ -30,6 +31,7 @@ achievementsList[k_badger_hacks_achievement] = {
 
 export const k_azure_hack_for_access="azure-hack-for-access-acheivement";
 achievementsList[k_azure_hack_for_access] = {
+  time: "University of Wisconsin-Madison",
   title: "5th Place at Azure Hack for Accessibility Hackathon",
   content:
     <>
