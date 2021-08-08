@@ -1,4 +1,4 @@
-import {useEffect} from "react";
+import React, {useEffect, useState} from "react";
 import {Container, Image} from "react-bootstrap";
 import {isMobile} from "react-device-detect";
 import HeaderScene from "components/header-scene/";
@@ -30,44 +30,104 @@ interface HomeProps {
 const Home = (props: HomeProps) => {
     const isMobileCss = useWindowDimensions().width <= 900;
 
+    let [aboutRef, setAboutRef] = useState<any>(undefined);
+    let [workExperienceRef, setWorkExperienceRef] = useState<any>(undefined);
+    let [innovativeEndeavorsRef, setInnovativeEndeavorsRef] = useState<any>(undefined);
+    let [achievementsRef, setAchievementsRef] = useState<any>(undefined);
+
     useEffect(() => {
         props.setScreen(k_home_link);
-    });
+    }, [props]);
+
+    useEffect(() => {
+        const url: string = String(window.location);
+        const anchorPresent = url.lastIndexOf("#") !== url.lastIndexOf("#/");
+        const anchor = anchorPresent ? url.substring(url.lastIndexOf("#") + 1) : "";
+
+        let ref: any = undefined;
+
+        switch (anchor) {
+            case k_about_href:
+                ref = aboutRef;
+                if (ref) {
+                    setTimeout(() => {
+                        ref.scrollIntoView();
+                    }, 500);
+                }
+                break;
+            case k_work_experience_href:
+                ref = workExperienceRef;
+                if (ref) {
+                    setTimeout(() => {
+                        ref.scrollIntoView();
+                    }, 500);
+                }
+                break;
+            case k_innovative_endeavors_href:
+                ref = innovativeEndeavorsRef;
+                if (ref) {
+                    setTimeout(() => {
+                        ref.scrollIntoView();
+                    }, 500);
+                }
+                break;
+            case k_achievements_href:
+                ref = achievementsRef;
+                if (ref) {
+                    setTimeout(() => {
+                        ref.scrollIntoView();
+                    }, 500);
+                }
+                break;
+        }
+
+
+    }, [aboutRef, achievementsRef, innovativeEndeavorsRef, workExperienceRef]);
 
     return (
         <div style={{backgroundColor: "white"}}>
-            <div className={isMobile ? "bg-image-container fill-height-mobile" : "bg-image-container"}
-                 style={{overflow: "hidden"}}>
-                {
-                    isMobile
-                        ?
-                        <HeaderScene/>
-                        :
-                        <HeaderScene/>
-                }
+            {/*Header*/}
+            <div>
+                <div className={isMobile ? "bg-image-container fill-height-mobile" : "bg-image-container"}
+                     style={{overflow: "hidden"}}>
+                    <HeaderScene/>
 
-                <div style={{position: "absolute", color: "white", bottom: "30%", fontSize: 30}}
-                     className="digital-font">
-                    <Typewriter
-                        options={{
-                            strings: ["Software Engineer", "Innovator", "Problem Solver"],
-                            autoStart: true,
-                            loop: true,
-                            cursor: ""
-                        }}
-                    />
+                    <div style={{position: "absolute", color: "white", bottom: "30%", fontSize: 30}}
+                         className="digital-font">
+                        <Typewriter
+                            options={{
+                                strings: ["Software Engineer", "Innovator", "Problem Solver"],
+                                autoStart: true,
+                                loop: true,
+                                cursor: ""
+                            }}
+                        />
+                    </div>
                 </div>
+
+                <h1 className="big-name">Deepak Ramalingam</h1>
             </div>
 
-            <h1 className="big-name">Deepak Ramalingam</h1>
-
-            <div className="home-section" id={k_about_href}>
+            {/*About Section*/}
+            <div
+                ref={ref => {
+                    setAboutRef(ref);
+                }}
+                className="home-section"
+                id={k_about_href}>
                 <Container style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
                     <AboutSection isMobileCss={isMobileCss}/>
                 </Container>
             </div>
 
-            <div className="home-section" id={k_work_experience_href} style={{backgroundColor: "rgb(240, 240, 240)"}}>
+            {/*Work Experience Section*/}
+            <div
+                ref={ref => {
+                    setWorkExperienceRef(ref);
+                }}
+                className="home-section"
+                id={k_work_experience_href}
+                style={{backgroundColor: "rgb(240, 240, 240)"}}>
                 <Container>
                     <div style={{marginBottom: 10, display: "flex", flexDirection: "row", alignItems: "center"}}>
                         <Image className="emoji-icon" src={suitcase_icon} fluid/>
@@ -79,7 +139,13 @@ const Home = (props: HomeProps) => {
                 </Container>
             </div>
 
-            <div className="home-section" id={k_innovative_endeavors_href}>
+            {/*Innovative Endeavors Section*/}
+            <div
+                ref={ref => {
+                    setInnovativeEndeavorsRef(ref);
+                }}
+                className="home-section"
+                id={k_innovative_endeavors_href}>
                 <Container>
                     <div style={{marginBottom: 10, display: "flex", flexDirection: "row", alignItems: "center"}}>
                         <Image className="emoji-icon" src={robot_face_icon} fluid/>
@@ -91,7 +157,14 @@ const Home = (props: HomeProps) => {
                 </Container>
             </div>
 
-            <div className="home-section" id={k_achievements_href} style={{backgroundColor: "rgb(240, 240, 240)"}}>
+            {/*Achievements Section*/}
+            <div
+                ref={ref => {
+                    setAchievementsRef(ref);
+                }}
+                className="home-section"
+                id={k_achievements_href}
+                style={{backgroundColor: "rgb(240, 240, 240)"}}>
                 <Container>
                     <div style={{marginBottom: 10, display: "flex", flexDirection: "row", alignItems: "center"}}>
                         <Image className="emoji-icon" src={trophy_icon} fluid/>
@@ -103,6 +176,7 @@ const Home = (props: HomeProps) => {
                 </Container>
             </div>
 
+            {/*Footer*/}
             <Footer/>
         </div>
     );

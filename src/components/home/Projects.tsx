@@ -1,4 +1,4 @@
-import {k_home_link, k_project_link} from "components/navbar";
+import {k_home_link, k_innovative_endeavors_href, k_project_link} from "components/navbar";
 import {useEffect, useRef, useState} from "react";
 import {Button, Image} from "react-bootstrap";
 import {CopyToClipboard} from "react-copy-to-clipboard";
@@ -165,7 +165,7 @@ export const Project = (props: ProjectProps) => {
                             marginBottom: "2rem"
                         }}>
                             <Button onClick={() => {
-                                history.push(k_home_link);
+                                history.push(`${k_home_link}#${k_innovative_endeavors_href}`);
                             }}>
                                 View All Projects
                             </Button>
@@ -181,7 +181,7 @@ export const Project = (props: ProjectProps) => {
                             marginBottom: "2rem"
                         }}>
                             <Button onClick={() => {
-                                history.go(-1);
+                                history.push(`${k_home_link}#${k_innovative_endeavors_href}`);
                             }}>
                                 View All Projects
                             </Button>
