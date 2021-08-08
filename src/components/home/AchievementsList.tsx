@@ -674,7 +674,7 @@ achievementsList[k_theresa_sharpe] = {
     content:
         <>
             <ul>
-                <li>Plaque of excellence given to one male and one female student of the middle school</li>
+                <li>Plaque of excellence given to one male and one female student</li>
             </ul>
         </>,
     image: image_26
@@ -785,7 +785,7 @@ achievementsList[k_varty_tennis_achievement] = {
     content:
         <>
             <ul>
-                <li>Won 3rd place during West Ada's Varsity Tennis tournament</li>
+                <li>Won 3rd place during West Ada School District Varsity Tennis tournament</li>
             </ul>
         </>,
     image: image_13
@@ -890,7 +890,7 @@ achievementsList[k_math_gr6_achievement] = {
 
 export const k_world_civ_achievement = "world-civ-achievement";
 achievementsList[k_world_civ_achievement] = {
-    time: "Grade 7",
+    time: "Grade 6",
     title: "Outstanding Historian Award for Gifted and Talented World Civilizations",
     content:
         <>
