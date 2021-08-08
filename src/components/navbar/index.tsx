@@ -1,14 +1,9 @@
-import {
-  NavLink
-} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
-import {
-  Navbar,
-  Nav
-} from "react-bootstrap";
+import {Nav, Navbar} from "react-bootstrap";
 
-import { isBrowser } from "react-device-detect";
-import { Link } from "react-scroll";
+import {isBrowser} from "react-device-detect";
+import {Link} from "react-scroll";
 
 import useScrollState from "utils/ScrollState";
 import useWindowDimensions from "utils/WindowDimensions";
@@ -16,52 +11,57 @@ import useWindowDimensions from "utils/WindowDimensions";
 import logo from "resources/logo.svg";
 
 interface CustomNavbarProps {
-  screen: string;
-  setScreen: Function;
-  user: any;
+    screen: string;
+    setScreen: Function;
+    user: any;
 }
 
 const CustomNavbar = (props: CustomNavbarProps) => {
-  const navbarHeight = 60;
-  const footerNameHeight = 100;
-  const useTransparentNavbar = useScrollState(useWindowDimensions().height - navbarHeight - footerNameHeight) === "topSection" && props.screen === "home" && isBrowser;
+    const navbarHeight = 60;
+    const footerNameHeight = 100;
+    const useTransparentNavbar = useScrollState(useWindowDimensions().height - navbarHeight - footerNameHeight) === "topSection" && props.screen === "home" && isBrowser;
 
-  const blacklist = [k_admin_link, k_project_link];
+    const blacklist = [k_admin_link, k_project_link];
 
-  if(blacklist.includes(props.screen)) {
-    return <></>;
-  }
+    if (blacklist.includes(props.screen)) {
+        return <></>;
+    }
 
-  return (
-    <Navbar className={(useTransparentNavbar ? "transparent-background" : "black-background-transparent")} fixed="top" bg="dark" variant="dark" expand="lg">
-      <Navbar.Brand href="/">
-        <img alt="logo" className="navbar-logo" src={logo} width="30" height="30" />
-      </Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="mr-auto">
-          <Link className="nav-link" to={k_about_href} activeClass="active" spy={true} smooth={true}>
-            About
-          </Link>
+    return (
+        <Navbar className={(useTransparentNavbar ? "transparent-background" : "black-background-transparent")}
+                fixed="top" bg="dark" variant="dark" expand="lg">
+            <Navbar.Brand href="/">
+                <img alt="logo" className="navbar-logo" src={logo} width="30" height="30"/>
+            </Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+            <Navbar.Collapse id="basic-navbar-nav">
+                <Nav className="mr-auto">
+                    <Link className="nav-link" to={k_about_href} activeClass="active" spy={true} smooth={true}>
+                        About
+                    </Link>
 
-          <Link className="nav-link" to={k_work_experience_href} activeClass="active" spy={true} smooth={true}>
-            Work Experience
-          </Link>
+                    <Link className="nav-link" to={k_work_experience_href} activeClass="active" spy={true}
+                          smooth={true}>
+                        Work Experience
+                    </Link>
 
-          <Link className="nav-link" to={k_innovative_endeavors_href} activeClass="active" spy={true} smooth={true}>
-            Innovative Endeavors
-          </Link>
+                    <Link className="nav-link" to={k_innovative_endeavors_href} activeClass="active" spy={true}
+                          smooth={true}>
+                        Innovative Endeavors
+                    </Link>
 
-          <Link className="nav-link" to={k_achievements_href} activeClass="active" spy={true} smooth={true}>
-            Achievements
-          </Link>
+                    <Link className="nav-link" to={k_achievements_href} activeClass="active" spy={true} smooth={true}>
+                        Achievements
+                    </Link>
 
-          {props.user && <NavLink to={k_admin_link} className="nav-link" activeClassName="active">Admin</NavLink>}
-        </Nav>
-        {props.user && <a href={k_home_link} style={{ color: "white", cursor: "pointer" }} className="nav-link">Sign Out</a>}
-      </Navbar.Collapse>
-    </Navbar>
-  );
+                    {props.user &&
+                    <NavLink to={k_admin_link} className="nav-link" activeClassName="active">Admin</NavLink>}
+                </Nav>
+                {props.user &&
+                <a href={k_home_link} style={{color: "white", cursor: "pointer"}} className="nav-link">Sign Out</a>}
+            </Navbar.Collapse>
+        </Navbar>
+    );
 }
 
 export const k_home_link = "/home";

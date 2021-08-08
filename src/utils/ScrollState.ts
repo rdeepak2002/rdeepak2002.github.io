@@ -1,17 +1,16 @@
-import { useState, useEffect } from "react";
+import {useEffect, useState} from "react";
 
 export default function useScrollState(height: number) {
     const [scrollState, setScrollState] = useState("topSection");
 
     useEffect(() => {
         let listener: any = undefined;
-        listener = document.addEventListener("scroll", e => {
+        listener = document.addEventListener("scroll", _ => {
             if (document.scrollingElement) {
-                var scrolled = document.scrollingElement.scrollTop;
+                let scrolled = document.scrollingElement.scrollTop;
                 if (scrolled >= height) {
                     setScrollState(scrolled.toString());
-                }
-                else if (scrollState !== "topSection") {
+                } else if (scrollState !== "topSection") {
                     setScrollState("topSection");
                 }
             }

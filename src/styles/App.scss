@@ -2,7 +2,7 @@
 @font-face {
   font-family: "digital-7";
   src: local("digital-7"),
-    url(../resources/fonts/digital-7.ttf) format("truetype");
+  url(../resources/fonts/digital-7.ttf) format("truetype");
 }
 
 /* general styling */
@@ -61,7 +61,7 @@ h3 {
   display: block;
 }
 
-.fill-height-moblie {
+.fill-height-mobile {
   height: -webkit-fill-available !important;
 }
 
@@ -102,7 +102,7 @@ h3 {
 
 /* digital font */
 .digital-font {
-  font-family: "digital-7";
+  font-family: "digital-7", serif;
 }
 
 /* card effect */
@@ -131,7 +131,7 @@ h3 {
 
 /* timeline styles */
 .vertical-timeline::before {
-  background:rgb(0, 0, 0) !important;
+  background: rgb(0, 0, 0) !important;
 }
 
 .timeline-card-content {
@@ -139,13 +139,13 @@ h3 {
 }
 
 /* table styling */
-table { 
-  table-layout:fixed;
+table {
+  table-layout: fixed;
 }
 
-td { 
-  overflow: hidden; 
-  text-overflow: ellipsis; 
+td {
+  overflow: hidden;
+  text-overflow: ellipsis;
   word-wrap: break-word;
 }
 
@@ -166,6 +166,6 @@ td {
 
 /* projects page */
 .project-img {
-  width: "auto";
-  height: "100%";
+  width: auto;
+  height: 100%;
 }

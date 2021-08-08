@@ -1,8 +1,8 @@
-import { detect } from 'detect-browser';
+import {detect} from 'detect-browser';
 
 const browserId = () => {
-    const browser:any = detect();
+    const browser: any = detect();
     return `${browser.name}${browser.version}${browser.os}`;
 }
 
-export { browserId };
+export {browserId};
