@@ -15,6 +15,9 @@ import robot_face_icon from "resources/icons/robot-face-icon.png";
 import suitcase_icon from "resources/icons/suitcase-icon.png";
 import trophy_icon from "resources/icons/trophy-icon.png";
 
+import qs from "qs";
+import {getSearchUrl} from "../../utils/UrlTools";
+
 import {
     k_about_href,
     k_achievements_href,
@@ -40,10 +43,8 @@ const Home = (props: HomeProps) => {
     }, [props]);
 
     useEffect(() => {
-        const url: string = String(window.location);
-        const anchorPresent = url.lastIndexOf("#") !== url.lastIndexOf("#/");
-        const anchor = anchorPresent ? url.substring(url.lastIndexOf("#") + 1) : "";
-
+        const parsedUrl: any = qs.parse(getSearchUrl(), {ignoreQueryPrefix: true});
+        const anchor: string = parsedUrl.to;
         let ref: any = undefined;
 
         switch (anchor) {
@@ -79,9 +80,10 @@ const Home = (props: HomeProps) => {
                     }, 500);
                 }
                 break;
+            default:
+                window.scrollTo(0, 0);
+                break;
         }
-
-
     }, [aboutRef, achievementsRef, innovativeEndeavorsRef, workExperienceRef]);
 
     return (
