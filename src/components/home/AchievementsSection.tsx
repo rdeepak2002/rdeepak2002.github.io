@@ -19,7 +19,7 @@ let achievementsListCap = 0;
 // get the number of achievements until middle school
 for (const achievementKey in achievementsList) {
     const achievement = achievementsList[achievementKey];
-    if(achievement.time === "Grade 8") {
+    if (achievement.time === "Grade 8") {
         break;
     }
     achievementsListCap++;
