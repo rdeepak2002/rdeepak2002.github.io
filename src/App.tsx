@@ -4,11 +4,12 @@ import {useEffect, useState} from "react";
 import {createView} from "service/ViewService";
 import {k_device, readFromStorage, saveToStorage} from "utils/Serialize";
 
-import CustomNavbar, {k_admin_link, k_home_link, k_project_link} from "components/navbar/"
+import CustomNavbar, {k_achievements_link, k_admin_link, k_home_link, k_project_link} from "components/navbar/"
 import Home from "components/home";
 import ProjectPage from "components/project";
 import Admin from "components/admin";
 import IDevice from "interfaces/Device";
+import AchievementsPage from "./components/achievement";
 
 const App = () => {
     const [screen, setScreen] = useState("App");
@@ -65,6 +66,9 @@ const App = () => {
                 </Route>
                 <Route path={k_project_link}>
                     <ProjectPage setScreen={setScreen}/>
+                </Route>
+                <Route path={k_achievements_link}>
+                    <AchievementsPage setScreen={setScreen}/>
                 </Route>
                 <Redirect to={k_home_link}/>
             </Switch>

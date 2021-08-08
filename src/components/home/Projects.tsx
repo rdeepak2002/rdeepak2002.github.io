@@ -1,8 +1,9 @@
-import {k_project_link} from "components/navbar";
+import {k_home_link, k_project_link} from "components/navbar";
 import {useEffect, useRef, useState} from "react";
 import {Button, Image} from "react-bootstrap";
 import {CopyToClipboard} from "react-copy-to-clipboard";
 import {getBaseUrl} from "utils/UrlTools";
+import {useHistory} from "react-router-dom";
 import projectsList, {showMoreHeight} from "./ProjectsList";
 import TagsSection from "./TagsSection";
 import LiteYouTubeEmbed from 'react-lite-youtube-embed';
@@ -59,6 +60,7 @@ export interface ProjectProps {
 
 export const Project = (props: ProjectProps) => {
     const sectionUrl = `${getBaseUrl()}#${k_project_link}?id=${props.id}`;
+    const history = useHistory();
 
     const contentRef: any = useRef();
     const showMoreHeight = props.showMoreHeight;
@@ -98,7 +100,8 @@ export const Project = (props: ProjectProps) => {
                 <div style={{paddingLeft: 10, paddingRight: 10}}>
                     <CopyToClipboard text={sectionUrl}
                                      onCopy={() => {
-                                         window.location.href = sectionUrl;
+                                         const sectionSearch = `${k_project_link}?id=${props.id}`;
+                                         history.push(sectionSearch);
                                      }}
                     >
                         <h4 style={{marginTop: "1rem", cursor: "pointer"}}>{props.title}</h4>
@@ -162,7 +165,7 @@ export const Project = (props: ProjectProps) => {
                             marginBottom: "2rem"
                         }}>
                             <Button onClick={() => {
-                                window.location.href = getBaseUrl();
+                                history.push(k_home_link);
                             }}>
                                 View All Projects
                             </Button>
@@ -178,7 +181,7 @@ export const Project = (props: ProjectProps) => {
                             marginBottom: "2rem"
                         }}>
                             <Button onClick={() => {
-                                window.history.go(-1);
+                                history.go(-1);
                             }}>
                                 View All Projects
                             </Button>

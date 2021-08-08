@@ -21,7 +21,7 @@ const CustomNavbar = (props: CustomNavbarProps) => {
     const footerNameHeight = 100;
     const useTransparentNavbar = useScrollState(useWindowDimensions().height - navbarHeight - footerNameHeight) === "topSection" && props.screen === "home" && isBrowser;
 
-    const blacklist = [k_admin_link, k_project_link];
+    const blacklist = [k_admin_link, k_project_link, k_achievements_link];
 
     if (blacklist.includes(props.screen)) {
         return <></>;
@@ -66,6 +66,7 @@ const CustomNavbar = (props: CustomNavbarProps) => {
 
 export const k_home_link = "/home";
 export const k_project_link = "/project";
+export const k_achievements_link = "/achievements";
 export const k_admin_link = "/admin";
 
 export const k_about_href = "about";
