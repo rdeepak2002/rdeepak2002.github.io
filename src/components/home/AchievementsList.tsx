@@ -133,8 +133,7 @@ achievementsList[k_stanford_proco_achievement] = {
     content:
         <>
             <ul>
-                <li>Director of Reporting of ESports Club at Monta Vista High School</li>
-                <li>Organized gaming tournaments to help students relax after school</li>
+                <li>Won 6th place at the annual Stanford ProCo competitive programming competition</li>
             </ul>
         </>,
 }
@@ -495,7 +494,7 @@ achievementsList[k_grade_10_gpa_achievement] = {
 
 export const k_scioly_grade_9_achievement = "grade-9-scioly-achievement";
 achievementsList[k_scioly_grade_9_achievement] = {
-    time: "Grade 10",
+    time: "Grade 9",
     title: "Freshman Year Science Olympiad",
     content:
         <>
@@ -507,6 +506,90 @@ achievementsList[k_scioly_grade_9_achievement] = {
                 <li>6th Place for Ecology at Tracy, CA Invitational</li>
                 <li>7th Place for Optics at Tracy, CA Invitational</li>
                 <li>7th Place for Game On at Tracy, CA Invitational</li>
+            </ul>
+        </>,
+}
+
+export const k_berkeley_math_tourney_achievement = "berkeley-math-tourney-achievement";
+achievementsList[k_berkeley_math_tourney_achievement] = {
+    time: "Grade 10",
+    title: "Participated in the Berkeley Math Tournament Competition",
+    content:
+        <>
+            <ul>
+                <li>Participated in the annual Berkeley Math Tournament (BMT) competition</li>
+            </ul>
+        </>,
+}
+
+export const k_lincoln_ice_cream_social_achievement = "lincoln-ice-cream-achievement";
+achievementsList[k_lincoln_ice_cream_social_achievement] = {
+    time: "Grade 9",
+    title: "Community Service at Lincoln Elementary Ice Cream Social",
+    content:
+        <>
+            <ul>
+                <li>Volunteered for 2.5 hours at the Lincoln Elementary Ice Cream Social event</li>
+            </ul>
+        </>,
+}
+
+export const k_j_cherry_blossom_achievement = "j-cherry-blossom-achievement";
+achievementsList[k_j_cherry_blossom_achievement] = {
+    time: "Grade 9",
+    title: "Community Service at Japanese Cherry Blossom Festival",
+    content:
+        <>
+            <ul>
+                <li>Volunteered for 3.5 hours at the Japanese Cherry Blossom Festival event</li>
+            </ul>
+        </>,
+}
+
+export const k_mvhs_robotics_team_grade_9_achievement = "mvhs-robotics-9-achievement";
+achievementsList[k_mvhs_robotics_team_grade_9_achievement] = {
+    time: "Grade 9",
+    title: "Team Member on Monta Vista Robotics Team",
+    content:
+        <>
+            <ul>
+                <li>Contributed to the development of a robot for the FIRST Robotics Competition</li>
+            </ul>
+        </>,
+}
+
+export const k_mvhs_nhs_grade_9_achievement = "mvhs-nhs-9-achievement";
+achievementsList[k_mvhs_nhs_grade_9_achievement] = {
+    time: "Grade 9",
+    title: "Member of the Monta Vista National Honor Society Club",
+    content:
+        <>
+            <ul>
+                <li>Volunteered to better the Santa Clara community</li>
+            </ul>
+        </>,
+}
+
+export const k_mvhs_csf_team_grade_9_achievement = "mvhs-csf-9-achievement";
+achievementsList[k_mvhs_csf_team_grade_9_achievement] = {
+    time: "Grade 9",
+    title: "Member of the Monta Vista California Scholarship Foundation Club",
+    content:
+        <>
+            <ul>
+                <li>Volunteered to better the Santa Clara community</li>
+            </ul>
+        </>,
+}
+
+export const k_grade_9_gpa_achievement = "mvhs-gpa-9-achievement";
+achievementsList[k_grade_9_gpa_achievement] = {
+    time: "Grade 9",
+    title: "4.0 GPA",
+    content:
+        <>
+            <ul>
+                <li>Received a 4.0 unweighted GPA for both semesters</li>
             </ul>
         </>,
 }
