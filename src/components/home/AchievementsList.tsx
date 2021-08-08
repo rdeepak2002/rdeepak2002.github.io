@@ -186,8 +186,8 @@ achievementsList[k_scioly_grade_11_achievement] = {
         <>
             <ul>
                 <li>School team received 3rd Place Trophy at Santa Clara, CA Regional</li>
-                <li>4th Place for Mousetrap Vehicle at Tracy, CA Invitational</li>
                 <li>10th Place for Code Busters at Santa Clara, CA Regional</li>
+                <li>4th Place for Mousetrap Vehicle at Tracy, CA Invitational</li>
             </ul>
         </>,
 }
@@ -214,6 +214,299 @@ achievementsList[k_pen_state_mc_achievement] = {
         <>
             <ul>
                 <li>Volunteered for 6 hours to help proctor the Peninsula State Math Counts event</li>
+            </ul>
+        </>,
+}
+
+export const k_regnart_fall_fest_achievement = "regnart-fall-fest-achievement";
+achievementsList[k_regnart_fall_fest_achievement] = {
+    time: "Grade 11",
+    title: "Community Service at Regnart Fall Festival",
+    content:
+        <>
+            <ul>
+                <li>Volunteered for 3 hours to help organize the Regnart Fall Festival event</li>
+            </ul>
+        </>,
+}
+
+export const k_mountain_view_tree_lighting_achievement = "mountain-view-tree-lighting-achievement";
+achievementsList[k_mountain_view_tree_lighting_achievement] = {
+    time: "Grade 11",
+    title: "Community Service at Mountain View Tree Lighting",
+    content:
+        <>
+            <ul>
+                <li>Volunteered for 3 hours to help organize the Mountain View Tree Lighting event</li>
+            </ul>
+        </>,
+}
+
+export const k_friends_of_cupertino_book_sale_achievement = "friends-of-cupertino-book-sale-achievement";
+achievementsList[k_friends_of_cupertino_book_sale_achievement] = {
+    time: "Grade 11",
+    title: "Community Service at Friends of Cupertino Book Sale",
+    content:
+        <>
+            <ul>
+                <li>Volunteered for 3 hours to help organize the Friends of Cupertino Book Sale event</li>
+            </ul>
+        </>,
+}
+
+export const k_lincoln_science_fest_achievement = "lincoln-science-fest-achievement";
+achievementsList[k_lincoln_science_fest_achievement] = {
+    time: "Grade 11",
+    title: "Community Service at Lincoln Lawrence Hall of Science Mystery Festival",
+    content:
+        <>
+            <ul>
+                <li>Volunteered for 4 hours to help organize the Lincoln Lawrence Hall of Science Mystery Festival
+                    event
+                </li>
+            </ul>
+        </>,
+}
+
+export const k_indian_village_achievement = "indian-village-achievement";
+achievementsList[k_indian_village_achievement] = {
+    time: "Grade 11",
+    title: "Taught Computer Science to Underprivileged Students in an Indian Village",
+    content:
+        <>
+            <ul>
+                <li>Volunteered for 21 hours to teach Computer Science to Underprivileged Students in an Indian
+                    Village
+                </li>
+            </ul>
+        </>,
+}
+
+export const k_mvhs_robotics_team_achievement = "mvhs-robotics-achievement";
+achievementsList[k_mvhs_robotics_team_achievement] = {
+    time: "Grade 11",
+    title: "Team Member on Monta Vista Robotics Team",
+    content:
+        <>
+            <ul>
+                <li>Contributed to the development of a robot for the FIRST Robotics Competition</li>
+            </ul>
+        </>,
+}
+
+export const k_mvhs_csf_team_achievement = "mvhs-csf-achievement";
+achievementsList[k_mvhs_csf_team_achievement] = {
+    time: "Grade 11",
+    title: "Member of the Monta Vista California Scholarship Foundation Club",
+    content:
+        <>
+            <ul>
+                <li>Volunteered to better the Santa Clara community</li>
+            </ul>
+        </>,
+}
+
+export const k_cupertino_lib_teen_app_achievement = "cupertino-lib-teen-app-achievement";
+achievementsList[k_cupertino_lib_teen_app_achievement] = {
+    time: "Grade 10",
+    title: "1st Place at the Cupertino Library Teen App Challenge Competition",
+    content:
+        <>
+            <ul>
+                <li>Develop "Hapi App"</li>
+                <li>Received cash prize of $500</li>
+                <li>Featured in Patch News article</li>
+                <li>Interviewed by Mr. Matt Lorenzo, Teen Services Librarian</li>
+            </ul>
+        </>,
+}
+
+export const k_scioly_grade_10_achievement = "grade-10-scioly-achievement";
+achievementsList[k_scioly_grade_10_achievement] = {
+    time: "Grade 10",
+    title: "Sophomore Year Science Olympiad",
+    content:
+        <>
+            <ul>
+                <li>School team received 3rd Place Trophy at Santa Clara, CA Regional</li>
+                <li>10th Place for Anatomy and Physiology at Santa Clara, CA Regional</li>
+            </ul>
+        </>,
+}
+
+export const k_acsl_achievement = "acsl-achievement";
+achievementsList[k_acsl_achievement] = {
+    time: "Grade 10",
+    title: "6th Place at International American Computer Science League Competition",
+    content:
+        <>
+            <ul>
+                <li>Won 6th place internationally at the American Computer Science League (ACSL) competition</li>
+            </ul>
+        </>,
+}
+
+export const k_harker_programming_invitational_10_achievement = "harker-programming-invit-10-achievement";
+achievementsList[k_harker_programming_invitational_10_achievement] = {
+    time: "Grade 10",
+    title: "Participated in the Harker Programming Invitational Competition",
+    content:
+        <>
+            <ul>
+                <li>Participated in the competitive programming competition held at Harker Private School</li>
+            </ul>
+        </>,
+}
+
+export const k_dell_tech_achievement = "dell-tech-challenge-achievement";
+achievementsList[k_dell_tech_achievement] = {
+    time: "Grade 10",
+    title: "Participated in the Dell Tech Challenge Competition",
+    content:
+        <>
+            <ul>
+                <li>Developed a device for the 2018 Dell Tech Challenge: "Drop and Dash"</li>
+            </ul>
+        </>,
+}
+
+export const k_stanford_math_tourney_achievement = "stanford-math-tourney-achievement";
+achievementsList[k_stanford_math_tourney_achievement] = {
+    time: "Grade 10",
+    title: "Participated in the Stanford Math Tournament Competition",
+    content:
+        <>
+            <ul>
+                <li>Participated in the annual Stanford Math Tournament (SMT) competition</li>
+            </ul>
+        </>,
+}
+
+export const k_jv_badminton_achievement = "jv-badminton-achievement";
+achievementsList[k_jv_badminton_achievement] = {
+    time: "Grade 10",
+    title: "Junior Varsity Badminton Player at Monta Vista High School",
+    content:
+        <>
+            <ul>
+                <li>Played in the Junior Varsity badminton team at Monta Vista High School</li>
+            </ul>
+        </>,
+}
+
+export const k_red_cross_turkey_dinner_achievement = "red-cross-turkey-dinner-achievement";
+achievementsList[k_red_cross_turkey_dinner_achievement] = {
+    time: "Grade 10",
+    title: "Community Service at Red Cross Turkey Dinner Distribution",
+    content:
+        <>
+            <ul>
+                <li>Volunteered for 5 hours at the Red Cross Turkey Dinner Distribution event</li>
+                <li>Helped distribute turkey dinners for underprivileged communities</li>
+            </ul>
+        </>,
+}
+
+export const k_stampedeathon_achievement = "stampedeathon-achievement";
+achievementsList[k_stampedeathon_achievement] = {
+    time: "Grade 10",
+    title: "Community Service at Stampede-a-thon Carnival Event",
+    content:
+        <>
+            <ul>
+                <li>Volunteered for 3 hours at the Stampede-a-thon Carnival event</li>
+                <li>Helped sell merchandise for the event at a booth</li>
+            </ul>
+        </>,
+}
+
+export const k_kennedy_middle_school_math_night_achievement = "kennedy-middle-school-achievement";
+achievementsList[k_kennedy_middle_school_math_night_achievement] = {
+    time: "Grade 10",
+    title: "Community Service at Kennedy Middle School Math Night",
+    content:
+        <>
+            <ul>
+                <li>Volunteered for 4 hours at the Kennedy Middle School Math Night event</li>
+                <li>Taught math concepts to middle school students</li>
+            </ul>
+        </>,
+}
+
+export const k_cupertino_city_fair_achievement = "cupertino-city-fair-achievement";
+achievementsList[k_cupertino_city_fair_achievement] = {
+    time: "Grade 10",
+    title: "Community Service at Cupertino City Fair",
+    content:
+        <>
+            <ul>
+                <li>Volunteered for 5 hours at the Cupertino City Fair event</li>
+            </ul>
+        </>,
+}
+
+export const k_mvhs_robotics_team_grade_10_achievement = "mvhs-robotics-10-achievement";
+achievementsList[k_mvhs_robotics_team_grade_10_achievement] = {
+    time: "Grade 10",
+    title: "Team Member on Monta Vista Robotics Team",
+    content:
+        <>
+            <ul>
+                <li>Contributed to the development of a robot for the FIRST Robotics Competition</li>
+            </ul>
+        </>,
+}
+
+export const k_mvhs_nhs_grade_10_achievement = "mvhs-nhs-10-achievement";
+achievementsList[k_mvhs_nhs_grade_10_achievement] = {
+    time: "Grade 10",
+    title: "Member of the Monta Vista National Honor Society Club",
+    content:
+        <>
+            <ul>
+                <li>Volunteered to better the Santa Clara community</li>
+            </ul>
+        </>,
+}
+
+export const k_mvhs_csf_team_grade_10_achievement = "mvhs-csf-10-achievement";
+achievementsList[k_mvhs_csf_team_grade_10_achievement] = {
+    time: "Grade 10",
+    title: "Member of the Monta Vista California Scholarship Foundation Club",
+    content:
+        <>
+            <ul>
+                <li>Volunteered to better the Santa Clara community</li>
+            </ul>
+        </>,
+}
+
+export const k_grade_10_gpa_achievement = "mvhs-gpa-10-achievement";
+achievementsList[k_grade_10_gpa_achievement] = {
+    time: "Grade 10",
+    title: "4.0 GPA",
+    content:
+        <>
+            <ul>
+                <li>Received a 4.0 unweighted GPA for both semesters</li>
+            </ul>
+        </>,
+}
+
+export const k_scioly_grade_9_achievement = "grade-9-scioly-achievement";
+achievementsList[k_scioly_grade_9_achievement] = {
+    time: "Grade 10",
+    title: "Freshman Year Science Olympiad",
+    content:
+        <>
+            <ul>
+                <li>School team received 4th Place Trophy at Santa Clara, CA Regional</li>
+                <li>4th Place for Robot Arm at Santa Clara, CA Regional</li>
+                <li>8th Place for Towers at Santa Clara, CA Regional</li>
+                <li>3rd Place for Robot Arm at Tracy, CA Invitational</li>
+                <li>6th Place for Ecology at Tracy, CA Invitational</li>
+                <li>7th Place for Optics at Tracy, CA Invitational</li>
+                <li>7th Place for Game On at Tracy, CA Invitational</li>
             </ul>
         </>,
 }
