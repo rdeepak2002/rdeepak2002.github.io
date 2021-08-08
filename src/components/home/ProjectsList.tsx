@@ -58,6 +58,8 @@ import {
     k_ts_tag
 } from "./ProjectTags";
 
+import personal_website_image from "resources/images/personal_website.png";
+
 export const showMoreHeight = "177px";
 
 interface ProjectList {
@@ -342,7 +344,7 @@ projectsList[k_hapi_app_href] = {
 };
 
 projectsList[k_personal_website_href] = {
-    imageUrl: "https://cdn.wionews.com/sites/default/files/styles/story_page/public/2021/04/08/190606-untitled-design-11.jpg",
+    imageUrl: personal_website_image,
     title: "Personal Website",
     type: "Web App",
     date: "August of 2021",
