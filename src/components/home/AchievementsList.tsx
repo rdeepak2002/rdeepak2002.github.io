@@ -77,6 +77,18 @@ achievementsList[k_azure_hack_for_access_achievement] = {
         </>,
 }
 
+export const k_deans_honors_list_1_achievement = "deans-honors-list-1-achievement";
+achievementsList[k_deans_honors_list_1_achievement] = {
+    time: "University of Wisconsin-Madison",
+    title: "Dean's Honors List",
+    content:
+        <>
+            <ul>
+                <li>I was on UW-Madison's Dean's Honors List for both semesters</li>
+            </ul>
+        </>,
+}
+
 export const k_pico_ctf_achievement = "pico-ctf-achievement";
 achievementsList[k_pico_ctf_achievement] = {
     time: "Grade 12",

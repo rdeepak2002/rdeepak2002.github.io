@@ -14,8 +14,18 @@ export interface AchievementProps {
 let achievementsListShort: AchievementList = {};
 let items: any = [];
 let index = 0;
-const achievementsListCap = 46;
+let achievementsListCap = 0;
 
+// get the number of achievements until middle school
+for (const achievementKey in achievementsList) {
+    const achievement = achievementsList[achievementKey];
+    if(achievement.time === "Grade 8") {
+        break;
+    }
+    achievementsListCap++;
+}
+
+// only use achievements until middle school
 for (const achievementKey in achievementsList) {
     if (index < achievementsListCap) {
         const achievement = achievementsList[achievementKey];
