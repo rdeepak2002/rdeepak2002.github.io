@@ -135,14 +135,20 @@ h3 {
 }
 
 .timeline-card-content {
-  min-height: 10px !important;
+  //min-height: 10px !important;
 }
 
 .timeline-item-title {
   word-wrap: break-word !important;
 }
 
+.card-description {
+  //margin: 0 !important;
+  //padding: 0 !important;
+}
+
 .chrono-custom-element {
+  width: 70% !important;
   word-wrap: break-word !important;
 }
 

@@ -7,7 +7,7 @@ export interface AchievementProps {
     time: string;
     image?: string;
     title: string;
-    content: JSX.Element;
+    content?: JSX.Element;
 }
 
 let items: any = [];
@@ -19,13 +19,13 @@ for (const achievementKey in achievementsList) {
 
 const AchievementsSection = () => {
     return (
-        <div style={{height: "60vh", minHeight: "500px"}}>
+        <div style={{}}>
             <Chrono
                 scrollable={{scrollbar: true}}
                 slideShow={true}
-                mode="VERTICAL"
+                mode={isMobile ? "HORIZONTAL" : "VERTICAL"}
                 disableNavOnKey
-                hideControls={isMobile}
+                hideControls={!isMobile}
                 useReadMore={false}
                 allowDynamicUpdate={true}
                 items={items}
@@ -45,7 +45,9 @@ const Achievement = (props: AchievementProps) => {
     return (
         <div className="chrono-custom-element" style={{width: "100%"}}>
             <h4>{props.title}</h4>
-            {props.content}
+            {props.content &&
+            props.content
+            }
             {props.image &&
             <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
                 <Image src={props.image} fluid style={{maxWidth: "100%", width: "500px"}} loading={"lazy"}/>

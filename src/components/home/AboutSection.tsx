@@ -29,7 +29,7 @@ const AboutSection = (props: AboutSectionProps) => {
 
                     <div style={{marginTop: "1rem"}}>
                         <p><strong>Name:</strong> Deepak Ramalingam</p>
-                        <p><strong>Major:</strong> B.S. Computer Science @ Georgia Institute of Technology</p>
+                        <p><strong>Major:</strong> B.S. Computer Science @ Georgia Institute of Technology (Georgia Tech)</p>
                         <p><strong>Email:</strong> rdeepak2002@gmail.com</p>
                         <p><strong>Phone:</strong> +1 (208) 391-9267</p>
                     </div>
@@ -39,7 +39,7 @@ const AboutSection = (props: AboutSectionProps) => {
 
                     <p>
                         I was born in Boise, Idaho, and I am currently a second year Computer Science student at the
-                        Georgia Institute of Technology.
+                        Georgia Institute of Technology (Georgia Tech).
                     </p>
 
                     <p>
