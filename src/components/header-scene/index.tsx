@@ -7,10 +7,7 @@ import React from "react";
 import Camera from "./Camera";
 import Planet from "./Planet";
 
-interface HeaderSceneProps {
-}
-
-const HeaderScene = (props: HeaderSceneProps) => {
+const HeaderScene = () => {
   const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth - 1);
   const [windowHeight, setWindowHeight] = useState<number>(window.innerHeight - 1);
   const [loaded, setLoaded] = useState<boolean>(false);
