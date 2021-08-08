@@ -2,33 +2,34 @@ import {AchievementProps} from "./AchievementsSection";
 import badger_hacks_article_image from "resources/images/achievements/BadgerHacksArticle.png";
 import image_1 from "resources/images/achievements/1.jpg";
 import image_2 from "resources/images/achievements/2.jpg";
-import image_3 from "resources/images/achievements/3.jpg";
+// import image_3 from "resources/images/achievements/3.jpg";
 import image_4 from "resources/images/achievements/4.jpg";
 import image_5 from "resources/images/achievements/5.jpg";
 import image_6 from "resources/images/achievements/6.jpg";
 import image_7 from "resources/images/achievements/7.jpg";
 import image_8 from "resources/images/achievements/8.jpg";
 import image_9 from "resources/images/achievements/9.jpg";
-import image_10 from "resources/images/achievements/10.jpg";
+// import image_10 from "resources/images/achievements/10.jpg";
 import image_11 from "resources/images/achievements/11.jpg";
 import image_12 from "resources/images/achievements/12.jpg";
 import image_13 from "resources/images/achievements/13.jpg";
 import image_14 from "resources/images/achievements/14.jpg";
-import image_15 from "resources/images/achievements/15.jpg";
-import image_16 from "resources/images/achievements/16.jpg";
-import image_17 from "resources/images/achievements/17.jpg";
+// import image_15 from "resources/images/achievements/15.jpg";
+// import image_16 from "resources/images/achievements/16.jpg";
+// import image_17 from "resources/images/achievements/17.jpg";
 import image_18 from "resources/images/achievements/18.jpg";
-import image_19 from "resources/images/achievements/19.jpg";
-import image_20 from "resources/images/achievements/20.jpg";
+// import image_19 from "resources/images/achievements/19.jpg";
+// import image_20 from "resources/images/achievements/20.jpg";
 import image_21 from "resources/images/achievements/21.jpg";
 import image_22 from "resources/images/achievements/22.jpg";
-import image_23 from "resources/images/achievements/23.jpg";
-import image_24 from "resources/images/achievements/24.jpg";
-import image_25 from "resources/images/achievements/25.jpg";
+// import image_23 from "resources/images/achievements/23.jpg";
+// import image_24 from "resources/images/achievements/24.jpg";
+// import image_25 from "resources/images/achievements/25.jpg";
 import image_26 from "resources/images/achievements/26.jpg";
-import image_27 from "resources/images/achievements/27.jpg";
 
-interface AchievementList {
+// import image_27 from "resources/images/achievements/27.jpg";
+
+export interface AchievementList {
     [key: string]: AchievementProps;
 }
 
@@ -724,7 +725,9 @@ achievementsList[k_cert_of_excel_geo_achievement] = {
     content:
         <>
             <ul>
-                <li>Received a certificate of excellence for being the top student in my Gifted and Talented World Geography class</li>
+                <li>Received a certificate of excellence for being the top student in my Gifted and Talented World
+                    Geography class
+                </li>
             </ul>
         </>,
 }
@@ -810,7 +813,8 @@ achievementsList[k_computer_explorations_achievement] = {
     content:
         <>
             <ul>
-                <li>Received a certificate of excellence for being the top student in my Computer Explorations class</li>
+                <li>Received a certificate of excellence for being the top student in my Computer Explorations class
+                </li>
             </ul>
         </>,
 }
@@ -822,7 +826,9 @@ achievementsList[k_social_studies_achievement] = {
     content:
         <>
             <ul>
-                <li>Received a certificate of excellence for being the top student in my Gifted and Talented Social Studies class</li>
+                <li>Received a certificate of excellence for being the top student in my Gifted and Talented Social
+                    Studies class
+                </li>
             </ul>
         </>,
 }
@@ -858,8 +864,11 @@ achievementsList[k_student_of_quarter_cck_achievement] = {
     content:
         <>
             <ul>
-                <li>Received a "Student of the Quarter - Character Traits" award for Courage, Citizenship, and Kindness</li>
-                <li>Received a "Student of the Quarter - Character Traits" award for Diligence, Integrity, and Loyalty</li>
+                <li>Received a "Student of the Quarter - Character Traits" award for Courage, Citizenship, and
+                    Kindness
+                </li>
+                <li>Received a "Student of the Quarter - Character Traits" award for Diligence, Integrity, and Loyalty
+                </li>
             </ul>
         </>,
 }
@@ -895,7 +904,9 @@ achievementsList[k_world_civ_achievement] = {
     content:
         <>
             <ul>
-                <li>Received a certificate of excellence for being the top student in my Gifted and Talented World Civilizations class</li>
+                <li>Received a certificate of excellence for being the top student in my Gifted and Talented World
+                    Civilizations class
+                </li>
             </ul>
         </>,
 }

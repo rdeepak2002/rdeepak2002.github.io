@@ -5,11 +5,11 @@ import {getBaseUrl, getSearchUrl} from "utils/UrlTools";
 import qs from "qs";
 import projectsList from "components/home/ProjectsList";
 
-interface PojectPageProps {
+interface ProjectPageProps {
     setScreen: Function;
 }
 
-const ProjectPage = (props: PojectPageProps) => {
+const ProjectPage = (props: ProjectPageProps) => {
     const [project, setProject] = useState<ProjectProps>();
     const [goBack, setGoBack] = useState<boolean>(false);
 
