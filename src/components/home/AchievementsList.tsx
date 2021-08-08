@@ -594,4 +594,269 @@ achievementsList[k_grade_9_gpa_achievement] = {
         </>,
 }
 
+export const k_regional_math_counts_gr8_achievement = "mc-gr8-regional-achievement";
+achievementsList[k_regional_math_counts_gr8_achievement] = {
+    time: "Grade 8",
+    title: "5th Place at Regional Math Counts",
+    content:
+        <>
+            <ul>
+                <li>Received a team and individual trophy for winning 5th place at the Regional Math Counts event</li>
+            </ul>
+        </>,
+}
+
+export const k_state_math_counts_gr8_achievement = "mc-gr8-state-achievement";
+achievementsList[k_state_math_counts_gr8_achievement] = {
+    time: "Grade 8",
+    title: "14th Place at Idaho State Math Counts",
+    content:
+        <>
+            <ul>
+                <li>Won 14th place at the Idaho State Math Counts event</li>
+            </ul>
+        </>,
+}
+
+export const k_theresa_sharpe = "theresa-sharpe-achievement";
+achievementsList[k_theresa_sharpe] = {
+    time: "Grade 8",
+    title: "Teresa Sharpe Award",
+    content:
+        <>
+            <ul>
+                <li>Plaque of excellence given to one male and one female student of the middle school</li>
+            </ul>
+        </>,
+}
+
+export const k_cert_academic_gr8_achievement = "cert-academic-8-achievement";
+achievementsList[k_cert_academic_gr8_achievement] = {
+    time: "Grade 8",
+    title: "Certificate in Academic and Character Excellence",
+    content:
+        <>
+            <ul>
+                <li>Certificate received for outstanding academic performance</li>
+            </ul>
+        </>,
+}
+
+export const k_geo_bee_achievement = "geo-bee-achievement";
+achievementsList[k_geo_bee_achievement] = {
+    time: "Grade 8",
+    title: "3rd Place at National Geography Bee Competition",
+    content:
+        <>
+            <ul>
+                <li>Received 3rd place at my middle school's National Geography Bee</li>
+            </ul>
+        </>,
+}
+
+export const k_cert_of_merit_achievement = "math-gr8-achievement";
+achievementsList[k_cert_of_merit_achievement] = {
+    time: "Grade 8",
+    title: "Certificate of Excellence for Honors Math",
+    content:
+        <>
+            <ul>
+                <li>Received a certificate of excellence for being the top student in my honors-level math class</li>
+            </ul>
+        </>,
+}
+
+export const k_cert_of_excel_geo_achievement = "geo-gr8-achievement";
+achievementsList[k_cert_of_excel_geo_achievement] = {
+    time: "Grade 8",
+    title: "Certificate of Excellence for Gifted and Talented World Geography",
+    content:
+        <>
+            <ul>
+                <li>Received a certificate of excellence for being the top student in my Gifted and Talented World Geography class</li>
+            </ul>
+        </>,
+}
+
+export const k_cert_of_excel_span_achievement = "span-gr8-achievement";
+achievementsList[k_cert_of_excel_span_achievement] = {
+    time: "Grade 8",
+    title: "Certificate of Excellence for Spanish I",
+    content:
+        <>
+            <ul>
+                <li>Received a certificate of excellence for being the top student in my Spanish I class</li>
+            </ul>
+        </>,
+}
+
+export const k_gt_best_achievement = "gt-best-achievement";
+achievementsList[k_gt_best_achievement] = {
+    time: "Grade 8",
+    title: "Gifted and Talented King",
+    content:
+        <>
+            <ul>
+                <li>Voted by peers as the best student in the Gifted and Talented class</li>
+            </ul>
+        </>,
+}
+
+export const k_njhs_achievement = "njhs-achievement";
+achievementsList[k_njhs_achievement] = {
+    time: "Grade 8",
+    title: "Treasurer of National Junior Honor Society",
+    content:
+        <>
+            <ul>
+                <li>Treasurer of National Junior Honor Society club</li>
+            </ul>
+        </>,
+}
+
+export const k_njhs_volunteering_achievement = "njhs-vol-achievement";
+achievementsList[k_njhs_volunteering_achievement] = {
+    time: "Grade 8",
+    title: "Raised Money for National Junior Honor Society Club",
+    content:
+        <>
+            <ul>
+                <li>Helped sell doughnuts to raise money for the National Junior Honor Society club</li>
+            </ul>
+        </>,
+}
+
+export const k_varty_tennis_achievement = "varsity-tennis-achievement";
+achievementsList[k_varty_tennis_achievement] = {
+    time: "Grade 8",
+    title: "3rd Place at Middle School Varsity Tennis Tournament",
+    content:
+        <>
+            <ul>
+                <li>Won 3rd place during West Ada's Varsity Tennis tournament</li>
+            </ul>
+        </>,
+}
+
+export const k_highest_honor_roll_gr8_achievement = "honor-roll-gr8-achievement";
+achievementsList[k_highest_honor_roll_gr8_achievement] = {
+    time: "Grade 8",
+    title: "Highest Honor Roll",
+    content:
+        <>
+            <ul>
+                <li>Received a 4.0 GPA for both semesters</li>
+            </ul>
+        </>,
+}
+
+export const k_computer_explorations_achievement = "computer-explorations-achievement";
+achievementsList[k_computer_explorations_achievement] = {
+    time: "Grade 7",
+    title: "Certificate of Excellence for Computer Explorations",
+    content:
+        <>
+            <ul>
+                <li>Received a certificate of excellence for being the top student in my Computer Explorations class</li>
+            </ul>
+        </>,
+}
+
+export const k_social_studies_achievement = "social-studies-achievement";
+achievementsList[k_social_studies_achievement] = {
+    time: "Grade 7",
+    title: "Certificate of Excellence for Gifted and Talented Social Studies",
+    content:
+        <>
+            <ul>
+                <li>Received a certificate of excellence for being the top student in my Gifted and Talented Social Studies class</li>
+            </ul>
+        </>,
+}
+
+export const k_math_gr7_achievement = "math-gr7-achievement";
+achievementsList[k_math_gr7_achievement] = {
+    time: "Grade 7",
+    title: "Certificate of Excellence for Math",
+    content:
+        <>
+            <ul>
+                <li>Received a certificate of excellence for being the top student in my Math class</li>
+            </ul>
+        </>,
+}
+
+export const k_highest_honor_roll_gr7_achievement = "honor-roll-gr7-achievement";
+achievementsList[k_highest_honor_roll_gr7_achievement] = {
+    time: "Grade 7",
+    title: "Highest Honor Roll",
+    content:
+        <>
+            <ul>
+                <li>Received a 4.0 GPA for both semesters</li>
+            </ul>
+        </>,
+}
+
+export const k_student_of_quarter_cck_achievement = "student-of-quarter-cck-achievement";
+achievementsList[k_student_of_quarter_cck_achievement] = {
+    time: "Grade 6",
+    title: "Student of the Quarter - Character Traits",
+    content:
+        <>
+            <ul>
+                <li>Received a "Student of the Quarter - Character Traits" award for Courage, Citizenship, and Kindness</li>
+                <li>Received a "Student of the Quarter - Character Traits" award for Diligence, Integrity, and Loyalty</li>
+            </ul>
+        </>,
+}
+
+export const k_nat_hist_day_achievement = "nat-hist-day-achievement";
+achievementsList[k_nat_hist_day_achievement] = {
+    time: "Grade 6",
+    title: "3rd Place at Regional National History Day",
+    content:
+        <>
+            <ul>
+                <li>Received 3rd place at the regional National History Day competition</li>
+            </ul>
+        </>,
+}
+
+export const k_math_gr6_achievement = "math-gr6-achievement";
+achievementsList[k_math_gr6_achievement] = {
+    time: "Grade 6",
+    title: "Certificate of Excellence for Math",
+    content:
+        <>
+            <ul>
+                <li>Received a certificate of excellence for being the top student in my Math class</li>
+            </ul>
+        </>,
+}
+
+export const k_world_civ_achievement = "world-civ-achievement";
+achievementsList[k_world_civ_achievement] = {
+    time: "Grade 7",
+    title: "Outstanding Historian Award for Gifted and Talented World Civilizations",
+    content:
+        <>
+            <ul>
+                <li>Received a certificate of excellence for being the top student in my Gifted and Talented World Civilizations class</li>
+            </ul>
+        </>,
+}
+
+export const k_highest_honor_roll_gr6_achievement = "honor-roll-gr6-achievement";
+achievementsList[k_highest_honor_roll_gr6_achievement] = {
+    time: "Grade 6",
+    title: "Highest Honor Roll",
+    content:
+        <>
+            <ul>
+                <li>Received a 4.0 GPA for both semesters</li>
+            </ul>
+        </>,
+}
+
 export default achievementsList;
