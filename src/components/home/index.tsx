@@ -92,7 +92,7 @@ const Home = (props: HomeProps) => {
                      style={{overflow: "hidden"}}>
                     <HeaderScene/>
 
-                    <div style={{position: "absolute", color: "white", bottom: "30%", fontSize: 30}}
+                    <div style={{position: "absolute", color: "black", bottom: "30%", fontSize: 30}}
                          className="digital-font">
                         <Typewriter
                             options={{
@@ -103,9 +103,9 @@ const Home = (props: HomeProps) => {
                             }}
                         />
                     </div>
-                </div>
 
-                <h1 className="big-name">Deepak Ramalingam</h1>
+                    <h1 className="big-name">Deepak Ramalingam</h1>
+                </div>
             </div>
 
             {/*About Section*/}

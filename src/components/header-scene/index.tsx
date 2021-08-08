@@ -33,7 +33,7 @@ const HeaderScene = () => {
                 style={{width: windowWidth, height: windowHeight, visibility: loaded ? "visible" : "hidden"}}>
             <Camera setWindowWidth={setWindowWidth} setWindowHeight={setWindowHeight}/>
             <directionalLight intensity={0.5}/>
-            <ambientLight intensity={0.24}/>
+            <ambientLight intensity={1.0}/>
             <Suspense fallback={"loading"}>
                 <Planet/>
             </Suspense>
