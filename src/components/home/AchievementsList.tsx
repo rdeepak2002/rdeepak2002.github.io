@@ -1,5 +1,32 @@
 import {AchievementProps} from "./AchievementsSection";
 import badger_hacks_article_image from "resources/images/achievements/BadgerHacksArticle.png";
+import image_1 from "resources/images/achievements/1.jpg";
+import image_2 from "resources/images/achievements/2.jpg";
+import image_3 from "resources/images/achievements/3.jpg";
+import image_4 from "resources/images/achievements/4.jpg";
+import image_5 from "resources/images/achievements/5.jpg";
+import image_6 from "resources/images/achievements/6.jpg";
+import image_7 from "resources/images/achievements/7.jpg";
+import image_8 from "resources/images/achievements/8.jpg";
+import image_9 from "resources/images/achievements/9.jpg";
+import image_10 from "resources/images/achievements/10.jpg";
+import image_11 from "resources/images/achievements/11.jpg";
+import image_12 from "resources/images/achievements/12.jpg";
+import image_13 from "resources/images/achievements/13.jpg";
+import image_14 from "resources/images/achievements/14.jpg";
+import image_15 from "resources/images/achievements/15.jpg";
+import image_16 from "resources/images/achievements/16.jpg";
+import image_17 from "resources/images/achievements/17.jpg";
+import image_18 from "resources/images/achievements/18.jpg";
+import image_19 from "resources/images/achievements/19.jpg";
+import image_20 from "resources/images/achievements/20.jpg";
+import image_21 from "resources/images/achievements/21.jpg";
+import image_22 from "resources/images/achievements/22.jpg";
+import image_23 from "resources/images/achievements/23.jpg";
+import image_24 from "resources/images/achievements/24.jpg";
+import image_25 from "resources/images/achievements/25.jpg";
+import image_26 from "resources/images/achievements/26.jpg";
+import image_27 from "resources/images/achievements/27.jpg";
 
 interface AchievementList {
     [key: string]: AchievementProps;
@@ -148,6 +175,7 @@ achievementsList[k_harker_programming_invitational_achievement] = {
                 <li>Cash prize of $250</li>
             </ul>
         </>,
+    image: image_5
 }
 
 export const k_cupertino_hacks_achievement = "cupertino-hacks-achievement";
@@ -163,6 +191,7 @@ achievementsList[k_cupertino_hacks_achievement] = {
                 <li>Official recognition in "Engineering and Computer Programming" by the City Council of Cupertino</li>
             </ul>
         </>,
+    image: image_4
 }
 
 export const k_congressional_app_challenge_achievement = "cong-app-challenge-achievement";
@@ -175,6 +204,7 @@ achievementsList[k_congressional_app_challenge_achievement] = {
                 <li>Received signed certificate from Congressman Ro Khanna</li>
             </ul>
         </>,
+    image: image_18
 }
 
 export const k_scioly_grade_11_achievement = "grade-11-scioly-achievement";
@@ -189,6 +219,7 @@ achievementsList[k_scioly_grade_11_achievement] = {
                 <li>4th Place for Mousetrap Vehicle at Tracy, CA Invitational</li>
             </ul>
         </>,
+    image: image_12
 }
 
 export const k_ap_scholar_achievement = "ap-scholar-achievement";
@@ -331,6 +362,7 @@ achievementsList[k_scioly_grade_10_achievement] = {
                 <li>10th Place for Anatomy and Physiology at Santa Clara, CA Regional</li>
             </ul>
         </>,
+    image: image_11
 }
 
 export const k_acsl_achievement = "acsl-achievement";
@@ -367,6 +399,20 @@ achievementsList[k_dell_tech_achievement] = {
                 <li>Developed a device for the 2018 Dell Tech Challenge: "Drop and Dash"</li>
             </ul>
         </>,
+    image: image_2
+}
+
+export const k_los_altos_achievement = "los-altos-achievement";
+achievementsList[k_los_altos_achievement] = {
+    time: "Grade 10",
+    title: "Participated in Los Altos Hacks Hackathon",
+    content:
+        <>
+            <ul>
+                <li>Developed a tutor service app during the Los Altos Hacks Hackathon</li>
+            </ul>
+        </>,
+    image: image_14
 }
 
 export const k_stanford_math_tourney_achievement = "stanford-math-tourney-achievement";
@@ -508,6 +554,7 @@ achievementsList[k_scioly_grade_9_achievement] = {
                 <li>7th Place for Game On at Tracy, CA Invitational</li>
             </ul>
         </>,
+    image: image_9
 }
 
 export const k_berkeley_math_tourney_achievement = "berkeley-math-tourney-achievement";
@@ -604,6 +651,7 @@ achievementsList[k_regional_math_counts_gr8_achievement] = {
                 <li>Received a team and individual trophy for winning 5th place at the Regional Math Counts event</li>
             </ul>
         </>,
+    image: image_1
 }
 
 export const k_state_math_counts_gr8_achievement = "mc-gr8-state-achievement";
@@ -616,6 +664,7 @@ achievementsList[k_state_math_counts_gr8_achievement] = {
                 <li>Won 14th place at the Idaho State Math Counts event</li>
             </ul>
         </>,
+    image: image_6
 }
 
 export const k_theresa_sharpe = "theresa-sharpe-achievement";
@@ -628,6 +677,7 @@ achievementsList[k_theresa_sharpe] = {
                 <li>Plaque of excellence given to one male and one female student of the middle school</li>
             </ul>
         </>,
+    image: image_26
 }
 
 export const k_cert_academic_gr8_achievement = "cert-academic-8-achievement";
@@ -640,6 +690,7 @@ achievementsList[k_cert_academic_gr8_achievement] = {
                 <li>Certificate received for outstanding academic performance</li>
             </ul>
         </>,
+    image: image_7
 }
 
 export const k_geo_bee_achievement = "geo-bee-achievement";
@@ -700,6 +751,7 @@ achievementsList[k_gt_best_achievement] = {
                 <li>Voted by peers as the best student in the Gifted and Talented class</li>
             </ul>
         </>,
+    image: image_8
 }
 
 export const k_njhs_achievement = "njhs-achievement";
@@ -736,6 +788,7 @@ achievementsList[k_varty_tennis_achievement] = {
                 <li>Won 3rd place during West Ada's Varsity Tennis tournament</li>
             </ul>
         </>,
+    image: image_13
 }
 
 export const k_highest_honor_roll_gr8_achievement = "honor-roll-gr8-achievement";
@@ -881,6 +934,7 @@ achievementsList[k_reflection_gr4_achievement] = {
                 <li>Received award for outstanding writing</li>
             </ul>
         </>,
+    image: image_21
 }
 
 export const k_reflection_gr2_1_achievement = "reflections-gr2-1-achievement";
@@ -893,6 +947,7 @@ achievementsList[k_reflection_gr2_1_achievement] = {
                 <li>Received 1st place award for drawing</li>
             </ul>
         </>,
+    image: image_22
 }
 
 export const k_reflection_gr2_2_achievement = "reflections-gr2-2-achievement";
