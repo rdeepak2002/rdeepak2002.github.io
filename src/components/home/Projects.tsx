@@ -101,7 +101,7 @@ export const Project = (props: ProjectProps) => {
                     <CopyToClipboard text={sectionUrl}
                                      onCopy={() => {
                                          const sectionSearch = `${k_project_link}?id=${props.id}`;
-                                         history.push(sectionSearch)
+                                         history.push(sectionSearch);
                                      }}
                     >
                         <h4 style={{marginTop: "1rem", cursor: "pointer"}}>{props.title}</h4>
