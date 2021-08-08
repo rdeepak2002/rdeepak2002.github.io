@@ -19,7 +19,7 @@ for (const achievementKey in achievementsList) {
 
 const AchievementsSection = () => {
     return (
-        <div style={{height: isMobile ? "auto" : "500px"}}>
+        <div style={{height: "60vh", minHeight: "500px"}}>
             <Chrono
                 scrollable={{scrollbar: true}}
                 slideShow={true}
@@ -43,7 +43,7 @@ const AchievementsSection = () => {
 
 const Achievement = (props: AchievementProps) => {
     return (
-        <div style={{width: "100%"}}>
+        <div className="chrono-custom-element" style={{width: "100%"}}>
             <h4>{props.title}</h4>
             {props.content}
             {props.image &&

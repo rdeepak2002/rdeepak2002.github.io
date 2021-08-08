@@ -73,4 +73,70 @@ achievementsList[k_teen_hacks_htx_achievement] = {
         </>,
 }
 
+export const k_omega_hacks_achievement = "omega-hacks-achievement";
+achievementsList[k_omega_hacks_achievement] = {
+    time: "Grade 12",
+    title: "1st Place at Omega Hacks Hackathon",
+    content:
+        <>
+            <ul>
+                <li>Developed SmartRoom web application</li>
+                <li>Cash prize of $60</li>
+            </ul>
+        </>,
+}
+
+export const k_nhs_achievement = "nhs-achievement";
+achievementsList[k_nhs_achievement] = {
+    time: "Grade 11",
+    title: "Vice President of National Honor Society Club",
+    content:
+        <>
+            <ul>
+                <li>VP of National Honor Society club at Monta Vista High School</li>
+                <li>Organized volunteering events for club members to partake in</li>
+                <li>Designed website to allow club members to register for volunteering events</li>
+            </ul>
+        </>,
+}
+
+export const k_mvhs_bite_achievement = "mvhs-bite-achievement";
+achievementsList[k_mvhs_bite_achievement] = {
+    time: "Grade 11",
+    title: "Vice President of Bite (Food Science) Club",
+    content:
+        <>
+            <ul>
+                <li>VP of Bite Club at Monta Vista High School</li>
+                <li>Organized educational food science presentations and events</li>
+            </ul>
+        </>,
+}
+
+export const k_mvhs_esports_achievement = "mvhs-esports-achievement";
+achievementsList[k_mvhs_esports_achievement] = {
+    time: "Grade 11",
+    title: "Director of Reporting of ESports Club",
+    content:
+        <>
+            <ul>
+                <li>Director of Reporting of ESports Club at Monta Vista High School</li>
+                <li>Organized gaming tournaments to help students relax after school</li>
+            </ul>
+        </>,
+}
+
+export const k_stanford_proco_achievement = "stanford-proco-achievement";
+achievementsList[k_stanford_proco_achievement] = {
+    time: "Grade 11",
+    title: "6th Place at Stanford ProCo Programming Competition",
+    content:
+        <>
+            <ul>
+                <li>Director of Reporting of ESports Club at Monta Vista High School</li>
+                <li>Organized gaming tournaments to help students relax after school</li>
+            </ul>
+        </>,
+}
+
 export default achievementsList;
