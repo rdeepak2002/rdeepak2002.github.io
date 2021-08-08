@@ -859,4 +859,88 @@ achievementsList[k_highest_honor_roll_gr6_achievement] = {
         </>,
 }
 
+export const k_pres_award_achievement = "pres-award-achievement";
+achievementsList[k_pres_award_achievement] = {
+    time: "Grade 5",
+    title: "President's Education Award",
+    content:
+        <>
+            <ul>
+                <li>Received a letter and certificate from President Obama</li>
+            </ul>
+        </>,
+}
+
+export const k_reflection_gr4_achievement = "reflections-gr4-achievement";
+achievementsList[k_reflection_gr4_achievement] = {
+    time: "Grade 4",
+    title: "School Reflections Award - Award of Excellence - Outstanding Achievement in Literature",
+    content:
+        <>
+            <ul>
+                <li>Received award for outstanding writing</li>
+            </ul>
+        </>,
+}
+
+export const k_reflection_gr2_1_achievement = "reflections-gr2-1-achievement";
+achievementsList[k_reflection_gr2_1_achievement] = {
+    time: "Grade 2",
+    title: "School Reflections Award - Visual Art - 1st place - Visual Arts - School Award of Excellence",
+    content:
+        <>
+            <ul>
+                <li>Received 1st place award for drawing</li>
+            </ul>
+        </>,
+}
+
+export const k_reflection_gr2_2_achievement = "reflections-gr2-2-achievement";
+achievementsList[k_reflection_gr2_2_achievement] = {
+    time: "Grade 2",
+    title: "Regional Reflections Award - Visual Arts - Award of Excellence - Received Trophy",
+    content:
+        <>
+            <ul>
+                <li>Received 1st place trophy for drawing</li>
+            </ul>
+        </>,
+}
+
+export const k_reflection_gr1_achievement = "reflections-gr1-achievement";
+achievementsList[k_reflection_gr1_achievement] = {
+    time: "Grade 1",
+    title: "School Reflections Award - Visual Art - 1st place - Visual Arts - School Award of Excellence",
+    content:
+        <>
+            <ul>
+                <li>Received 1st place award for drawing</li>
+            </ul>
+        </>,
+}
+
+export const k_reflection_gr1_2_achievement = "reflections-gr1_2-achievement";
+achievementsList[k_reflection_gr1_2_achievement] = {
+    time: "Grade 1",
+    title: "Regionals Reflections Award - Visual Art - 2nd place - Visual Arts - School Award of Excellence",
+    content:
+        <>
+            <ul>
+                <li>Received 2nd place award for drawing</li>
+            </ul>
+        </>,
+}
+
+export const k_pbs_achievement = "pbs-achievement";
+achievementsList[k_pbs_achievement] = {
+    time: "Kindergarten",
+    title: "2nd Place at PBS 15th Annual National Contest - Certificate of Achievement Spring 2009 Young Writers & Illustrators Contest",
+    content:
+        <>
+            <ul>
+                <li>Received 2nd place award for writing</li>
+            </ul>
+        </>,
+}
+
 export default achievementsList;
