@@ -19,12 +19,13 @@ for (const achievementKey in achievementsList) {
 
 const AchievementsSection = () => {
   return (
-    <div style={{ height: isMobile ? "auto" : "1000px" }}>
+    <div style={{ height: isMobile ? "auto" : "500px" }}>
       <Chrono
         scrollable={{ scrollbar: true }}
+        slideShow={true}
         mode="VERTICAL"
         disableNavOnKey
-        hideControls={isMobile ? true : false}
+        hideControls={isMobile}
         useReadMore={false}
         allowDynamicUpdate={true}
         items={items}

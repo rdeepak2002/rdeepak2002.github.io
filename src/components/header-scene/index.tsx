@@ -1,11 +1,11 @@
-import { Canvas, useThree } from "@react-three/fiber";
-import { CubeTextureLoader } from 'three';
+import { Canvas } from "@react-three/fiber";
+// import { useThree } from "@react-three/fiber";
+// import { CubeTextureLoader } from 'three';
 import { Suspense, useEffect, useState } from "react";
-import { SpaceSkyBox } from "./SkyBoxes";
+// import { SpaceSkyBox } from "./SkyBoxes";
 import React from "react";
 import Camera from "./Camera";
 import Planet from "./Planet";
-import { isMobile } from "react-device-detect";
 
 interface HeaderSceneProps {
 }
@@ -47,13 +47,13 @@ const HeaderScene = (props: HeaderSceneProps) => {
   );
 }
 
-function SkyBox() {
-  const { scene } = useThree();
-  const loader = new CubeTextureLoader();
-  const texture = loader.load(SpaceSkyBox);
-  scene.background = texture;
-  return null;
-}
+// function SkyBox() {
+//   const { scene } = useThree();
+//   const loader = new CubeTextureLoader();
+//   const texture = loader.load(SpaceSkyBox);
+//   scene.background = texture;
+//   return null;
+// }
 
 export const degreesToRadians = (degrees: number) => {
   return degrees * Math.PI / 180.0;
