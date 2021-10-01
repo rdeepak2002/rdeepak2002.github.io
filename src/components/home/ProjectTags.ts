@@ -73,6 +73,13 @@ projectTags[k_nlp_tag] = {
     link: "https://www.ibm.com/cloud/learn/natural-language-processing"
 };
 
+export const k_redis_tag: string = "redis";
+projectTags[k_redis_tag] = {
+    name: "redis",
+    color: "#FA493C",
+    link: "https://redis.io/"
+};
+
 export const k_firebase_storage_tag: string = "firebasestorage";
 projectTags[k_firebase_storage_tag] = {
     name: "firebase storage",
