@@ -41,7 +41,7 @@ const WorkExperienceTimeline = () => {
                     <>
                         <ul style={{marginTop: "1rem"}}>
                             <li>Contributed to the research and development of creative tools utilized by designers for
-                                creating Augmented Reality filters and effects in the TikTok app
+                                developing Augmented Reality filters and effects in the TikTok app
                             </li>
                             <li>Contributed to the development of a machine learning powered smart playlist generator
                                 during an internal Hackathon
