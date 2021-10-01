@@ -48,7 +48,7 @@ import {
     k_python_tag,
     k_raspberrypi_tag,
     k_react_native_tag,
-    k_react_tag,
+    k_react_tag, k_redis_tag,
     k_redux_tag,
     k_sass_tag,
     k_socketio_tag,
@@ -154,7 +154,7 @@ projectsList[k_ford_connected_href] = {
                 </ol>
             </ul>
         </>,
-    tags: [k_graphql_tag, k_redux_tag, k_react_native_tag, k_heroku_tag, k_ts_tag, k_css_tag, k_spring_boot_tag, k_java_tag, k_mongodb_tag, k_firebase_storage_tag],
+    tags: [k_graphql_tag, k_redux_tag, k_react_native_tag, k_heroku_tag, k_ts_tag, k_css_tag, k_spring_boot_tag, k_java_tag, k_redis_tag, k_mongodb_tag, k_firebase_storage_tag],
     showMoreHeight: showMoreHeight,
     id: k_ford_connected_href
 };
