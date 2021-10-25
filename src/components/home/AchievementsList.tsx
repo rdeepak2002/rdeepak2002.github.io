@@ -35,6 +35,21 @@ export interface AchievementList {
 
 let achievementsList: AchievementList = {};
 
+export const k_eghi_gt_2021 = "eghi_gt_2021-achievement";
+achievementsList[k_eghi_gt_2021] = {
+    time: "Georgia Institute of Technology (Georgia Tech)",
+    title: "1st Place at 2021 Emory Global Health Institute (EGHI) / Georgia Tech (GT) Hackathon",
+    content:
+        <>
+            <ul>
+                <li>Developed an intelligent, automated, low-power, and affordable forest fire detection system</li>
+                <li>Link to the video: <a href={'https://youtu.be/ZNsCTzE4tb8'}>https://youtu.be/ZNsCTzE4tb8</a></li>
+                <li>Link to the website: <a href={'https://globalhealth.emory.edu/students/hackathon/index.html'}>https://globalhealth.emory.edu/students/hackathon/index.html</a></li>
+                <li>Cash prize of $4000</li>
+            </ul>
+        </>,
+}
+
 export const k_badger_hacks_achievement = "badger-hacks-achievement";
 achievementsList[k_badger_hacks_achievement] = {
     time: "University of Wisconsin-Madison",
