@@ -36,7 +36,7 @@ const WorkExperienceTimeline = () => {
                 logo: tiktok_logo,
                 title: "Augmented Reality Software Engineering Intern @ TikTok (Intelligent Creation Lab)",
                 location: "Mountain View, CA",
-                tags: [k_ar_tag, k_cpp_tag, k_lua_tag, k_ts_tag, k_napi_tag],
+                tags: [k_ar_tag, k_react_tag, k_cpp_tag, k_lua_tag, k_ts_tag, k_napi_tag],
                 content:
                     <>
                         <ul style={{marginTop: "1rem"}}>
