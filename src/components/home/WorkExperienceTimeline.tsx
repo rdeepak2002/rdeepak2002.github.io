@@ -40,13 +40,12 @@ const WorkExperienceTimeline = () => {
                 content:
                     <>
                         <ul style={{marginTop: "1rem"}}>
-                            <li>Contributed to the research and development of creative tools utilized by designers for
-                                developing Augmented Reality filters and effects in the TikTok app
+                            <li>Contributed to the research and development of ”TikTok Effect House,” a tool utilized by designers for developing Augmented Reality filters and effects for the TikTok app
                             </li>
-                            <li>Contributed to the development of a machine learning powered smart playlist generator
-                                during an internal Hackathon
+                            <li>Contributed to the development of a machine learning powered smart playlist generator during an internal Hackathon
                             </li>
-                            <li>Patent pending internship project</li>
+                            <li>Worked with React, TypeScript, Node Addon API, C++, Lua, and multiprocessing to implement a patent pending internship project</li>
+                            <li>Featured in the news: <a rel="noreferrer" target="_blank" href={"https://techcrunch.com/2021/08/23/tiktok-is-building-its-own-ar-development-platform-tiktok-effect-studio/"} style={{wordBreak: "break-all"}}>https://techcrunch.com/2021/08/23/tiktok-is-building-its-own-ar-development-platform-tiktok-effect-studio/</a></li>
                         </ul>
                     </>
             },
