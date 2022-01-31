@@ -1,5 +1,5 @@
 import {Image} from "react-bootstrap";
-import deepak_picture from "resources/images/deepak_2.jpeg";
+import deepak_picture from "resources/images/deepak_3.jpeg";
 
 interface AboutSectionProps {
     isMobileCss: boolean;
