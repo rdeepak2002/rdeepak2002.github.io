@@ -35,6 +35,21 @@ export interface AchievementList {
 
 let achievementsList: AchievementList = {};
 
+export const k_horizons_2022 = "k_horizons_2022-achievement";
+achievementsList[k_horizons_2022] = {
+    time: "Georgia Institute of Technology (Georgia Tech)",
+    title: "1st Place at Georgia Tech's \"Horizons 2022\" Hackathon",
+    content:
+        <>
+            <ul>
+                <li>Developed an AI-powered art generation website with support for WebXR for viewing an art gallery in virtual reality</li>
+                <li>Link to the video: <a href={'https://youtu.be/Op-Y9EYESPI'}>https://youtu.be/Op-Y9EYESPI</a></li>
+                <li>Link to the website: <a href={'https://devpost.com/software/hokusai'}>https://devpost.com/software/hokusai</a></li>
+                <li>Cash prize of $75</li>
+            </ul>
+        </>,
+}
+
 export const k_eghi_gt_2021 = "eghi_gt_2021-achievement";
 achievementsList[k_eghi_gt_2021] = {
     time: "Georgia Institute of Technology (Georgia Tech)",
