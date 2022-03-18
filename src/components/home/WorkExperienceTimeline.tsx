@@ -50,7 +50,7 @@ const WorkExperienceTimeline = () => {
                     </>
             },
             {
-                date: "June 2020 - Present",
+                date: "June 2020 - May 2021",
                 logo: mylifeguard_logo,
                 title: "Software Developer @ PeeblesTech LLC",
                 location: "Madison, WI",
