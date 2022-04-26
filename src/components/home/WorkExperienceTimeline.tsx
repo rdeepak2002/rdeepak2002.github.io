@@ -3,6 +3,7 @@ import {Image} from "react-bootstrap";
 import {VerticalTimeline, VerticalTimelineElement} from "react-vertical-timeline-component";
 import 'react-vertical-timeline-component/style.min.css';
 
+import netflix_logo from "resources/images/NetflixLogo.png";
 import tiktok_logo from "resources/images/TikTokLogo.png";
 import mylifeguard_logo from "resources/images/MyLifeGuardLogo.png";
 
@@ -31,6 +32,20 @@ const WorkExperienceTimeline = () => {
 
     useEffect(() => {
         setWorkExperienceItems([
+            {
+                date: "May 2022 - August 2022",
+                logo: netflix_logo,
+                title: "Big Data Platform Software Engineer Intern @ Netflix",
+                location: "Los Gatos, CA",
+                tags: [],
+                content:
+                    <>
+                        <ul style={{marginTop: "1rem"}}>
+                            <li>Incoming software engineering intern on the Big Data Platform team
+                            </li>
+                        </ul>
+                    </>
+            },
             {
                 date: "May 2021 - August 2021",
                 logo: tiktok_logo,
