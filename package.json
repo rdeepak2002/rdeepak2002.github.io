@@ -24,7 +24,7 @@
     "@types/react-vertical-timeline-component": "^3.0.1",
     "@types/three": "^0.130.1",
     "@types/uuid": "^8.3.0",
-    "axios": "^0.21.1",
+    "axios": "^0.21.2",
     "bootstrap": "4.6.0",
     "detect-browser": "^5.2.0",
     "gh-pages": "^3.2.0",
