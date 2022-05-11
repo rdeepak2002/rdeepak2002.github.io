@@ -135,7 +135,7 @@ projectsList[k_tower_defense_game_href] = {
     date: "May of 2022",
     content:
         <>
-            <p>Tower Defense Game Developed in Georgia Tech's CS 2340 Objects and Design Class</p>
+            <p>Tower Defense Game Developed in Georgia Tech's CS 2340 "Objects and Design" Class</p>
             <ul>
                 <li>Developed a Tower Defense Desktop Game Application using JavaFX and Maven</li>
                 <li>Won first place out of 127 teams for the best game in the class based on student votes</li>
