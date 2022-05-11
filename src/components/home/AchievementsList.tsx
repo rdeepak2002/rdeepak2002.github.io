@@ -35,6 +35,20 @@ export interface AchievementList {
 
 let achievementsList: AchievementList = {};
 
+export const k_cs2340_2022 = "k_cs2340_2022-achievement";
+achievementsList[k_cs2340_2022] = {
+    time: "Georgia Institute of Technology (Georgia Tech)",
+    title: "1st Place in Georgia Tech's CS 2340 Class Project Competition",
+    content:
+        <>
+            <ul>
+                <li>Worked in a team of 4 students to develop a tower defense game</li>
+                <li>Won first place out of 127 teams for the best game based on student votes</li>
+                <li>Link to the video: <a href={'https://youtu.be/FEQlW8OKS3c'}>https://youtu.be/FEQlW8OKS3c</a></li>
+            </ul>
+        </>,
+}
+
 export const k_horizons_2022 = "k_horizons_2022-achievement";
 achievementsList[k_horizons_2022] = {
     time: "Georgia Institute of Technology (Georgia Tech)",

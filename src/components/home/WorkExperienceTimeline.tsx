@@ -61,7 +61,14 @@ const WorkExperienceTimeline = () => {
                             </li>
                             <li>Worked with React, TypeScript, Node Addon API, C++, Lua, and multiprocessing to implement a patent pending internship project</li>
                             <li>Featured in the news: <a rel="noreferrer" target="_blank" href={"https://techcrunch.com/2021/08/23/tiktok-is-building-its-own-ar-development-platform-tiktok-effect-studio/"} style={{wordBreak: "break-all"}}>https://techcrunch.com/2021/08/23/tiktok-is-building-its-own-ar-development-platform-tiktok-effect-studio/</a></li>
+                            <li>Name mentioned in below LinkedIn post:</li>
                         </ul>
+
+                        <div>
+                            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6919641954519584768"
+                                    height="500" width="100%" frameBorder="0" allowFullScreen={true}
+                                    title="Embedded post"></iframe>
+                        </div>
                     </>
             },
             {

@@ -11,7 +11,7 @@ import {
     k_spanish_hero_href,
     k_teaching_cs_indian_village_href,
     k_the_right_price_href,
-    k_tort_cam_href
+    k_tort_cam_href, k_tower_defense_game_href
 } from "../navbar";
 import {ProjectProps} from "./Projects";
 import {
@@ -126,6 +126,34 @@ projectsList[k_smart_room_href] = {
     tags: [k_html_tag, k_js_tag, k_css_tag, k_babel_tag, k_socketio_tag, k_nodejs_tag, k_threejs_tag, k_heroku_tag, k_blender_tag],
     showMoreHeight: showMoreHeight,
     id: k_smart_room_href
+};
+
+projectsList[k_tower_defense_game_href] = {
+    videoUrl: "https://www.youtube.com/embed/FEQlW8OKS3c",
+    title: "Georgia Tech CS 2340 Tower Defense Game",
+    type: "Desktop Game",
+    date: "May of 2022",
+    content:
+        <>
+            <p>Tower Defense Game Developed in Georgia Tech's CS 2340 Objects and Design Class</p>
+            <ul>
+                <li>Developed a Tower Defense Desktop Game Application using JavaFX and Maven</li>
+                <li>Won first place out of 127 teams for the best game in the class based on student votes</li>
+                <li>Recognition from class instructor, Dr. Aibek Musaev</li>
+                <li><strong>Utilized:</strong> SOLID and GRASP object oriented design principles while developing the software. Art and music are from the 2006 game "YS Origin".</li>
+                <li><strong>Functions:</strong></li>
+                <ol>
+                    <li>Users can place towers onto a map</li>
+                    <li>Users can purchase towers from a store</li>
+                    <li>Users can earn money by eliminating enemies</li>
+                    <li>Users can battle a final boss after surviving through three waves of enemies</li>
+                    <li>Users can view game statistics such as how many towers they placed after winning or losing</li>
+                </ol>
+            </ul>
+        </>,
+    tags: [k_java_tag],
+    showMoreHeight: showMoreHeight,
+    id: k_tower_defense_game_href
 };
 
 projectsList[k_ford_connected_href] = {
