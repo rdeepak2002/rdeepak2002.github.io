@@ -39,7 +39,7 @@ const AboutSection = (props: AboutSectionProps) => {
                     <h5>Biography</h5>
 
                     <p>
-                        I was born in Boise, Idaho, and I am currently a third year Computer Science student at the
+                        I was born in Boise, Idaho, and I am currently a second year Computer Science student at the
                         Georgia Institute of Technology (Georgia Tech).
                     </p>
 
@@ -49,7 +49,13 @@ const AboutSection = (props: AboutSectionProps) => {
                     </p>
 
                     <p>
-                        Currently, I am working as a Software Engineer Intern on Netflix's Big Data Platform team.
+                        I work part-time as a Software Developer for PeeblesTech LLC in Wisconsin, Madison.
+                    </p>
+
+                    <p>
+                        I was also a full-time Augmented Reality Software Engineering Intern (Summer 2021) at TikTok's
+                        Intelligent
+                        Creation R&D Lab in Mountain View, California.
                     </p>
                 </div>
             </div>
