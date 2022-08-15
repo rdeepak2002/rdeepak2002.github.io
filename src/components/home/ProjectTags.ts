@@ -290,6 +290,34 @@ projectTags[k_spring_boot_tag] = {
     link: "https://spring.io/projects/spring-boot"
 };
 
+export const k_aws_tag: string = "aws";
+projectTags[k_aws_tag] = {
+    name: "aws",
+    color: "#ce9900",
+    link: "https://aws.amazon.com/"
+};
+
+export const k_apache_iceberg_tag: string = "apacheiceberg";
+projectTags[k_apache_iceberg_tag] = {
+    name: "apache iceberg",
+    color: "#7a8cff",
+    link: "https://iceberg.apache.org/"
+};
+
+export const k_spinnaker_tag: string = "spinnaker";
+projectTags[k_spinnaker_tag] = {
+    name: "spinnaker",
+    color: "#0d1861",
+    link: "https://spinnaker.io/"
+};
+
+export const k_presto_tag: string = "presto";
+projectTags[k_presto_tag] = {
+    name: "presto",
+    color: "#00d393",
+    link: "https://prestodb.io/"
+};
+
 export const k_go_tag: string = "go";
 projectTags[k_go_tag] = {
     name: "go",

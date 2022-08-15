@@ -39,7 +39,7 @@ const AboutSection = (props: AboutSectionProps) => {
                     <h5>Biography</h5>
 
                     <p>
-                        I was born in Boise, Idaho, and I am currently a second year Computer Science student at the
+                        I was born in Boise, Idaho, and I am currently a third year Computer Science student at the
                         Georgia Institute of Technology (Georgia Tech).
                     </p>
 
@@ -54,8 +54,7 @@ const AboutSection = (props: AboutSectionProps) => {
 
                     <p>
                         I was also a full-time Augmented Reality Software Engineering Intern (Summer 2021) at TikTok's
-                        Intelligent
-                        Creation R&D Lab in Mountain View, California.
+                        Intelligent Creation R&D Lab in Mountain View, California.
                     </p>
                 </div>
             </div>

@@ -11,18 +11,18 @@ import {MdLocationOn} from "react-icons/md";
 import {useEffect, useState} from "react";
 import TagsSection from "./TagsSection";
 import {
-    k_android_tag,
-    k_ar_tag,
-    k_cpp_tag,
-    k_digital_ocean_tag,
+    k_android_tag, k_apache_iceberg_tag,
+    k_ar_tag, k_aws_tag,
+    k_cpp_tag, k_css_tag,
+    k_digital_ocean_tag, k_html_tag,
     k_java_tag,
     k_jenkins_tag,
     k_js_tag,
     k_lua_tag,
     k_mongodb_tag,
     k_napi_tag,
-    k_nginx_tag,
-    k_react_tag,
+    k_nginx_tag, k_presto_tag, k_python_tag,
+    k_react_tag, k_spinnaker_tag,
     k_spring_boot_tag,
     k_ts_tag
 } from "./ProjectTags";
@@ -37,12 +37,13 @@ const WorkExperienceTimeline = () => {
                 logo: netflix_logo,
                 title: "Big Data Platform Software Engineer Intern @ Netflix",
                 location: "Los Gatos, CA",
-                tags: [],
+                tags: [k_java_tag, k_python_tag, k_jenkins_tag, k_spring_boot_tag, k_aws_tag, k_apache_iceberg_tag, k_presto_tag, k_spinnaker_tag, k_html_tag, k_css_tag, k_js_tag],
                 content:
                     <>
                         <ul style={{marginTop: "1rem"}}>
-                            <li>Incoming software engineering intern on the Big Data Platform team
-                            </li>
+                            <li>Refactored Spring Boot server code to publish tens of thousands of Big Data Platform jobs daily to an Apache Iceberg table for future analysis</li>
+                            <li>Developed a framework to smartly manage and validate hundreds of rules used for the auto diagnosis and remediation of millions of Big Data Platform jobs, and to ensure that compute resources are not wasted on failed auto remediation attempts</li>
+                            <li>Collaborated with a cross-functional team within the Big Data Platform organization to develop an API and web application to aid in resolving on-call alerts for data pipelines used for the real-time processing of petabytes of data</li>
                         </ul>
                     </>
             },
