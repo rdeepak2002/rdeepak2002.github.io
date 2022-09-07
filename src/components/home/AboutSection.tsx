@@ -47,15 +47,6 @@ const AboutSection = (props: AboutSectionProps) => {
                         I am passionate about Computer Science and during my free time I like to create full stack
                         applications. I also love to play racquet sports like badminton and tennis.
                     </p>
-
-                    <p>
-                        I work part-time as a Software Developer for PeeblesTech LLC in Wisconsin, Madison.
-                    </p>
-
-                    <p>
-                        I was also a full-time Augmented Reality Software Engineering Intern (Summer 2021) at TikTok's
-                        Intelligent Creation R&D Lab in Mountain View, California.
-                    </p>
                 </div>
             </div>
         </div>
