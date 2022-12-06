@@ -29,7 +29,7 @@
     "detect-browser": "^5.2.0",
     "gh-pages": "^3.2.0",
     "node-sass": "^6.0.0",
-    "qs": "^6.10.1",
+    "qs": "^6.10.3",
     "react": "^17.0.2",
     "react-bootstrap": "^1.6.1",
     "react-chrono": "^1.10.1",
