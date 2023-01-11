@@ -1,4 +1,5 @@
 import {
+    k_dream_href,
     k_augnav_href,
     k_club_websites_href,
     k_deep_playlist_href,
@@ -43,7 +44,7 @@ import {
     k_js_tag,
     k_mongodb_tag,
     k_nlp_tag,
-    k_nodejs_tag,
+    k_nodejs_tag, k_opengl_tag,
     k_p5_tag,
     k_python_tag,
     k_raspberrypi_tag,
@@ -55,10 +56,11 @@ import {
     k_spring_boot_tag,
     k_swift_tag,
     k_threejs_tag,
-    k_ts_tag
+    k_ts_tag, k_webassembly_tag
 } from "./ProjectTags";
 
 import personal_website_image from "resources/images/personal_website.png";
+import dream_engine_image from "resources/images/dream-screenshot.png";
 
 export const showMoreHeight = "177px";
 
@@ -67,6 +69,28 @@ interface ProjectList {
 }
 
 let projectsList: ProjectList = {};
+
+projectsList[k_dream_href] = {
+    imageUrl: dream_engine_image,
+    title: "Dream Engine",
+    type: "Real-Time 3D Engine / Game Engine",
+    date: "Present",
+    content:
+        <>
+            <p>Link to Web App: <a rel="noreferrer" target="_blank"
+                                   href="https://rdeepak2002.github.io/dream/">https://rdeepak2002.github.io/dream/</a></p>
+            <ul>
+                <li>Developing a Real-Time 3D Engine / Game Engine Similar to Unity and Unreal.</li>
+                <li><strong>Functions</strong></li>
+                <ul>
+                    <li>TBA</li>
+                </ul>
+            </ul>
+        </>,
+    tags: [k_cpp_tag, k_opengl_tag, k_webassembly_tag],
+    showMoreHeight: showMoreHeight,
+    id: k_dream_href
+};
 
 projectsList[k_augnav_href] = {
     videoUrl: "https://www.youtube.com/embed/8opbh55IOg4",

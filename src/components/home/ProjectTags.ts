@@ -220,6 +220,21 @@ projectTags[k_cpp_tag] = {
     link: "https://www.cplusplus.com/"
 };
 
+export const k_opengl_tag: string = "opengl";
+projectTags[k_opengl_tag] = {
+    name: "opengl",
+    color: "#ed3560",
+    link: "https://www.opengl.org/"
+};
+
+export const k_webassembly_tag: string = "web assembly";
+projectTags[k_webassembly_tag] = {
+    name: "web assembly",
+    color: "#15c092",
+    link: "https://webassembly.org/"
+};
+
+
 export const k_ar_tag: string = "ar";
 projectTags[k_ar_tag] = {
     name: "ar",
