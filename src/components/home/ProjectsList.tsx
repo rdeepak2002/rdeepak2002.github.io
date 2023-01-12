@@ -73,18 +73,25 @@ let projectsList: ProjectList = {};
 projectsList[k_dream_href] = {
     imageUrl: dream_engine_image,
     title: "Dream Engine",
-    type: "Real-Time 3D Engine / Game Engine",
-    date: "Present",
+    type: "Real-Time 3D Engine (Game Engine)",
+    date: "In Development",
     content:
         <>
-            <p>Link to Web App: <a rel="noreferrer" target="_blank"
+            <p>Website for the Application: <a rel="noreferrer" target="_blank"
                                    href="https://rdeepak2002.github.io/dream/">https://rdeepak2002.github.io/dream/</a></p>
+            <p>“Dream Engine" - A Simple Tool to Allow Anyone to Turn Their Dreams Into Reality.</p>
             <ul>
-                <li>Developing a Real-Time 3D Engine / Game Engine Similar to Unity and Unreal.</li>
-                <li><strong>Functions</strong></li>
-                <ul>
-                    <li>TBA</li>
-                </ul>
+                <li>Developed a real-time 3D engine / game engine similar to Unity and Unreal.</li>
+                <li><strong>Utilized:</strong> C++ for the core engine code, OpenGL for rendering, and Emscripten to allow the engine to be compiled to web assembly.</li>
+                <li><strong>Functions:</strong></li>
+                <ol>
+                    <li>Entity component system with hierarchy support.</li>
+                    <li>Lua scripting to allow users to attach custom game code to entities.</li>
+                    <li>Physics system utilizing Bullet Physics engine.</li>
+                    <li>Forward rendering with support for point lights, directional lights, and spot lights.</li>
+                    <li>Ability to load numerous types of 3D models from a project's asset folder into the 3D world.</li>
+                    <li>Support for skeletal animations and a graph editor to edit animator state machines associated with entities.</li>
+                </ol>
             </ul>
         </>,
     tags: [k_cpp_tag, k_opengl_tag, k_webassembly_tag],
