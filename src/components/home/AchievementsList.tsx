@@ -73,6 +73,7 @@ achievementsList[k_eghi_gt_2021] = {
             <ul>
                 <li>Developed an intelligent, automated, low-power, and affordable forest fire detection system</li>
                 <li>Link to the video: <a href={'https://youtu.be/ZNsCTzE4tb8'}>https://youtu.be/ZNsCTzE4tb8</a></li>
+                <li>Link to interview: <a href={'https://youtu.be/0NA1ekdCo3E'}>https://youtu.be/0NA1ekdCo3E</a></li>
                 <li>Link to the website: <a href={'https://globalhealth.emory.edu/students/hackathon/index.html'}>https://globalhealth.emory.edu/students/hackathon/index.html</a></li>
                 <li>Cash prize of $4000</li>
             </ul>
