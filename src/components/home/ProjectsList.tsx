@@ -71,7 +71,7 @@ interface ProjectList {
 let projectsList: ProjectList = {};
 
 projectsList[k_dream_href] = {
-    videoUrl: "https://youtu.be/bcXhjQ1Pl3U",
+    videoUrl: "https://www.youtube.com/embed/bcXhjQ1Pl3U",
     title: "Dream Engine",
     type: "Real-Time 3D Engine (Game Engine)",
     date: "In Development",
