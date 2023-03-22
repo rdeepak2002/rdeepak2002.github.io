@@ -74,11 +74,14 @@ projectsList[k_dream_href] = {
     videoUrl: "https://www.youtube.com/embed/bcXhjQ1Pl3U",
     title: "Dream Engine",
     type: "Real-Time 3D Engine (Game Engine)",
-    date: "In Development",
+    date: "February of 2023",
     content:
         <>
             <p>Website for the Application: <a rel="noreferrer" target="_blank"
                                    href="https://rdeepak2002.github.io/dream/">https://rdeepak2002.github.io/dream/</a></p>
+            <p>Link to Source Code of the Software: <a rel="noreferrer" target="_blank"
+                                                       href="https://github.com/rdeepak2002/dream/tree/51-instancing-support">https://github.com/rdeepak2002/dream/</a>
+            </p>
             <p>“Dream Engine" - A Simple Tool to Allow Anyone to Turn Their Dreams Into Reality.</p>
             <ul>
                 <li>Developed a real-time 3D engine / game engine similar to Unity and Unreal.</li>
