@@ -35,6 +35,20 @@ export interface AchievementList {
 
 let achievementsList: AchievementList = {};
 
+export const k_jj_2023 = "k_jj_2023-achievement";
+achievementsList[k_jj_2023] = {
+    time: "Georgia Institute of Technology (Georgia Tech)",
+    title: "Johnson & Johnson Inc Hacking Health Tech – All Sci, No Fi",
+    content:
+        <>
+            <ul>
+                <li>Won first place and a $15,000 cash prize for a hackathon hosted by Johnson & Johnson</li>
+                <li>Link to competition page: <a href={'https://allscinofi.hackerearth.com/'}>https://allscinofi.hackerearth.com/</a></li>
+                <li>Link to LinkedIn post: <a href={'https://www.linkedin.com/posts/johnson-%26-johnson_hacking-health-tech-hackathon-winners-activity-7052307002487656448-wA-Q?utm_source=share&utm_medium=member_desktop'}>LinkedIn</a></li>
+            </ul>
+        </>,
+}
+
 export const k_cs2340_2022 = "k_cs2340_2022-achievement";
 achievementsList[k_cs2340_2022] = {
     time: "Georgia Institute of Technology (Georgia Tech)",
