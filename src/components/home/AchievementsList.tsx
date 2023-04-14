@@ -38,7 +38,7 @@ let achievementsList: AchievementList = {};
 export const k_jj_2023 = "k_jj_2023-achievement";
 achievementsList[k_jj_2023] = {
     time: "Georgia Institute of Technology (Georgia Tech)",
-    title: "Johnson & Johnson Inc Hacking Health Tech – All Sci, No Fi",
+    title: "1st Place at Johnson & Johnson Inc Hacking Health Tech – All Sci, No Fi",
     content:
         <>
             <ul>
@@ -52,7 +52,7 @@ achievementsList[k_jj_2023] = {
 export const k_cs2340_2022 = "k_cs2340_2022-achievement";
 achievementsList[k_cs2340_2022] = {
     time: "Georgia Institute of Technology (Georgia Tech)",
-    title: "1st Place in Georgia Tech's CS 2340 Class Project Competition",
+    title: "1st Place at Georgia Tech's CS 2340 Class Project Competition",
     content:
         <>
             <ul>
