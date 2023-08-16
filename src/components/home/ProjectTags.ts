@@ -10,6 +10,13 @@ interface IProjectTags {
 
 const projectTags: IProjectTags = {};
 
+export const k_spark_tag: string = "spark";
+projectTags[k_spark_tag] = {
+    name: "spark",
+    color: "#fead51",
+    link: "https://spark.apache.org/"
+};
+
 export const k_ios_tag: string = "ios";
 projectTags[k_ios_tag] = {
     name: "ios",

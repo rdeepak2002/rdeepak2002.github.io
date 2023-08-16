@@ -24,7 +24,8 @@ import {
     k_nginx_tag, k_presto_tag, k_python_tag,
     k_react_tag, k_spinnaker_tag,
     k_spring_boot_tag,
-    k_ts_tag
+    k_ts_tag,
+    k_spark_tag
 } from "./ProjectTags";
 
 const WorkExperienceTimeline = () => {
@@ -32,6 +33,20 @@ const WorkExperienceTimeline = () => {
 
     useEffect(() => {
         setWorkExperienceItems([
+            {
+                date: "May 2023 - August 2023",
+                logo: netflix_logo,
+                title: "Big Data Platform Software Engineer Intern @ Netflix",
+                location: "Los Gatos, CA",
+                tags: [k_java_tag, k_python_tag, k_jenkins_tag, k_spring_boot_tag, k_aws_tag, k_apache_iceberg_tag, k_spark_tag, k_presto_tag, k_spinnaker_tag, k_html_tag, k_css_tag],
+                content:
+                    <>
+                        <p>(Return internship)</p>
+                        <ul style={{marginTop: "1rem"}}>
+                            <li>Developed a framework to provide a detailed diagnosis of long-running jobs for Netflix's Big Data workflow orchestrator that supports over 150 teams and 70,000 workflows</li>
+                        </ul>
+                    </>
+            },
             {
                 date: "May 2022 - August 2022",
                 logo: netflix_logo,
