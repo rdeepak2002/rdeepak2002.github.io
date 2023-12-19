@@ -6,7 +6,7 @@ Deepak Ramalingam's website.
 
 ### Requirements
 
-- [NodeJS](https://nodejs.org/en/)
+- [NodeJS](https://nodejs.org/en/) (Version 16)
 - [npm](https://www.npmjs.com/get-npm)
 - [yarn](https://classic.yarnpkg.com/en/docs/install)
 

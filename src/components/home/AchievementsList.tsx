@@ -35,6 +35,19 @@ export interface AchievementList {
 
 let achievementsList: AchievementList = {};
 
+export const k_frst_indoor_loc_chal = "k_frst_indoor_loc_chal-achievement";
+achievementsList[k_frst_indoor_loc_chal] = {
+    time: "Georgia Institute of Technology (Georgia Tech)",
+    title: "1st Place at FRST Challenge (Indoor Location Tracking Competition)",
+    content:
+        <>
+            <ul>
+                <li>Won first place and a $507,000 prize for working with a team of four people to develop the world's best indoor location tracking technology</li>
+                <li>Link to competition results: <a href={'https://frstchallenge.com/phase-5/'}>https://frstchallenge.com/phase-5/</a></li>
+            </ul>
+        </>,
+}
+
 export const k_jj_2023 = "k_jj_2023-achievement";
 achievementsList[k_jj_2023] = {
     time: "Georgia Institute of Technology (Georgia Tech)",
