@@ -61,7 +61,7 @@ import {
 
 import personal_website_image from "resources/images/personal_website.png";
 import web from "resources/images/web.jpg";
-import projects from "resources/images/projects.jpg";
+import projects_image from "resources/images/projects.jpg";
 // import dream_engine_image from "resources/images/dream-screenshot.png";
 
 export const showMoreHeight = "177px";
@@ -548,7 +548,7 @@ projectsList[k_club_websites_href] = {
 };
 
 projectsList[k_more_projects_href] = {
-    imageUrl: projects,
+    imageUrl: projects_image,
     title: "More Projects",
     type: "Hobbies",
     date: "Current",
