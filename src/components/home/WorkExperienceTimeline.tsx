@@ -34,6 +34,19 @@ const WorkExperienceTimeline = () => {
     useEffect(() => {
         setWorkExperienceItems([
             {
+                date: "January 2024 - Present",
+                logo: netflix_logo,
+                title: "Software Engineer @ Netflix (Big Data Platform)",
+                location: "Los Gatos, CA",
+                tags: [k_java_tag, k_python_tag, k_jenkins_tag, k_spring_boot_tag, k_aws_tag, k_apache_iceberg_tag, k_spark_tag, k_presto_tag, k_spinnaker_tag, k_html_tag, k_css_tag],
+                content:
+                    <>
+                        <p>
+                            Big Data Platform Orchestration team whose goal is to provide an orchestration platform to meet Netflix’s analytics and machine learning needs
+                        </p>
+                    </>
+            },
+            {
                 date: "May 2023 - August 2023",
                 logo: netflix_logo,
                 title: "Big Data Platform Software Engineer Intern @ Netflix",
@@ -75,7 +88,7 @@ const WorkExperienceTimeline = () => {
                             </li>
                             <li>Contributed to the development of a machine learning powered smart playlist generator during an internal Hackathon
                             </li>
-                            <li>Worked with React, TypeScript, Node Addon API, C++, Lua, and multiprocessing to implement a patent pending internship project</li>
+                            <li>Worked with React, TypeScript, Node Addon API, C++, Lua, and multiprocessing to implement a patented internship project (<a href="https://patentimages.storage.googleapis.com/5b/65/f8/ced0b8b2195e52/WO2023128864A2.pdf">Link to patent</a>)</li>
                             <li>Featured in the news: <a rel="noreferrer" target="_blank" href={"https://techcrunch.com/2021/08/23/tiktok-is-building-its-own-ar-development-platform-tiktok-effect-studio/"} style={{wordBreak: "break-all"}}>https://techcrunch.com/2021/08/23/tiktok-is-building-its-own-ar-development-platform-tiktok-effect-studio/</a></li>
                             <li>Name mentioned in below LinkedIn post:</li>
                         </ul>

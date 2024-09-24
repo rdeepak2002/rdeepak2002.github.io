@@ -60,6 +60,8 @@ import {
 } from "./ProjectTags";
 
 import personal_website_image from "resources/images/personal_website.png";
+import web from "resources/images/web.jpg";
+import projects from "resources/images/projects.jpg";
 // import dream_engine_image from "resources/images/dream-screenshot.png";
 
 export const showMoreHeight = "177px";
@@ -516,7 +518,7 @@ projectsList[k_teaching_cs_indian_village_href] = {
 };
 
 projectsList[k_club_websites_href] = {
-    imageUrl: "https://theartsdevelopmentcompany.org.uk/wp-content/uploads/2019/02/Website-Building-Landscape-1280x640.jpg",
+    imageUrl: web,
     title: "Websites For Clubs",
     type: "Web Apps",
     date: "August of 2019",
@@ -546,7 +548,7 @@ projectsList[k_club_websites_href] = {
 };
 
 projectsList[k_more_projects_href] = {
-    imageUrl: "https://cdn.datafloq.com/cache/blog_pictures/878x531/artificial-intelligence-future-of-programming.jpg",
+    imageUrl: projects,
     title: "More Projects",
     type: "Hobbies",
     date: "Current",
