@@ -74,3 +74,9 @@ Example:
 ```shell
 export npm_config_python=/opt/homebrew/bin/python3.9
 ```
+
+Another option that must be enabled:
+
+```shell
+export NODE_OPTIONS=--openssl-legacy-provider
+```
