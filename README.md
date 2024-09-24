@@ -64,3 +64,13 @@ Publishes the compiled version of this web application to the gh-pages branch.
 ## Deployment
 
 Navigate to Settings/Pages in the GitHub repo, then select gh-pages as the active branch. 
+
+## 2024.09.23 Note
+
+Python 3.9 must be used as the ``npm_config_python``
+
+Example:
+
+```shell
+export npm_config_python=/opt/homebrew/bin/python3.9
+```
