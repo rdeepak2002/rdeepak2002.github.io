@@ -25,7 +25,8 @@ import {
     k_react_tag, k_spinnaker_tag,
     k_spring_boot_tag,
     k_ts_tag,
-    k_spark_tag, k_redis_tag
+    k_spark_tag, k_redis_tag,
+    k_elastic_search
 } from "./ProjectTags";
 
 const WorkExperienceTimeline = () => {
@@ -38,7 +39,7 @@ const WorkExperienceTimeline = () => {
                 logo: netflix_logo,
                 title: "Software Engineer @ Netflix (Big Data Platform)",
                 location: "Los Gatos, CA",
-                tags: [k_java_tag, k_python_tag, k_jenkins_tag, k_spring_boot_tag, k_aws_tag, k_apache_iceberg_tag, k_spark_tag, k_presto_tag, k_spinnaker_tag, k_html_tag, k_css_tag, k_react_tag, k_redis_tag],
+                tags: [k_java_tag, k_python_tag, k_jenkins_tag, k_spring_boot_tag, k_aws_tag, k_apache_iceberg_tag, k_spark_tag, k_presto_tag, k_spinnaker_tag, k_html_tag, k_css_tag, k_react_tag, k_redis_tag, k_elastic_search],
                 content:
                     <>
                         <p>

@@ -404,4 +404,12 @@ projectTags[k_jenkins_tag] = {
     link: "https://www.jenkins.io/"
 };
 
+export const k_elastic_search: string = "elastic search";
+projectTags[k_elastic_search] = {
+    name: "elastic search",
+    color: "#ffce00",
+    link: "https://www.elastic.co/"
+};
+
+
 export default projectTags;
