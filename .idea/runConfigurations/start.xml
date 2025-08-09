@@ -3,6 +3,7 @@
     <package-json value="$PROJECT_DIR$/package.json" />
     <command value="start" />
     <node-interpreter value="project" />
+    <node-options value="--openssl-legacy-provider" />
     <envs />
     <method v="2" />
   </configuration>

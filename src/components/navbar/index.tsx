@@ -82,6 +82,7 @@ export const k_tort_cam_href = "tort_cam";
 export const k_smart_room_href = "smart_room";
 export const k_dream_href = "dream";
 export const k_augnav_href = "augnav";
+export const k_reddit_place_bot_href = "reddit_place_bot";
 export const k_tower_defense_game_href = "tower_defense_game";
 export const k_club_websites_href = "club_websites";
 export const k_more_projects_href = "more_projects";

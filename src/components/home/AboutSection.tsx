@@ -38,9 +38,11 @@ const AboutSection = (props: AboutSectionProps) => {
                 <div style={{display: "flex", flexDirection: "column", flex: 0.5}}>
                     <h5>Biography</h5>
 
-                    <p>
-                        My passion in programming since my elementary school days led me to develop my first educational video game in the JAVA programming language during my freshman year of high school. I am now a full-stack and mobile app developer. During my leisure time, I enjoy reading and obtaining advanced Computer Science knowledge, which I utilize to solve real world problems in the fields of education, business, health care, and emergency preparedness. My practical work is showcased in the form of web and phone applications. Due to my clean, structured programming techniques, I have won hackathons and several advanced Computer Science and Math competitions in the states of California, Georgia, and Idaho.
-                    </p>
+                    <p>I’m a software engineer passionate about building reliable, high-impact systems and products. My experience spans startups, big tech, and research environments — from developing systems to orchestrate machine learning and big data workloads in Netflix’s data platform (2× intern, now full-time) to contributing to patented augmented reality tools at TikTok, and creating production-ready web and mobile applications at PeeblesTech.</p>
+
+                    <p>I’ve worked on projects across diverse domains: building a custom real-time 3D engine and renderer from the ground up, developing augmented reality navigation systems, creating machine learning-powered applications, and maintaining open-source projects that gained wide attention. At Georgia Tech, I served as president of the WebDev club, leading a community where students learned full-stack development through hands-on projects.</p>
+
+                    <p>In every project, my focus is on writing clean, well-tested, maintainable code and delivering software that balances performance, usability, and long-term scalability.</p>
 
                 </div>
             </div>
