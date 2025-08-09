@@ -1,6 +1,7 @@
 import {
     k_dream_href,
     k_augnav_href,
+    k_reddit_place_bot_href,
     k_club_websites_href,
     k_deep_playlist_href,
     k_ford_connected_href,
@@ -62,7 +63,7 @@ import {
 import personal_website_image from "resources/images/personal_website.png";
 import web from "resources/images/web.jpg";
 import projects_image from "resources/images/projects.jpg";
-// import dream_engine_image from "resources/images/dream-screenshot.png";
+import reddit_place_bot_image from "resources/images/reddit-place-bot-image.png";
 
 export const showMoreHeight = "177px";
 
@@ -131,6 +132,33 @@ projectsList[k_augnav_href] = {
     tags: [k_ios_tag, k_arkit_tag, k_swift_tag, k_firestore_tag, k_html_tag, k_css_tag, k_js_tag, k_threejs_tag, k_nodejs_tag, k_heroku_tag],
     showMoreHeight: showMoreHeight,
     id: k_augnav_href
+};
+
+projectsList[k_reddit_place_bot_href] = {
+    imageUrl: reddit_place_bot_image,
+    title: "Reddit Place Bot",
+    type: "#1 Trending GitHub Repo for 2 Days",
+    date: "April of 2022",
+    content:
+        <>
+            <p>GitHub Repo: <a rel="noreferrer" target="_blank"
+                                               href="https://github.com/rdeepak2002/reddit-place-script-2022">https://github.com/rdeepak2002/reddit-place-script-2022</a></p>
+            <p>“Reddit Place Bot" - #1 Trending GitHub Repo on April 4, 2022.</p>
+            <ul>
+                <li>Developed a bot for the <a rel="noreferrer" target="_blank" href="https://en.wikipedia.org/wiki/R/place#:~:text=r%2Fplace%20was%20a%20recurring,and%20on%20July%2020%2C%202023.">r/place Reddit event</a></li>
+                <li><strong>Inspired:</strong> When I noticed r/place could be automated, I reverse-engineered the Reddit client to create an open source bot.
+                </li>
+                <li><strong>Utilized:</strong> The power of the open source community. The project received 904 stars, was the #1 trending GitHub repo for 2 days, had 40 contributors from around the world, was cloned thousands of times, and had hundreds of thousands visitors.</li>
+                <li><strong>Functions:</strong></li>
+                <ol>
+                    <li>Allows users to place pixels on r/place using a bot.</li>
+                    <li>Tor, multi-processing to maximize efficiency of the bot, and efficient pixel placing algorithms.</li>
+                </ol>
+            </ul>
+        </>,
+    tags: [k_python_tag],
+    showMoreHeight: showMoreHeight,
+    id: k_reddit_place_bot_href
 };
 
 projectsList[k_smart_room_href] = {
